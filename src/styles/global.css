@@ -1,0 +1,141 @@
+@font-face {
+  font-display: swap;
+  font-family: "Bellefair", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 400;
+  src: url("/assets/fonts/Bellefair-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Bellefair", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 400;
+  src: url("/assets/fonts/Lato/Lato-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Lato", serif;
+  font-optical-sizing: auto;
+  font-style: bold;
+  font-weight: 900;
+  src: url("/assets/fonts/Lato/Lato-Bold.ttf") format("truetype");
+}
+@font-face {
+  font-display: swap;
+  font-family: "Playfair", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 400;
+  src: url("/assets/fonts/PlayfairDisplay-VariableFont_wght.ttf")
+    format("truetype");
+}
+
+:root {
+  /* Border Radius */
+  --border-radius-btn: 8px;
+  --border-radius-card: 8px;
+  --border-radius-full: 500vw;
+  --border-radius-img: 8px;
+  --border-radius-input-field: 4px;
+
+  /* Box shadows */
+  --box-shadow-gold: 0px 2px 15px 0px hsl(36, 59%, 58%, 40%);
+  --box-shadow-light: 0px 2px 15px 0px hsl(224, 75%, 11%, 20%);
+  --box-shadow: 0px 2px 15px 0px hsl(224, 75%, 11%, 40%);
+
+  /* Colors */
+  --clr-dark-gray: hsl(0, 0%, 29%);
+  --clr-gold: hsl(36, 46%, 69%);
+  --clr-green-blue: hsl(168, 12%, 51%);
+  --clr-warm-sand: hsl(40, 36%, 95%);
+  --clr-white: hsl(0, 0%, 100%);
+
+  --clr-alert-green-900: hsl(106, 91%, 25%);
+  --clr-alert-yellow-900: hsl(46, 100%, 51%);
+  --clr-alert-red-900: hsl(0, 100%, 33%);
+  --clr-cta-green-900: hsl(120, 54%, 55%);
+
+  /* Fonts Family */
+  --ff-body: "Lato", sans-serif;
+  --ff-header: "Playfair", serif;
+  --ff-logo: "Bellefair", serif;
+
+  /* Font sizes */
+  --fs-200: 1.2rem;
+  --fs-300: 1.4rem;
+  --fs-400: 1.6rem;
+  --fs-500: 2rem;
+  --fs-600: 2.4rem;
+  --fs-700: 3.2rem;
+  --fs-800: 4rem;
+  --fs-900: 5.2rem;
+
+  /* Font Weights */
+
+  --fw-bold: 900;
+  --fw-italic-semi-bold: 700 italic;
+  --fw-italic: italic;
+  --fw-light-bold: 600;
+  --fw-regular: 400;
+  --fw-semi-bold: 700;
+
+  /* Line Height */
+  --lh-200: 125%;
+  --lh-300: 150%;
+  --lh-400: 175%;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--clr-dark-gray);
+  font-family: var(--ff-body);
+  font-size: var(--fs-body);
+  line-height: 1.6;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+p,
+li,
+figcaption {
+  text-wrap: pretty;
+  max-width: 65ch;
+}
+
+img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-style: italic;
+  height: auto;
+  max-width: 100%;
+  shape-margin: 1.6rem;
+  vertical-align: middle;
+}
