@@ -1,0 +1,47 @@
+{
+  "page_title": "Contact & Boeking",
+  "intro": {
+    "headline": "Plan je verblijf — we horen graag van je",
+    "paragraph": "Wil je even helemaal weg uit de drukte? Of heb je een vraag over ons verblijf, de omgeving of beschikbaarheid? Je kunt ons altijd even een bericht sturen — we reageren meestal binnen een uur.",
+    "testimonial": {
+      "quote": "De communicatie was perfect, we kregen snel reactie.",
+      "author": "Kees ★ 5 / 5"
+    }
+  },
+  "contact_form": {
+    "title": "Neem contact op",
+    "subtitle": "📬 Stuur ons een bericht",
+    "description": "Vul het formulier in en we nemen zo snel mogelijk contact met je op.",
+    "fields": {
+      "name": "Naam",
+      "email": "E-mailadres",
+      "message": "Bericht",
+      "submit": "Verstuur bericht"
+    },
+    "response_time": "💬 We reageren meestal binnen één uur."
+  },
+  "airbnb_booking": {
+    "title": "Of boek direct via Airbnb",
+    "description": "Liever meteen je verblijf vastleggen? Dat kan eenvoudig via onze Airbnb-pagina. Daar zie je direct de actuele beschikbaarheid en prijzen.",
+    "button": "Bekijk beschikbaarheid op Airbnb ↗"
+  },
+  "location": {
+    "title": "Waar vind je ons",
+    "description": "📍 Schermerhorn, tussen Alkmaar en Hoorn\nEen rustig dorp in de uitgestrekte Schermerpolder — dicht bij de kust, de stad en het echte buitenleven.",
+    "maps_button": "Open in Google Maps ↗"
+  },
+  "closing_cta": {
+    "title": "Tot snel bij Schermer Eylandt",
+    "paragraph": "Of je nu komt om te onthaasten, de omgeving te ontdekken of gewoon te genieten van stilte en ruimte — je bent van harte welkom bij ons in de Schermerpolder.",
+    "signature": "Schermer Eylandt – rust, ruimte en gastvrijheid.",
+    "contact_info": {
+      "phone": "📞 Telefoon: +31 (0)6 xxx xxx xx",
+      "email": "✉️ E-mail: info@schermer-eylandt.nl",
+      "social": "🌐 Volg ons: [Instagram] | [Facebook] | [Airbnb ↗]"
+    }
+  },
+  "seo": {
+    "title": "Contact & Boeking – B&B Schermer Eylandt Schermerhorn",
+    "description": "Neem contact op met Bas & Linda van B&B Schermer Eylandt of boek direct via Airbnb. Rust, ruimte en gastvrijheid in het hart van de Schermerpolder."
+  }
+}

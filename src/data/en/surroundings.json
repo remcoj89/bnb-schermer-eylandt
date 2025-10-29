@@ -1,0 +1,66 @@
+{
+  "page_title": "Explore North Holland",
+  "hero": {
+    "headline": "From our bed & breakfast, you can explore the true essence of Holland: vast open landscapes, historic windmills and charming villages leading to the coast. Here, you’ll enjoy countryside tranquility — without being far from the city.",
+    "testimonial": {
+      "quote": "The perfect base to explore North Holland.",
+      "author": "Georgina",
+      "rating": "⭐⭐⭐⭐⭐"
+    }
+  },
+  "highlights": [
+    {
+      "icon": "📍",
+      "title": "Alkmaar – 15 min",
+      "description": "🧀 Cheese Market & historic city center"
+    },
+    {
+      "icon": "🌊",
+      "title": "Beach – 30 min",
+      "description": "🏖 Schoorl, Bergen or Egmond aan Zee"
+    },
+    {
+      "icon": "🏙",
+      "title": "Amsterdam – 35 min",
+      "description": "🚆 Easily reached by car or train"
+    }
+  ],
+  "experiences": {
+    "title": "Things to Do",
+    "items": [
+      {
+        "icon": "🚲",
+        "title": "Cycle among the windmills of the Schermer",
+        "description": "Perfect flat routes for peaceful rides through the Dutch countryside."
+      },
+      {
+        "icon": "🧀",
+        "title": "Visit the Alkmaar Cheese Market",
+        "description": "Every Friday, the Waagplein comes alive with color, sound and tradition."
+      },
+      {
+        "icon": "🏖",
+        "title": "A day at the beach or boating in De Rijp",
+        "description": "Combine sun, water and dinner in a beautiful historic village."
+      },
+      {
+        "icon": "🎨",
+        "title": "Culture & History",
+        "description": "Museums in Alkmaar, the Zaanse Schans, and more — all nearby but away from the crowds."
+      }
+    ]
+  },
+  "guest_experience": {
+    "quote": "We could go anywhere — the beach, Amsterdam, Texel — and each night we returned to the calm of Schermerhorn.",
+    "author": "David ★ 5 / 5"
+  },
+  "cta": {
+    "title": "Ready to experience the real North Holland?",
+    "description": "Leave the noise behind and enjoy a stay filled with peace and authenticity.",
+    "button": "Book via Airbnb ↗"
+  },
+  "seo": {
+    "title": "Explore North Holland – B&B Schermer Eylandt Schermerhorn",
+    "description": "Discover Alkmaar, the dunes, windmills and coast from Schermer Eylandt — your perfect base in the Dutch countryside."
+  }
+}

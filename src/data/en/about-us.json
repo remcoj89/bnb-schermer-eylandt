@@ -1,0 +1,44 @@
+{
+  "page_title": "About Us – Bas & Linda",
+  "intro": {
+    "headline": "A Dream Come True",
+    "paragraph_1": "Some places just feel right from the start. When we, Bas & Linda, found this historic house in Schermerhorn, we knew: this is where we want to welcome guests.",
+    "paragraph_2": "After months of renovating and decorating, Schermer Eylandt became what we dreamed of — a place to relax, breathe and truly unwind.",
+    "testimonial": {
+      "quote": "A warm welcome with breakfast and local tips — we felt right at home.",
+      "author": "Isabelle",
+      "rating": "⭐⭐⭐⭐⭐"
+    }
+  },
+  "hospitality": {
+    "title": "What Hospitality Means to Us",
+    "paragraph": "For us, hospitality means attention and care. It’s in the small details — a fresh cup of coffee, a personal note, a tip for a beautiful walk. We want every guest to feel comfortable and cared for, whether staying for a weekend or a week.",
+    "quotes": [
+      {
+        "text": "They respond so quickly and are always happy to help.",
+        "author": "Kees"
+      },
+      {
+        "text": "The kindest hosts I’ve ever met.",
+        "author": "Sooyeong"
+      }
+    ]
+  },
+  "philosophy": {
+    "title": "Our Philosophy",
+    "quote": {
+      "text": "We believe guests should feel at home right away — and leave with a smile.",
+      "author": "Linda"
+    },
+    "paragraph": "Our favorite thing? Seeing guests leave feeling recharged, happy and inspired. That’s what makes it all worthwhile."
+  },
+  "cta": {
+    "title": "You're Welcome Here",
+    "text": "Come and experience it for yourself. Let the calm of the countryside embrace you, enjoy the space, and feel at home at Schermer Eylandt.",
+    "buttons": ["Contact Us", "Book via Airbnb ↗"]
+  },
+  "seo": {
+    "title": "About Us – Bas & Linda, B&B Schermer Eylandt",
+    "description": "Meet Bas & Linda — your friendly hosts at Schermer Eylandt in Schermerhorn. Personal, warm and welcoming."
+  }
+}

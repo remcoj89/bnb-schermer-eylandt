@@ -1,0 +1,101 @@
+{
+  "page_title": "Accommodatie",
+  "intro": {
+    "headline": "Comfortabel verblijven in een historisch pand",
+    "paragraph_1": "Ons gastenverblijf combineert het karakter van een oud huis met het comfort van nu. De B&B is geschikt voor vier personen en voorzien van alles wat je nodig hebt voor een ontspannen verblijf.",
+    "testimonial": {
+      "quote": "De woning is schoon, compleet en voelt als thuis.",
+      "author": "Claire, 2025",
+      "rating": "⭐⭐⭐⭐⭐"
+    },
+    "paragraph_2": "Of je nu met z’n tweeën komt of met het hele gezin, bij Schermer Eylandt vind je de rust en ruimte om echt tot jezelf te komen."
+  },
+  "photo_gallery": {
+    "title": "Foto-impressie",
+    "description": "Ontdek de lichte kamers, de gezellige woonkamer en het uitzicht over de polder. Alles is met zorg ingericht, zodat je je direct thuis voelt — van het eerste kopje koffie in de ochtend tot de laatste zonnestralen op het terras.",
+    "note": "📸 Luchtige foto’s van slaapkamer, woonkamer, keuken en tuin. (Lightbox-weergave met korte beschrijvingen per ruimte.)"
+  },
+  "rooms_and_facilities": {
+    "title": "Overzicht van kamers & voorzieningen",
+    "items": [
+      {
+        "icon": "🛏",
+        "title": "Slaapkamer 1",
+        "description": "Tweepersoons boxspringbed"
+      },
+      {
+        "icon": "🛏",
+        "title": "Slaapkamer 2",
+        "description": "Stapelbed (ideaal voor kids)"
+      },
+      {
+        "icon": "🍳",
+        "title": "Keuken",
+        "description": "Volledig uitgerust met vaatwasser en koffiezetapparaat"
+      },
+      {
+        "icon": "🛋",
+        "title": "Woonkamer",
+        "description": "Comfortabele slaapbank, tv en massagestoel"
+      },
+      {
+        "icon": "🚿",
+        "title": "Badkamer",
+        "description": "Inloopdouche en frisse badlinnenservice"
+      },
+      {
+        "icon": "🚗",
+        "title": "Parkeren",
+        "description": "Gratis parkeren voor de deur"
+      },
+      {
+        "icon": "👶",
+        "title": "Voor de kleintjes",
+        "description": "Kinderstoel en bedje beschikbaar op aanvraag"
+      }
+    ]
+  },
+  "extra_comfort": {
+    "title": "Extra comfort volgens onze gasten",
+    "features": [
+      {
+        "icon": "💨",
+        "label": "Airco",
+        "quote": "De airco was heerlijk tijdens warme dagen.",
+        "author": "Claire"
+      },
+      {
+        "icon": "💻",
+        "label": "Snelle wifi (364 Mbps)",
+        "quote": "Perfect om even te werken.",
+        "author": "Jessica"
+      },
+      {
+        "icon": "🔑",
+        "label": "Zelf inchecken",
+        "quote": "Sleutelkastje – handig en flexibel!",
+        "author": "Georgina"
+      }
+    ],
+    "note": "Bij elk detail is nagedacht over gemak en rust. Zo kun jij je volledig richten op genieten."
+  },
+  "practical_info": {
+    "title": "Praktische informatie",
+    "info": [
+      "Check-in vanaf 15:00 uur, check-out tot 11:00 uur",
+      "Maximaal 4 gasten",
+      "Gratis annuleren binnen 24 uur",
+      "Geen huisdieren toegestaan",
+      "Roken niet toegestaan binnen"
+    ]
+  },
+  "closing_cta": {
+    "title": "Plan je verblijf",
+    "description": "Word wakker met uitzicht over de polder en sluit de dag af met het geluid van weidevogels. Bij Schermer Eylandt is het alsof de tijd even stilstaat.",
+    "button": "Bekijk prijzen en beschikbaarheid op Airbnb ↗"
+  },
+  "seo": {
+    "title": "Kamers & voorzieningen – B&B Schermer Eylandt Schermerhorn",
+    "description": "Verblijf in een historisch pand met modern comfort. Voorzien van alles wat je nodig hebt voor rust, ruimte en ontspanning."
+  }
+}

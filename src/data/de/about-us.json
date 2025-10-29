@@ -1,0 +1,44 @@
+{
+  "page_title": "Über uns – Bas & Linda",
+  "intro": {
+    "headline": "Ein Traum wird wahr",
+    "paragraph_1": "Manche Orte fühlen sich sofort richtig an. Als wir, Bas & Linda, dieses historische Haus fanden, wussten wir: Hier möchten wir Gäste empfangen.",
+    "paragraph_2": "Nach Monaten der Renovierung wurde Schermer Eylandt zu dem Ort, den wir uns erträumt hatten: Ein Platz zum Abschalten, Entspannen und Wohlfühlen.",
+    "testimonial": {
+      "quote": "Herzlicher Empfang mit Frühstück und Tipps – wir haben uns sofort wohlgefühlt.",
+      "author": "Isabelle",
+      "rating": "⭐⭐⭐⭐⭐"
+    }
+  },
+  "hospitality": {
+    "title": "Was Gastfreundschaft für uns bedeutet",
+    "paragraph": "Für uns bedeutet Gastfreundschaft vor allem Aufmerksamkeit. Die kleinen Gesten, die zählen – ein frischer Kaffee, ein Willkommensgruß, ein Tipp für einen schönen Spaziergang. Ob für ein Wochenende oder eine ganze Woche: Bei uns können Sie mit Ruhe, Raum und einem offenen Herzen rechnen.",
+    "quotes": [
+      {
+        "text": "Sie antworten unglaublich schnell und helfen sofort.",
+        "author": "Kees"
+      },
+      {
+        "text": "Die freundlichsten Gastgeber, die ich je getroffen habe.",
+        "author": "Sooyeong"
+      }
+    ]
+  },
+  "philosophy": {
+    "title": "Unsere Philosophie",
+    "quote": {
+      "text": "Uns ist wichtig, dass sich Gäste sofort zuhause fühlen – und mit einem Lächeln abreisen.",
+      "author": "Linda"
+    },
+    "paragraph": "Das Schönste für uns? Wenn Gäste ausgeruht und glücklich abreisen – dann wissen wir, dass wir alles richtig gemacht haben."
+  },
+  "cta": {
+    "title": "Fühlen Sie sich bei uns willkommen",
+    "text": "Kommen Sie vorbei und erleben Sie es selbst. Lassen Sie sich von der Ruhe der Landschaft umarmen, genießen Sie den Raum und fühlen Sie sich zuhause bei Schermer Eylandt.",
+    "buttons": ["Kontakt aufnehmen", "Über Airbnb buchen ↗"]
+  },
+  "seo": {
+    "title": "Über uns – Bas & Linda, B&B Schermer Eylandt",
+    "description": "Lernen Sie Bas & Linda kennen – die Gastgeber von Schermer Eylandt. Persönlich, herzlich und mit Liebe zum Detail."
+  }
+}

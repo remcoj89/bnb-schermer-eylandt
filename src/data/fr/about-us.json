@@ -1,0 +1,44 @@
+{
+  "page_title": "À propos de nous – Bas & Linda",
+  "intro": {
+    "headline": "Un rêve devenu réalité",
+    "paragraph_1": "Certains lieux ont une âme — dès qu’on y entre, on le sent. Quand nous, Bas & Linda, avons découvert cette maison historique à Schermerhorn, nous avons su tout de suite : c’est ici que commence notre rêve.",
+    "paragraph_2": "Après des mois de travaux, de peinture et d’aménagement, Schermer Eylandt est devenu ce que nous imaginions : un endroit pour se détendre, respirer et profiter du calme de la campagne.",
+    "testimonial": {
+      "quote": "Accueil chaleureux avec petit-déjeuner et conseils — nous nous sommes sentis tout de suite à l’aise.",
+      "author": "Isabelle",
+      "rating": "⭐⭐⭐⭐⭐"
+    }
+  },
+  "hospitality": {
+    "title": "Ce que signifie l’hospitalité pour nous",
+    "paragraph": "Pour nous, l’hospitalité, c’est avant tout l’attention. Les petits gestes qui font la différence — un café prêt à l’arrivée, un mot de bienvenue, une idée de balade au coucher du soleil. Nous aimons que chaque hôte se sente à sa place, libre et tranquille. Que ce soit pour un week-end ou une semaine entière, vous pouvez compter sur notre disponibilité et notre bienveillance.",
+    "quotes": [
+      {
+        "text": "Ils répondent très vite et sont toujours prêts à aider.",
+        "author": "Kees"
+      },
+      {
+        "text": "Les hôtes les plus sympathiques que j’aie jamais rencontrés.",
+        "author": "Sooyeong"
+      }
+    ]
+  },
+  "philosophy": {
+    "title": "Notre philosophie",
+    "quote": {
+      "text": "Nous trouvons essentiel que nos hôtes se sentent immédiatement chez eux — et repartent avec le sourire.",
+      "author": "Linda"
+    },
+    "paragraph": "Ce que nous préférons ? Voir nos visiteurs repartir reposés, inspirés, et heureux. C’est notre plus belle récompense."
+  },
+  "cta": {
+    "title": "Vous êtes les bienvenus",
+    "text": "Nous vous invitons à venir le vivre par vous-même. Laissez la tranquillité de la plaine de Schermer vous envelopper, profitez de l’espace et sentez-vous chez vous à Schermer Eylandt.",
+    "buttons": ["Contactez-nous", "Réserver sur Airbnb ↗"]
+  },
+  "seo": {
+    "title": "À propos de nous – Bas & Linda, B&B Schermer Eylandt",
+    "description": "Découvrez l’histoire de Bas & Linda, les hôtes de Schermer Eylandt à Schermerhorn. Un accueil chaleureux, personnel et authentique au cœur du Nord-Holland."
+  }
+}

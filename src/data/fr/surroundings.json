@@ -1,0 +1,66 @@
+{
+  "page_title": "Découvrez le Nord-Holland",
+  "hero": {
+    "headline": "Depuis notre bed & breakfast, partez à la découverte du vrai visage de la Hollande : des horizons infinis, des moulins historiques et des chemins bordés d’eau qui vous mènent vers de charmants villages et la mer du Nord. Ici, vous profitez encore du calme de la campagne — sans être loin de tout.",
+    "testimonial": {
+      "quote": "Point de départ idéal pour explorer le Nord-Holland.",
+      "author": "Georgina",
+      "rating": "⭐⭐⭐⭐⭐"
+    }
+  },
+  "highlights": [
+    {
+      "icon": "📍",
+      "title": "Alkmaar – 15 min",
+      "description": "🧀 Marché au fromage & vieille ville historique"
+    },
+    {
+      "icon": "🌊",
+      "title": "Plage – 30 min",
+      "description": "🏖 Schoorl, Bergen ou Egmond aan Zee"
+    },
+    {
+      "icon": "🏙",
+      "title": "Amsterdam – 35 min",
+      "description": "🚆 Facilement accessible en voiture ou en train"
+    }
+  ],
+  "experiences": {
+    "title": "Expériences à vivre dans la région",
+    "items": [
+      {
+        "icon": "🚲",
+        "title": "Faire du vélo parmi les moulins de la Schermer",
+        "description": "Les paysages plats et les digues offrent des itinéraires parfaits pour une balade tranquille au grand air."
+      },
+      {
+        "icon": "🧀",
+        "title": "Visiter le marché au fromage d’Alkmaar",
+        "description": "Chaque vendredi, la place du Waag s’anime avec les sons, les couleurs et les traditions de ce marché emblématique."
+      },
+      {
+        "icon": "🏖",
+        "title": "Une journée à la plage ou en bateau à De Rijp",
+        "description": "Profitez du soleil, de l’eau et d’un dîner agréable dans un village typiquement hollandais."
+      },
+      {
+        "icon": "🎨",
+        "title": "Culture et patrimoine",
+        "description": "Musées, villages historiques et la célèbre Zaanse Schans — tout est à proximité, mais loin du tumulte."
+      }
+    ]
+  },
+  "guest_experience": {
+    "quote": "Nous pouvions aller partout : la plage, Amsterdam, Texel — et chaque soir, retrouver le calme de Schermerhorn.",
+    "author": "David ★ 5 / 5"
+  },
+  "cta": {
+    "title": "Prêt à découvrir le vrai Nord-Holland ?",
+    "description": "Laissez le stress derrière vous et goûtez au plaisir d’un séjour calme et authentique.",
+    "button": "Réserver sur Airbnb ↗"
+  },
+  "seo": {
+    "title": "Découvrez le Nord-Holland – B&B Schermer Eylandt à Schermerhorn",
+    "description": "Explorez le meilleur du Nord-Holland depuis Schermer Eylandt : Alkmaar, les dunes, les moulins et la plage — tout à proximité."
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "page_title": "Contact & Réservation",
+  "intro": {
+    "headline": "Planifiez votre séjour — nous serons ravis d’échanger avec vous",
+    "paragraph": "Envie de faire une pause loin de l’agitation ? Des questions sur le séjour, la région ou les disponibilités ? N’hésitez pas à nous envoyer un message — nous répondons généralement dans l’heure.",
+    "testimonial": {
+      "quote": "La communication était parfaite, nous avons reçu une réponse très rapide.",
+      "author": "Kees ★ 5 / 5"
+    }
+  },
+  "contact_form": {
+    "title": "Envoyez-nous un message",
+    "subtitle": "📬 Formulaire de contact",
+    "description": "Remplissez le formulaire ci-dessous et nous vous répondrons dans les plus brefs délais.",
+    "fields": {
+      "name": "Nom",
+      "email": "Adresse e-mail",
+      "message": "Message",
+      "submit": "Envoyer le message"
+    },
+    "response_time": "💬 Nous répondons habituellement dans l’heure."
+  },
+  "airbnb_booking": {
+    "title": "Ou réservez directement via Airbnb",
+    "description": "Vous préférez réserver directement ? C’est possible via notre page Airbnb. Vous y trouverez les prix et disponibilités à jour.",
+    "button": "Voir les disponibilités sur Airbnb ↗"
+  },
+  "location": {
+    "title": "Où nous trouver",
+    "description": "📍 Schermerhorn, entre Alkmaar et Hoorn\nUn village paisible au cœur de la plaine de Schermer — près de la mer, de la ville et de la vraie campagne hollandaise.",
+    "maps_button": "Ouvrir dans Google Maps ↗"
+  },
+  "closing_cta": {
+    "title": "À très bientôt chez Schermer Eylandt",
+    "paragraph": "Que vous veniez pour vous reposer, explorer la région ou simplement profiter du calme, vous êtes les bienvenus chez Schermer Eylandt.",
+    "signature": "Schermer Eylandt – calme, espace et hospitalité.",
+    "contact_info": {
+      "phone": "📞 Téléphone : +31 (0)6 xxx xxx xx",
+      "email": "✉️ E-mail : info@schermer-eylandt.nl",
+      "social": "🌐 Suivez-nous : [Instagram] | [Facebook] | [Airbnb ↗]"
+    }
+  },
+  "seo": {
+    "title": "Contact & Réservation – B&B Schermer Eylandt Schermerhorn",
+    "description": "Contactez Bas & Linda de B&B Schermer Eylandt ou réservez directement via Airbnb. Calme, espace et hospitalité au cœur de la plaine de Schermer."
+  }
+}

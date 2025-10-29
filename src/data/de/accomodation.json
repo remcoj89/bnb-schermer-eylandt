@@ -1,0 +1,101 @@
+{
+  "page_title": "Unterkunft",
+  "intro": {
+    "headline": "Komfortabel wohnen in einem historischen Haus",
+    "paragraph_1": "Unsere Unterkunft verbindet den Charme eines historischen Hauses mit modernem Komfort. Das Gästehaus bietet Platz für bis zu 4 Personen und ist mit allem ausgestattet, was Sie für einen entspannten Aufenthalt benötigen.",
+    "testimonial": {
+      "quote": "Die Unterkunft ist sauber, vollständig ausgestattet und fühlt sich an wie Zuhause.",
+      "author": "Claire, 2025",
+      "rating": "⭐⭐⭐⭐⭐"
+    },
+    "paragraph_2": "Egal ob Sie als Paar reisen oder mit der Familie – Schermer Eylandt ist der perfekte Ort, um zur Ruhe zu kommen und neue Energie zu tanken."
+  },
+  "photo_gallery": {
+    "title": "Fotogalerie",
+    "description": "Entdecken Sie helle Räume, ein gemütliches Wohnzimmer und den Blick über die weite Landschaft. Alles ist mit Liebe zum Detail eingerichtet – vom ersten Kaffee am Morgen bis zum Sonnenuntergang auf der Terrasse.",
+    "note": "📸 (Fotogalerie – Schlafzimmer, Wohnzimmer, Küche, Garten)"
+  },
+  "rooms_and_facilities": {
+    "title": "Zimmer & Ausstattung",
+    "items": [
+      {
+        "icon": "🛏",
+        "title": "Schlafzimmer 1",
+        "description": "Doppel-Boxspringbett"
+      },
+      {
+        "icon": "🛏",
+        "title": "Schlafzimmer 2",
+        "description": "Etagenbett (ideal für Kinder)"
+      },
+      {
+        "icon": "🍳",
+        "title": "Küche",
+        "description": "Voll ausgestattet mit Geschirrspüler und Kaffeemaschine"
+      },
+      {
+        "icon": "🛋",
+        "title": "Wohnzimmer",
+        "description": "Schlafsofa, TV und Massagesessel"
+      },
+      {
+        "icon": "🚿",
+        "title": "Badezimmer",
+        "description": "Walk-in-Dusche, frische Handtücher"
+      },
+      {
+        "icon": "🚗",
+        "title": "Parkplatz",
+        "description": "Kostenloses Parken direkt vor dem Haus"
+      },
+      {
+        "icon": "👶",
+        "title": "Babyausstattung",
+        "description": "Kinderstuhl und Babybett auf Anfrage erhältlich"
+      }
+    ]
+  },
+  "extra_comfort": {
+    "title": "Extra-Komfort laut unserer Gäste",
+    "features": [
+      {
+        "icon": "💨",
+        "label": "Klimaanlage",
+        "quote": "Super angenehm an heißen Tagen.",
+        "author": "Claire"
+      },
+      {
+        "icon": "💻",
+        "label": "Schnelles WLAN (364 Mbps)",
+        "quote": "Perfekt zum Arbeiten.",
+        "author": "Jessica"
+      },
+      {
+        "icon": "🔑",
+        "label": "Selbstständiger Check-in",
+        "quote": "Schlüsselkasten – sehr praktisch!",
+        "author": "Georgina"
+      }
+    ],
+    "note": "Jedes Detail wurde mit Sorgfalt gestaltet, damit Sie einfach nur genießen können."
+  },
+  "practical_info": {
+    "title": "Praktische Informationen",
+    "info": [
+      "Check-in ab 15:00 Uhr, Check-out bis 11:00 Uhr",
+      "Maximal 4 Gäste",
+      "Kostenlose Stornierung innerhalb von 24 Stunden",
+      "Keine Haustiere",
+      "Nichtraucherunterkunft"
+    ]
+  },
+  "closing_cta": {
+    "title": "Planen Sie Ihren Aufenthalt",
+    "description": "Wachen Sie auf mit Blick auf die Felder und lassen Sie den Tag in völliger Ruhe ausklingen. Bei Schermer Eylandt scheint die Zeit ein wenig langsamer zu laufen.",
+    "button": "Preise & Verfügbarkeit auf Airbnb ansehen ↗"
+  },
+  "seo": {
+    "title": "Zimmer & Ausstattung – B&B Schermer Eylandt Schermerhorn",
+    "description": "Übernachten Sie in einem historischen Haus mit modernem Komfort. Ein Ort der Ruhe, Weite und Entspannung in Nordholland."
+  }
+}

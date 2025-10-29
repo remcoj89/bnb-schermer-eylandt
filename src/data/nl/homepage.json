@@ -1,0 +1,65 @@
+{
+  "hero": {
+    "headline": "Rust, ruimte en gastvrijheid in het hart van de Schermerpolder.",
+    "subline": "Ontsnap even aan de drukte en ervaar het echte Noord-Hollandse buitenleven — waar stilte, comfort en natuur samenkomen.",
+    "cta_buttons": ["Bekijk verblijf", "Boek via Airbnb ↗"]
+  },
+  "intro": {
+    "section_title": "Onze droomplek",
+    "paragraph_1": "Toen we voor het eerst dit historische pand in Schermerhorn zagen, wisten we het meteen: hier willen we iets bijzonders creëren.",
+    "paragraph_2": "Wij zijn Bas & Linda, en we hebben van dit huis onze droomplek gemaakt — en die delen we graag met jou. Of je nu komt om tot rust te komen, de omgeving te verkennen of gewoon even op te laden: bij ons voel je je direct thuis.",
+    "testimonial": {
+      "quote": "We voelden ons meteen thuis — alles was aanwezig.",
+      "author": "Sofie, juli 2025",
+      "rating": "⭐ ⭐ ⭐ ⭐ ⭐"
+    }
+  },
+  "why_guests_love_it": {
+    "section_title": "Waarom gasten hier graag verblijven",
+    "features": [
+      {
+        "icon": "🕊",
+        "title": "Rustige omgeving",
+        "text": "Heerlijk stil, met uitzicht over de uitgestrekte polder."
+      },
+      {
+        "icon": "🛏",
+        "title": "Comfort & netheid",
+        "text": "Alles was schoon, fris en stijlvol ingericht."
+      },
+      {
+        "icon": "📍",
+        "title": "Perfecte ligging",
+        "text": "Binnen 30 minuten bij het strand, Alkmaar of Amsterdam."
+      },
+      {
+        "icon": "🤝",
+        "title": "Persoonlijke ontvangst",
+        "text": "Bas en Linda denken overal aan en geven fijne tips."
+      }
+    ],
+    "rating_summary": "Gemiddeld beoordeeld met 4,98 / 5 uit 86 recensies"
+  },
+  "surroundings": {
+    "section_title": "Omgeving & beleving",
+    "paragraph": "Vanuit Schermer Eylandt ontdek je het beste van Noord-Holland: de historische stad Alkmaar, de duinen, de molens van De Rijp en het strand — allemaal binnen handbereik. Na een dag vol indrukken keer je terug naar de rust van het platteland.",
+    "highlights": [
+      "📸 Wandel door de polder",
+      "🚲 Fiets langs molens",
+      "🏖 Geniet van zee & strand",
+      "🍷 Ontspan in de tuin"
+    ]
+  },
+  "guest_experience": {
+    "quote": "Een absolute aanrader — we hebben genoten van de rust, de ruimte en de gastvrijheid.",
+    "author": "Kees ★ 5 / 5"
+  },
+  "final_cta": {
+    "text": "We heten je van harte welkom in onze bed & breakfast — een plek waar stilte, comfort en gastvrijheid vanzelfsprekend zijn.",
+    "button": "Bekijk beschikbaarheid op Airbnb ↗"
+  },
+  "seo": {
+    "title": "B&B Schermer Eylandt – Rust en ruimte in de Schermerpolder",
+    "description": "Overnacht in een historisch pand in Schermerhorn. Geniet van comfort, stilte en gastvrijheid van Bas & Linda."
+  }
+}

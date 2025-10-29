@@ -1,0 +1,65 @@
+{
+  "hero": {
+    "headline": "Peace, space and hospitality in the heart of the Schermer polder.",
+    "subline": "Escape the rush of everyday life and experience the real Dutch countryside — where silence, comfort and nature come together.",
+    "cta_buttons": ["View Stay", "Book via Airbnb ↗"]
+  },
+  "intro": {
+    "section_title": "Our Dream Place",
+    "paragraph_1": "When we first saw this historic house in Schermerhorn, we knew instantly: this is where we want to create something special.",
+    "paragraph_2": "We’re Bas & Linda, and we’ve turned this house into our dream place — one we love sharing with you. Whether you’re here to unwind, explore the surroundings or simply recharge — you’ll feel right at home from the moment you arrive.",
+    "testimonial": {
+      "quote": "We felt at home right away — everything we needed was there.",
+      "author": "Sofie, July 2025",
+      "rating": "⭐ ⭐ ⭐ ⭐ ⭐"
+    }
+  },
+  "why_guests_love_it": {
+    "section_title": "Why Guests Love Staying Here",
+    "features": [
+      {
+        "icon": "🕊",
+        "title": "Peaceful Surroundings",
+        "text": "So quiet and calm, with stunning views across the fields."
+      },
+      {
+        "icon": "🛏",
+        "title": "Comfort & Cleanliness",
+        "text": "Everything was spotless and beautifully decorated."
+      },
+      {
+        "icon": "📍",
+        "title": "Perfect Location",
+        "text": "Only 30 minutes to the beach, Alkmaar or Amsterdam."
+      },
+      {
+        "icon": "🤝",
+        "title": "Personal Welcome",
+        "text": "Bas and Linda think of everything and give great tips."
+      }
+    ],
+    "rating_summary": "Average rating: 4.98 / 5 from 86 reviews"
+  },
+  "surroundings": {
+    "section_title": "Surroundings & Experience",
+    "paragraph": "From Schermer Eylandt, you can discover the best of North Holland: the historic city of Alkmaar, the dunes, the windmills of De Rijp and the nearby beaches — all within easy reach. After a day full of discoveries, return to the peace of the countryside.",
+    "highlights": [
+      "📸 Walk through the fields",
+      "🚲 Cycle past windmills",
+      "🏖 Enjoy the sea & sand",
+      "🍷 Relax in the garden"
+    ]
+  },
+  "guest_experience": {
+    "quote": "An absolute gem — we loved the peace, the space and the warm hospitality.",
+    "author": "Kees ★ 5 / 5"
+  },
+  "final_cta": {
+    "text": "We warmly welcome you to our bed & breakfast — a place where peace, comfort and hospitality go hand in hand.",
+    "button": "Check Availability on Airbnb ↗"
+  },
+  "seo": {
+    "title": "B&B Schermer Eylandt – Peace and Space in the Schermer Polder",
+    "description": "Stay in a historic house in Schermerhorn. Enjoy comfort, quiet and warm hospitality from Bas & Linda."
+  }
+}

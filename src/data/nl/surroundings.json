@@ -1,0 +1,67 @@
+{
+  "page_title": "Ontdek Noord-Holland",
+  "hero": {
+    "headline": "Het echte Holland, midden in de natuur",
+    "paragraph": "Vanuit onze bed & breakfast stap je zo het echte Holland in: weidse uitzichten, oude molens en smalle dijkweggetjes die je leiden naar charmante dorpjes en het strand. Hier ervaar je nog de rust van het platteland — zonder ver van alles te zijn.",
+    "testimonial": {
+      "quote": "Ideale uitvalsbasis om Noord-Holland te verkennen.",
+      "author": "Georgina",
+      "rating": "⭐⭐⭐⭐⭐"
+    }
+  },
+  "highlights": [
+    {
+      "icon": "📍",
+      "title": "Alkmaar – 15 min",
+      "description": "🧀 Kaasmarkt & historische binnenstad"
+    },
+    {
+      "icon": "🌊",
+      "title": "Strand – 30 min",
+      "description": "🏖 Schoorl, Bergen of Egmond aan Zee"
+    },
+    {
+      "icon": "🏙",
+      "title": "Amsterdam – 35 min",
+      "description": "🚆 Gemakkelijk bereikbaar met de auto of trein"
+    }
+  ],
+  "experiences": {
+    "title": "Belevenissen in de omgeving",
+    "items": [
+      {
+        "icon": "🚲",
+        "title": "Fiets tussen de molens van de Schermer",
+        "description": "De polders zijn gemaakt voor fietsliefhebbers. Geniet van de rust, het weidse uitzicht en de typische Hollandse luchten."
+      },
+      {
+        "icon": "🧀",
+        "title": "Bezoek de kaasmarkt van Alkmaar",
+        "description": "Elke vrijdag verandert het Waagplein in een bruisend spektakel van geur, kleur en traditie."
+      },
+      {
+        "icon": "🏖",
+        "title": "Een dagje strand of varen in De Rijp",
+        "description": "Combineer een middag zon of water met een gezellig etentje in een historisch dorp."
+      },
+      {
+        "icon": "🎨",
+        "title": "Ontdek de cultuur en historie",
+        "description": "Van musea in Alkmaar tot de Zaanse Schans — alles is dichtbij, maar ver weg van de drukte."
+      }
+    ]
+  },
+  "guest_experience": {
+    "quote": "We konden overal heen: strand, Amsterdam, Texel — en elke avond terug naar de rust van Schermerhorn.",
+    "author": "David ★ 5 / 5"
+  },
+  "cta": {
+    "title": "Boek jouw verblijf",
+    "description": "Klaar om het echte Noord-Holland te ervaren? Laat de drukte achter je en ontdek hoe heerlijk het is om weer even écht stil te staan.",
+    "button": "Boek via Airbnb ↗"
+  },
+  "seo": {
+    "title": "Ontdek Noord-Holland – B&B Schermer Eylandt in Schermerhorn",
+    "description": "Ontdek het beste van Noord-Holland vanuit Schermer Eylandt: Alkmaar, de duinen, molens en het strand — allemaal binnen handbereik."
+  }
+}

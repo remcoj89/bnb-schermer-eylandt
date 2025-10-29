@@ -1,0 +1,66 @@
+{
+  "hero": {
+    "headline": "Ruhe, Weite und Gastfreundschaft im Herzen des Schermerpolders.",
+    "subline": "Entfliehen Sie dem Alltag und erleben Sie das echte Nordholland – dort, wo Stille, Komfort und Natur zusammenkommen.",
+    "cta_buttons": ["Unterkunft ansehen", "Über Airbnb buchen ↗"]
+  },
+  "intro": {
+    "section_title": "Unser Traumort",
+    "paragraph_1": "Als wir dieses historische Haus in Schermerhorn zum ersten Mal sahen, wussten wir sofort: Hier wollen wir etwas Besonderes schaffen.",
+    "paragraph_2": "Wir sind Bas & Linda, und wir haben aus diesem Haus unseren Traumort gemacht – einen Ort, den wir gerne mit Ihnen teilen. Ob Sie zur Ruhe kommen, die Umgebung erkunden oder einfach abschalten möchten – bei uns fühlen Sie sich sofort zuhause.",
+    "testimonial": {
+      "quote": "Wir fühlten uns sofort wie zuhause – es war alles da.",
+      "author": "Sofie, Juli 2025",
+      "rating": "⭐ ⭐ ⭐ ⭐ ⭐"
+    }
+  },
+  "why_guests_love_it": {
+    "section_title": "Warum Gäste gerne hier wohnen",
+    "features": [
+      {
+        "icon": "🕊",
+        "title": "Ruhige Umgebung",
+        "text": "Wunderschön still, mit weitem Blick über die Felder."
+      },
+      {
+        "icon": "🛏",
+        "title": "Komfort & Sauberkeit",
+        "text": "Alles war sauber, frisch und geschmackvoll eingerichtet."
+      },
+      {
+        "icon": "📍",
+        "title": "Perfekte Lage",
+        "text": "In 30 Minuten am Strand, in Alkmaar oder Amsterdam."
+      },
+      {
+        "icon": "🤝",
+        "title": "Persönlicher Empfang",
+        "text": "Bas und Linda denken an alles und geben tolle Tipps."
+      }
+    ],
+    "rating_summary": "Durchschnittliche Bewertung: 4,98 / 5 aus 86 Rezensionen"
+  },
+  "surroundings": {
+    "section_title": "Umgebung & Erlebnisse",
+    "paragraph": "Von Schermer Eylandt aus entdecken Sie das Beste von Nordholland: die historische Stadt Alkmaar, die Dünen, die Mühlen von De Rijp und die Nordseeküste – alles in Reichweite. Nach einem erlebnisreichen Tag kehren Sie in die Ruhe des Landlebens zurück.",
+    "highlights": [
+      "📸 Spaziergänge durch den Polder",
+      "🚲 Radtouren entlang der Mühlen",
+      "🏖 Sonne & Meer genießen",
+      "🍷 Entspannen im Garten"
+    ]
+  },
+  "guest_experience": {
+    "quote": "Ein absoluter Geheimtipp – wir haben die Ruhe, den Raum und die herzliche Gastfreundschaft sehr genossen.",
+    "author": "Kees ★ 5 / 5"
+  },
+  "final_cta": {
+    "text": "Wir heißen Sie herzlich willkommen in unserem Bed & Breakfast – ein Ort, an dem Ruhe, Komfort und Gastfreundschaft selbstverständlich sind.",
+    "button": "Verfügbarkeit auf Airbnb prüfen ↗"
+  },
+  "seo": {
+    "title": "B&B Schermer Eylandt – Ruhe und Weite im Schermerpolder",
+    "description": "Übernachten Sie in einem historischen Haus in Schermerhorn. Genießen Sie Komfort, Stille und die Gastfreundschaft von Bas & Linda."
+  }
+}
+

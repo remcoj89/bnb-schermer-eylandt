@@ -1,0 +1,66 @@
+{
+  "page_title": "Nordholland entdecken",
+  "hero": {
+    "headline": "Von unserer Unterkunft aus entdecken Sie das wahre Holland: weite Landschaften, alte Windmühlen und kleine Dörfer, die zur Nordsee führen. Hier genießen Sie die Ruhe des Landlebens – und sind doch überall schnell.",
+    "testimonial": {
+      "quote": "Idealer Ausgangspunkt, um Nordholland zu erkunden.",
+      "author": "Georgina",
+      "rating": "⭐⭐⭐⭐⭐"
+    }
+  },
+  "highlights": [
+    {
+      "icon": "📍",
+      "title": "Alkmaar – 15 Min.",
+      "description": "🧀 Käsemarkt & historische Altstadt"
+    },
+    {
+      "icon": "🌊",
+      "title": "Strand – 30 Min.",
+      "description": "🏖 Schoorl, Bergen oder Egmond aan Zee"
+    },
+    {
+      "icon": "🏙",
+      "title": "Amsterdam – 35 Min.",
+      "description": "🚆 Bequem mit Auto oder Bahn erreichbar"
+    }
+  ],
+  "experiences": {
+    "title": "Erlebnisse in der Umgebung",
+    "items": [
+      {
+        "icon": "🚲",
+        "title": "Radfahren zwischen den Windmühlen",
+        "description": "Die flachen Wege und Deiche sind ideal für entspannte Touren durch den Polder."
+      },
+      {
+        "icon": "🧀",
+        "title": "Besuch des Käsemarkts in Alkmaar",
+        "description": "Jeden Freitag verwandelt sich der Waagplatz in ein farbenfrohes Spektakel aus Tradition und Duft."
+      },
+      {
+        "icon": "🏖",
+        "title": "Ein Tag am Strand oder Bootfahren in De Rijp",
+        "description": "Kombinieren Sie Sonne, Wasser und ein gemütliches Abendessen in einem historischen Dorf."
+      },
+      {
+        "icon": "🎨",
+        "title": "Kultur & Geschichte",
+        "description": "Von Museen in Alkmaar bis zur Zaanse Schans – alles in der Nähe, aber weit weg vom Trubel."
+      }
+    ]
+  },
+  "guest_experience": {
+    "quote": "Wir konnten überall hin: Strand, Amsterdam, Texel – und jeden Abend kehrten wir in die Ruhe von Schermerhorn zurück.",
+    "author": "David ★ 5 / 5"
+  },
+  "cta": {
+    "title": "Bereit, das echte Nordholland zu entdecken?",
+    "description": "Lassen Sie die Hektik hinter sich und genießen Sie Ruhe, Raum und Gelassenheit.",
+    "button": "Über Airbnb buchen ↗"
+  },
+  "seo": {
+    "title": "Entdecken Sie Nordholland – B&B Schermer Eylandt Schermerhorn",
+    "description": "Erkunden Sie Nordholland von Schermer Eylandt aus: Alkmaar, Dünen, Windmühlen und Strand – alles in Reichweite."
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "page_title": "Hébergement",
+  "intro": {
+    "headline": "Séjour confortable dans une maison historique",
+    "paragraph_1": "Notre maison d’hôtes allie le charme d’une demeure ancienne au confort moderne. Le logement peut accueillir jusqu’à 4 personnes et dispose de tout le nécessaire pour un séjour paisible et relaxant.",
+    "testimonial": {
+      "quote": "Le logement est propre, complet et on s’y sent comme chez soi.",
+      "author": "Claire, 2025",
+      "rating": "⭐⭐⭐⭐⭐"
+    },
+    "paragraph_2": "Que vous voyagiez en couple ou en famille, Schermer Eylandt est un lieu où le temps ralentit — un endroit pour se reposer et se ressourcer."
+  },
+  "photo_gallery": {
+    "title": "Galerie photo",
+    "description": "Découvrez les chambres lumineuses, le salon chaleureux et la vue dégagée sur la plaine. Chaque espace a été aménagé avec soin, pour que vous vous sentiez chez vous dès le premier matin autour d’un café, ou le soir au coucher du soleil sur la terrasse.",
+    "note": "📸 (Galerie de photos – chambres, salon, cuisine, jardin avec descriptions courtes)"
+  },
+  "rooms_and_facilities": {
+    "title": "Aperçu des chambres & équipements",
+    "items": [
+      {
+        "icon": "🛏",
+        "title": "Chambre 1",
+        "description": "Lit double boxspring"
+      },
+      {
+        "icon": "🛏",
+        "title": "Chambre 2",
+        "description": "Lits superposés (idéal pour les enfants)"
+      },
+      {
+        "icon": "🍳",
+        "title": "Cuisine",
+        "description": "Entièrement équipée avec lave-vaisselle et machine à café"
+      },
+      {
+        "icon": "🛋",
+        "title": "Salon",
+        "description": "Canapé-lit confortable, télévision et fauteuil massant"
+      },
+      {
+        "icon": "🚿",
+        "title": "Salle de bain",
+        "description": "Douche à l’italienne et linge de bain fourni"
+      },
+      {
+        "icon": "🚗",
+        "title": "Parking",
+        "description": "Parking gratuit juste devant la maison"
+      },
+      {
+        "icon": "👶",
+        "title": "Équipements bébé",
+        "description": "Chaise haute et lit bébé disponibles sur demande"
+      }
+    ]
+  },
+  "extra_comfort": {
+    "title": "Confort supplémentaire selon nos clients",
+    "features": [
+      {
+        "icon": "💨",
+        "label": "Climatisation",
+        "quote": "Parfaite pendant les journées chaudes.",
+        "author": "Claire"
+      },
+      {
+        "icon": "💻",
+        "label": "Wi-Fi rapide (364 Mbps)",
+        "quote": "Idéal pour travailler un peu.",
+        "author": "Jessica"
+      },
+      {
+        "icon": "🔑",
+        "label": "Arrivée autonome",
+        "quote": "Boîte à clés très pratique !",
+        "author": "Georgina"
+      }
+    ],
+    "note": "Chaque détail a été pensé pour votre confort, afin que vous puissiez simplement profiter du moment présent."
+  },
+  "practical_info": {
+    "title": "Informations pratiques",
+    "info": [
+      "Arrivée à partir de 15h00, départ jusqu’à 11h00",
+      "Maximum : 4 personnes",
+      "Annulation gratuite dans les 24 heures",
+      "Animaux non admis",
+      "Interdiction de fumer à l’intérieur"
+    ]
+  },
+  "closing_cta": {
+    "title": "Planifiez votre séjour",
+    "description": "Réveillez-vous avec une vue sur les prairies et laissez la sérénité du paysage vous envelopper. À Schermer Eylandt, chaque jour commence en douceur et se termine dans le calme.",
+    "button": "Voir les prix et disponibilités sur Airbnb ↗"
+  },
+  "seo": {
+    "title": "Chambres & équipements – B&B Schermer Eylandt Schermerhorn",
+    "description": "Séjournez dans une maison historique avec tout le confort moderne. Un lieu de repos, d’espace et de sérénité au cœur du Nord-Hollande."
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "page_title": "Contact & Booking",
+  "intro": {
+    "headline": "Plan Your Stay — We'd Love to Hear from You",
+    "paragraph": "Looking to get away for a few days? Have a question about your stay or availability? Just send us a message — we usually reply within an hour.",
+    "testimonial": {
+      "quote": "Communication was perfect — we got a quick response.",
+      "author": "Kees ★ 5 / 5"
+    }
+  },
+  "contact_form": {
+    "title": "Send Us a Message",
+    "subtitle": "📬 Contact Form",
+    "description": "Fill in the form below and we’ll get back to you shortly.",
+    "fields": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "submit": "Send Message"
+    },
+    "response_time": "💬 We usually respond within the hour."
+  },
+  "airbnb_booking": {
+    "title": "Or Book Directly via Airbnb",
+    "description": "Prefer to book directly? Visit our Airbnb page for up-to-date prices and availability.",
+    "button": "View Availability on Airbnb ↗"
+  },
+  "location": {
+    "title": "Where to Find Us",
+    "description": "📍 Schermerhorn, between Alkmaar and Hoorn\nA quiet village in the Schermer polder — close to the coast, the city, and the true Dutch countryside.",
+    "maps_button": "Open in Google Maps ↗"
+  },
+  "closing_cta": {
+    "title": "See You Soon at Schermer Eylandt",
+    "paragraph": "Whether you’re here to relax, explore or simply enjoy the peace — you’re always welcome at Schermer Eylandt.",
+    "signature": "Schermer Eylandt – peace, space and hospitality.",
+    "contact_info": {
+      "phone": "📞 Phone: +31 (0)6 xxx xxx xx",
+      "email": "✉️ Email: info@schermer-eylandt.nl",
+      "social": "🌐 Follow us: [Instagram] | [Facebook] | [Airbnb ↗]"
+    }
+  },
+  "seo": {
+    "title": "Contact & Booking – B&B Schermer Eylandt Schermerhorn",
+    "description": "Contact Bas & Linda or book directly via Airbnb. Peace, comfort and warm hospitality in the heart of the Schermer polder."
+  }
+}
