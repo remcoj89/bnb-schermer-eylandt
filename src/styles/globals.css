@@ -34,7 +34,7 @@
 
 :root {
   /* Border Radius */
-  --border-radius-btn: 8px;
+  --border-radius-btn: 500vw;
   --border-radius-card: 8px;
   --border-radius-full: 500vw;
   --border-radius-img: 8px;
@@ -47,8 +47,11 @@
 
   /* Colors */
   --clr-dark-gray: hsl(0, 0%, 29%);
+  --clr-darker-gray: hsl(0, 0%, 15%);
   --clr-gold: hsl(36, 46%, 69%);
+  --clr-gold-dark: hsl(36, 96%, 41%);
   --clr-green-blue: hsl(168, 12%, 51%);
+  --clr-warm-sand-transparend: hsla(40, 36%, 95%, 0.562);
   --clr-warm-sand: hsl(40, 36%, 95%);
   --clr-white: hsl(0, 0%, 100%);
 
@@ -72,6 +75,8 @@
   --fs-800: 4rem;
   --fs-900: 5.2rem;
 
+  --fs-body: var(--fs-400);
+
   /* Font Weights */
 
   --fw-bold: 900;
@@ -85,6 +90,20 @@
   --lh-200: 125%;
   --lh-300: 150%;
   --lh-400: 175%;
+
+  /* Sizes */
+  --size-1: 1.6rem;
+  --size-2: 2.4rem;
+  --size-3: 3.2rem;
+  --size-4: 4rem;
+  --size-5: 4.8rem;
+  --size-6: 5.6rem;
+  --size-7: 6.4rem;
+  --size-8: 7.2rem;
+  --size-9: 8rem;
+  --size-10: 8.8rem;
+  --size-15: 15rem;
+  --size-16: 25rem;
 }
 
 *,
@@ -138,4 +157,8 @@ img {
   max-width: 100%;
   shape-margin: 1.6rem;
   vertical-align: middle;
+}
+
+[role=list] {
+  list-style: none;
 }

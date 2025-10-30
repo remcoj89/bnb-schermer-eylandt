@@ -1,0 +1,73 @@
+---
+// Components
+import Button from "./buttons.astro";
+---
+
+<nav>
+  <div class="wrapper">
+    <a href="/" id="logo">Schermer Eylandt</a>
+    <ul role="list">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Het verblijf</a></li>
+      <li><a href="#">Omgeving</a></li>
+      <li><a href="#">Over ons</a></li>
+    </ul>
+
+    <div>
+      <select name="lang" id="lang">
+        <option value="Dutch">NL</option>
+        <option value="English">EN</option>
+        <option value="German">GE</option>
+        <option value="French">FR</option>
+      </select>
+      <Button buttonStyle="primary">Contact</Button>
+    </div>
+  </div>
+</nav>
+
+<style>
+  nav {
+    background-color: var(--clr-warm-sand-transparend);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding-block: var(--size-1);
+    position: fixed;
+    top: 0;
+    inset-inline: 0;
+    z-index: 1000;
+
+    .wrapper {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+
+      #logo {
+        font-size: var(--fs-800);
+        font-weight: var(--fw-bold);
+        font-family: var(--ff-logo);
+        text-decoration: none;
+        color: var(--clr-dark-gray);
+      }
+
+      ul,
+      div {
+        display: flex;
+        gap: var(--size-1);
+      }
+
+      ul > li > a {
+        color: inherit;
+        font-size: var(--fs-500);
+        text-decoration: none;
+        padding-block: var(--size-1);
+
+        transition: all 0.3s ease-in-out;
+
+        &:hover,
+        &:focus {
+          color: var(--clr-darker-gray);
+          border-bottom: 2px solid var(--clr-darker-gray);
+        }
+      }
+    }
+  }
+</style>

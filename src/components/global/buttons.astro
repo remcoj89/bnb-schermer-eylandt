@@ -1,0 +1,29 @@
+---
+// Props
+const { buttonStyle = "", buttonType = "btn" } = Astro.props;
+---
+
+<button class=`btn ${buttonStyle}` type={buttonType}>
+  <slot />
+</button>
+
+<style>
+  .btn {
+    border-radius: var(--border-radius-btn);
+    cursor: pointer;
+    font-size: var(--fs-body);
+    padding: var(--size-1) var(--size-2);
+    text-transform: capitalize;
+    transition: background-color 0.3s ease;
+  }
+
+  .btn.primary {
+    background-color: var(--clr-gold);
+    color: var(--clr-white);
+    border: none;
+
+    &:hover {
+      background-color: var(--clr-gold-dark);
+    }
+  }
+</style>
