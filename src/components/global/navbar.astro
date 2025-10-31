@@ -16,7 +16,7 @@ import Button from "./buttons.astro";
     </ul>
 
     <div class="buttons-nav">
-      <div class="custom-select">
+
         <select name="lang" id="lang">
           <option value="Dutch">NL</option>
           <option value="English">EN</option>
@@ -24,7 +24,7 @@ import Button from "./buttons.astro";
           <option value="French">FR</option>
         </select>
         <span class="custom-arrow"></span>
-      </div>
+ 
       <Button href="/contact" buttonStyle="primary">Contact</Button>
     </div>
   </div>
@@ -74,60 +74,23 @@ import Button from "./buttons.astro";
         }
       }
 
-      .custom-select {
-        position: relative;
-        border-radius: var(--border-radius-card);
-        overflow: hidden;
-
+      .buttons-nav {
+        display: flex;
+        align-self: center;
+        justify-content: center;
+       
         select {
-          background-color: var(--clr-warm-sand-transparend);
+          background-color: transparent;
+          cursor: pointer;
           border: 0;
           padding-inline: var(--size-1) var(--size-2);
-          height: 100%;
-
+          padding-block: 0.5rem;
+          height: fit-content;
+          margin-block: auto;
+  
           &:focus,
           &:active {
             border: 0;
-          }
-        }
-
-        option {
-          background-color: var(--clr-warm-sand-transparend);
-        }
-
-        .custom-arrow {
-          background-color: var(--clr-gold);
-          display: block;
-          height: 100%;
-          position: absolute;
-          right: 0;
-          top: 0;
-          width: var(--size-2);
-          pointer-events: none;
-
-          &::before,
-          &::after {
-            --_transparent: transparent;
-            --_btnColor: var(--clr-gold-dark);
-            --_triangle-border: 0.5em solid;
-
-            border-left: var(--_triangle-border) var(--_transparent);
-            border-right: var(--_triangle-border) var(--_transparent);
-            content: "";
-            height: 0;
-            left: 50%;
-            position: absolute;
-            transform: translate(-50%, -50%);
-            width: 0;
-          }
-
-          &::after {
-            border-bottom: var(--_triangle-border) var(--_btnColor);
-            top: 38%;
-          }
-          &::before {
-            border-top: var(--_triangle-border) var(--_btnColor);
-            top: 62%;
           }
         }
       }
