@@ -4,13 +4,14 @@ import Layout from "../layouts/Layout.astro";
 
 // Sections
 import HeroSection from "../sections/homepage/heroSection.astro";
+import IntroSection from "../sections/homepage/introSection.astro";
+import WhyGuestsLoveItSection from "../sections/homepage/whyGuestsLoveItSection.astro";
 // Page data
 import data from "../data/nl/homepage.json";
 ---
 
 <Layout>
-  <HeroSection 
-  sectionContent={data.hero} />
+  <HeroSection sectionContent={data.hero} />
+  <IntroSection sectionContent={data.intro} sectionId="intro-section"/>
+  <WhyGuestsLoveItSection sectionContent={data.whyGuestsLoveIt} sectionId="why-guests-love-it" />
 </Layout>
-
-

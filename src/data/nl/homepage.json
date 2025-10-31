@@ -16,33 +16,33 @@
   "intro": {
     "sectionTitle": "Onze droomplek",
     "paragraph_1": "Toen we voor het eerst dit historische pand in Schermerhorn zagen, wisten we het meteen: hier willen we iets bijzonders creëren.",
-    "paragraph_2": "Wij zijn Bas & Linda, en we hebben van dit huis onze droomplek gemaakt — en die delen we graag met jou. Of je nu komt om tot rust te komen, de omgeving te verkennen of gewoon even op te laden: bij ons voel je je direct thuis.",
-    "testimonial": {
-      "quote": "We voelden ons meteen thuis — alles was aanwezig.",
-      "author": "Sofie, juli 2025",
-      "rating": "⭐ ⭐ ⭐ ⭐ ⭐"
+    "paragraph_2": "Wij zijn Bas & Linda, en we hebben van dit huis onze droomplek gemaakt, en die delen we graag met jou. Of je nu komt om tot rust te komen, de omgeving te verkennen of gewoon even op te laden: bij ons voel je je direct thuis.",
+    "sectionImage": {
+      "imageUrl":"/assets/images/bas-linda-evi.png",
+      "imageAlt": "De Hosts Bas en Linda samen met hun dochter"
     }
   },
   "whyGuestsLoveIt": {
     "sectionTitle": "Waarom gasten hier graag verblijven",
+    "sectionSubTitle": "Een selectie van wat onze gasten het meest waarderen.",
     "features": [
       {
-        "icon": "🕊",
+        "icon": "/assets/svgs/leave-icon.svg",
         "title": "Rustige omgeving",
         "text": "Heerlijk stil, met uitzicht over de uitgestrekte polder."
       },
       {
-        "icon": "🛏",
+        "icon": "/assets/svgs/bed-icon-green.svg",
         "title": "Comfort & netheid",
         "text": "Alles was schoon, fris en stijlvol ingericht."
       },
       {
-        "icon": "📍",
+        "icon": "/assets/svgs/map-icon.svg",
         "title": "Perfecte ligging",
         "text": "Binnen 30 minuten bij het strand, Alkmaar of Amsterdam."
       },
       {
-        "icon": "🤝",
+        "icon": "/assets/svgs/persoonlijk-ontvangs-icon.svg",
         "title": "Persoonlijke ontvangst",
         "text": "Bas en Linda denken overal aan en geven fijne tips."
       }

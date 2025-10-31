@@ -1,0 +1,51 @@
+---
+// Astro Assets
+import { Image } from "astro:assets";
+// Page Data
+const { sectionContent, sectionId } = Astro.props;
+---
+
+<section id={sectionId}>
+  <div class="wrapper intro-container">
+    <picture>
+      <Image
+        src={sectionContent.sectionImage.imageUrl}
+        alt={sectionContent.sectionImage.imageUrl}
+        width={500}
+        height={500}
+      />
+    </picture>
+
+    <div class="section-content">
+        <h2>{sectionContent.sectionTitle}</h2>
+        <p set:html={sectionContent.paragraph_1}></p>
+        <p set:html={sectionContent.paragraph_2}></p>
+    </div>
+  </div>
+</section>
+
+<style>
+  section {
+    background-color: var(--clr-warm-sand);
+    
+    .intro-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      picture {
+        border-radius: var(--border-radius-card);
+        overflow: hidden;
+        box-shadow: var(--box-shadow);
+      }
+
+      .section-content {
+        h2 {
+            margin-block-end: var(--size-2);
+        }
+
+  
+      }
+    }
+  }
+</style>

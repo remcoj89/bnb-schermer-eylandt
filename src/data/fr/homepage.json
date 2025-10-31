@@ -2,20 +2,27 @@
   "hero": {
     "headline": "Calme, espace et hospitalité au cœur de la plaine de Schermer.",
     "subline": "Évadez-vous du tumulte du quotidien et découvrez la véritable campagne du Nord-Hollande — là où le silence, le confort et la nature s’unissent.",
-    "cta_buttons": ["Découvrir le séjour", "Réserver sur Airbnb ↗"]
+    "ctaButtons": [
+        {
+        "btnTitle": "Découvrir le séjour",
+        "btnUrl": "/fr/hebergement"
+      },
+      {
+        "btnTitle": "Réserver sur Airbnb  ↗",
+        "btnUrl": "https://www.airbnb.fr/rooms/934796483879606222?"
+      }]
   },
   "intro": {
-    "section_title": "Notre lieu de rêve",
+    "sectionTitle": "Notre lieu de rêve",
     "paragraph_1": "Lorsque nous avons découvert pour la première fois cette maison historique à Schermerhorn, nous avons immédiatement su : c’est ici que nous voulons créer quelque chose de spécial.",
     "paragraph_2": "Nous sommes Bas et Linda, et nous avons fait de cette demeure notre lieu de rêve — un endroit que nous aimons partager avec vous. Que vous veniez pour vous détendre, explorer la région ou simplement recharger vos batteries, vous vous sentirez tout de suite chez vous.",
-    "testimonial": {
-      "quote": "Nous nous sommes sentis comme à la maison — tout était parfait.",
-      "author": "Sofie, juillet 2025",
-      "rating": "⭐ ⭐ ⭐ ⭐ ⭐"
+    "sectionImage": {
+      "imageUrl": "/assets/images/bas-linda-evi.png",
+      "imageAlt": ""
     }
   },
-  "why_guests_love_it": {
-    "section_title": "Pourquoi nos hôtes aiment séjourner ici",
+  "whyGuestsLoveIt": {
+    "sectionTitle": "Pourquoi nos hôtes aiment séjourner ici",
     "features": [
       {
         "icon": "🕊",
@@ -38,10 +45,10 @@
         "text": "Bas et Linda pensent à tout et donnent de très bons conseils."
       }
     ],
-    "rating_summary": "Note moyenne : 4,98 / 5 sur 86 avis"
+    "ratingSummary": "Note moyenne : 4,98 / 5 sur 86 avis"
   },
   "surroundings": {
-    "section_title": "Environnement & activités",
+    "sectionTitle": "Environnement & activités",
     "paragraph": "Depuis Schermer Eylandt, partez à la découverte du meilleur du Nord-Hollande : la ville historique d’Alkmaar, les dunes, les moulins de De Rijp et les plages — tout est à portée de main. Après une journée riche en découvertes, retrouvez la tranquillité de la campagne.",
     "highlights": [
       "📸 Promenez-vous dans la plaine",
@@ -50,11 +57,11 @@
       "🍷 Détendez-vous dans le jardin"
     ]
   },
-  "guest_experience": {
+  "guestExperience": {
     "quote": "Un véritable coup de cœur — nous avons adoré le calme, l’espace et l’accueil chaleureux.",
     "author": "Kees ★ 5 / 5"
   },
-  "final_cta": {
+  "finalCta": {
     "text": "Nous serons ravis de vous accueillir dans notre bed & breakfast — un lieu où le silence, le confort et l’hospitalité vont de soi.",
     "button": "Voir les disponibilités sur Airbnb ↗"
   },

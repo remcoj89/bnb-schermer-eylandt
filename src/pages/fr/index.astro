@@ -1,7 +1,15 @@
 ---
+// Layout
 import Layout from "../../layouts/Layout.astro";
+
+// Sections
+import HeroSection from "../../sections/homepage/heroSection.astro";
+import IntroSection from "../../sections/homepage/introSection.astro";
+// Page data
+import data from "../../data/fr/homepage.json";
 ---
 
 <Layout>
-  <h1>home fr</h1>
+  <HeroSection sectionContent={data.hero} />
+  <IntroSection sectionContent={data.intro} />
 </Layout>

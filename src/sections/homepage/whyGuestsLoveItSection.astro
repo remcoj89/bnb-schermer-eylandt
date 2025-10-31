@@ -1,0 +1,44 @@
+---
+// Components
+import Card from "../../components/card.astro";
+import CardGrid from "../../components/global/cardGrid.astro";
+// Page Data
+const { sectionContent, sectionId } = Astro.props;
+---
+
+<section id={sectionId}>
+  <div class="wrapper container">
+    <div class="sectionTitleCenter">
+      <h2>{sectionContent.sectionTitle}</h2>
+      <span>{sectionContent.sectionSubTitle}</span>
+    </div>
+
+    <CardGrid cardStyle="small-cards">
+      {
+        sectionContent.features.map((feature) => (
+          <Card cardStyle="usp-card">
+            <img src={feature.icon} alt="" />
+            <div>
+              <h3>{feature.title}</h3>
+              <p>{feature.text}</p>
+            </div>
+          </Card>
+        ))
+      }
+    </CardGrid>
+  </div>
+</section>
+
+<style>
+  .container {
+    display: grid;
+    gap: var(--size-7);
+
+    .sectionTitleCenter {
+      text-align: center;
+      h2 {
+        margin-block-end: var(--size-1);
+      }
+    }
+  }
+</style>
