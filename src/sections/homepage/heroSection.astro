@@ -1,0 +1,63 @@
+---
+// Page Data
+const { sectionContent } = Astro.props;
+
+// Components
+import Button from "../../components/global/buttons.astro";
+---
+
+<header>
+  <div class="wrapper header-container">
+    <h1>{sectionContent.headline}</h1>
+    <p>{sectionContent.subline}</p>
+
+    <div class="btn-wrapper">
+      <Button 
+      href={sectionContent.ctaButtons[0].btnUrl}
+      buttonStyle="primary"
+        >{sectionContent.ctaButtons[0].btnTitle}
+    </Button
+      >
+      <Button
+        href={sectionContent.ctaButtons[1].btnUrl}
+        buttonStyle="primary-open"
+        target="_blank"
+        >{sectionContent.ctaButtons[1].btnTitle}</Button
+      >
+    </div>
+  </div>
+</header>
+
+<style>
+  header {
+    align-items: center;
+    /* background-image: url("../assets/images/homepage/museum-molen-schermerhorn.jpg"); */
+    background-image: linear-gradient(
+        hsl(0, 0%, 29%, 75%),
+        hsl(0, 0%, 29%, 75%)
+      ),
+      url("../../assets/images/hero-schermer-eylandt-home.jpeg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    height: 75vh;
+
+    .header-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: var(--clr-white);
+      text-align: center;
+      gap: var(--size-1);
+
+      .btn-wrapper {
+        display: flex;
+        align-items: center;
+        gap: var(--size-1);
+        margin-block-start: var(--size-3);
+      }
+    }
+  }
+</style>

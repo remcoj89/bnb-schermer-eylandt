@@ -149,6 +149,11 @@ figcaption {
   max-width: 65ch;
 }
 
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
 img {
   background-repeat: no-repeat;
   background-size: cover;

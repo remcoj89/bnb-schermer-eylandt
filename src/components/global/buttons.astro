@@ -1,28 +1,72 @@
 ---
 // Props
-const { buttonStyle = "", buttonType = "btn" } = Astro.props;
+const {
+  href = null,
+  buttonStyle = null,
+  buttonType = "btn",
+  onClick = null,
+  target = null,
+} = Astro.props;
+
+// Check of het een externe link is én of het een nieuw tabblad opent
+const isExternal = href.startsWith("http://") || href.startsWith("https://");
+const openInNewTab = target === "_blank";
+const rel = isExternal && openInNewTab ? "noopener noreferrer" : undefined;
 ---
 
-<button class=`btn ${buttonStyle}` type={buttonType}>
-  <slot />
-</button>
+{
+  href ? (
+    <a href={href} class={`btn ${buttonStyle}`} target={target} rel={rel}>
+      <slot />
+    </a>
+  ) : (
+    <button class={`btn ${buttonStyle}`} type={buttonType} onclick={onClick}>
+      <slot />
+    </button>
+  )
+}
 
 <style>
   .btn {
     border-radius: var(--border-radius-btn);
     cursor: pointer;
     font-size: var(--fs-body);
+    font-weight: var(--fw-light-bold);
     padding: var(--size-1) var(--size-2);
     text-transform: capitalize;
-    transition: background-color 0.3s ease;
+    transition:
+      background-color 0.3s ease-in-out,
+      transform 0.3s ease-in-out;
   }
 
   .btn.primary {
-    background-color: var(--clr-gold);
+    background-color: var(--clr-gold-dark);
     color: var(--clr-white);
-    border: none;
+    border: solid 2px var(--clr-gold-dark);
 
-    &:hover {
+    &:hover,
+    &:focus {
+      background-color: transparent;
+    }
+
+    &:active {
+      transform: scale(0.9);
+      background-color: var(--clr-gold-dark);
+    }
+  }
+
+  .btn.primary-open {
+    border: solid 2px var(--clr-gold-dark);
+    background-color: transparent;
+    color: var(--clr-white);
+
+    &:hover,
+    &:focus {
+      background-color: var(--clr-gold-dark);
+    }
+
+    &:active {
+      transform: scale(0.9);
       background-color: var(--clr-gold-dark);
     }
   }

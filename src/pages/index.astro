@@ -1,29 +1,16 @@
 ---
+// Layout
 import Layout from "../layouts/Layout.astro";
 
+// Sections
+import HeroSection from "../sections/homepage/heroSection.astro";
 // Page data
 import data from "../data/nl/homepage.json";
 ---
 
 <Layout>
-  <header>
-    <div class="wrapper">
-      <h1>Home</h1>
-    </div>
-  </header>
+  <HeroSection 
+  sectionContent={data.hero} />
 </Layout>
 
-<style>
-  header {
-    align-items: center;
-    /* background-image: url("../assets/images/homepage/museum-molen-schermerhorn.jpg"); */
-    background-image:
-      url("../assets/images/homepage/museum-molen-schermerhorn.jpg"),
-      linear-gradient(black, black);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: grid;
-    height: 75vh;
-  }
-</style>
+

@@ -1,26 +1,31 @@
 ---
+// React Icons
+import { BurgerMenu, CloseIcon } from "../../assets/icons.jsx";
 // Components
 import Button from "./buttons.astro";
 ---
 
 <nav>
-  <div class="wrapper">
+  <div class="wrapper nav-bar">
     <a href="/" id="logo">Schermer Eylandt</a>
     <ul role="list">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Het verblijf</a></li>
-      <li><a href="#">Omgeving</a></li>
-      <li><a href="#">Over ons</a></li>
+      <li><a href="/">Home</a></li>
+      <li><a href="/accomadatie">Het verblijf</a></li>
+      <li><a href="/omgeving">Omgeving</a></li>
+      <li><a href="/over-ons">Over ons</a></li>
     </ul>
 
-    <div>
-      <select name="lang" id="lang">
-        <option value="Dutch">NL</option>
-        <option value="English">EN</option>
-        <option value="German">GE</option>
-        <option value="French">FR</option>
-      </select>
-      <Button buttonStyle="primary">Contact</Button>
+    <div class="buttons-nav">
+      <div class="custom-select">
+        <select name="lang" id="lang">
+          <option value="Dutch">NL</option>
+          <option value="English">EN</option>
+          <option value="German">GE</option>
+          <option value="French">FR</option>
+        </select>
+        <span class="custom-arrow"></span>
+      </div>
+      <Button href="/contact" buttonStyle="primary">Contact</Button>
     </div>
   </div>
 </nav>
@@ -35,7 +40,7 @@ import Button from "./buttons.astro";
     inset-inline: 0;
     z-index: 1000;
 
-    .wrapper {
+    .nav-bar {
       align-items: center;
       display: flex;
       justify-content: space-between;
@@ -49,7 +54,7 @@ import Button from "./buttons.astro";
       }
 
       ul,
-      div {
+      .buttons-nav {
         display: flex;
         gap: var(--size-1);
       }
@@ -66,6 +71,64 @@ import Button from "./buttons.astro";
         &:focus {
           color: var(--clr-darker-gray);
           border-bottom: 2px solid var(--clr-darker-gray);
+        }
+      }
+
+      .custom-select {
+        position: relative;
+        border-radius: var(--border-radius-card);
+        overflow: hidden;
+
+        select {
+          background-color: var(--clr-warm-sand-transparend);
+          border: 0;
+          padding-inline: var(--size-1) var(--size-2);
+          height: 100%;
+
+          &:focus,
+          &:active {
+            border: 0;
+          }
+        }
+
+        option {
+          background-color: var(--clr-warm-sand-transparend);
+        }
+
+        .custom-arrow {
+          background-color: var(--clr-gold);
+          display: block;
+          height: 100%;
+          position: absolute;
+          right: 0;
+          top: 0;
+          width: var(--size-2);
+          pointer-events: none;
+
+          &::before,
+          &::after {
+            --_transparent: transparent;
+            --_btnColor: var(--clr-gold-dark);
+            --_triangle-border: 0.5em solid;
+
+            border-left: var(--_triangle-border) var(--_transparent);
+            border-right: var(--_triangle-border) var(--_transparent);
+            content: "";
+            height: 0;
+            left: 50%;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            width: 0;
+          }
+
+          &::after {
+            border-bottom: var(--_triangle-border) var(--_btnColor);
+            top: 38%;
+          }
+          &::before {
+            border-top: var(--_triangle-border) var(--_btnColor);
+            top: 62%;
+          }
         }
       }
     }
