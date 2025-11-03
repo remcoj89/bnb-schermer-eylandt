@@ -1,0 +1,41 @@
+---
+// svg Components
+import { StarIcon } from "../../assets/icons";
+// Page Data
+const { sectionContent, sectionId } = Astro.props;
+---
+
+<section>
+  <div class="wrapper review">
+    <div class="stars">
+      {Array.from({ length: 5 }, () => <StarIcon />)}
+    </div>
+    <p>"{sectionContent.quote}"</p>
+    <span>- {sectionContent.author}</span>
+  </div>
+</section>
+
+<style>
+  section {
+    background-color: var(--clr-green-blue);
+
+    .review {
+      color: var(--clr-warm-sand);
+      display: grid;
+      justify-content: center;
+      gap: var(--size-3);
+      text-align: center;
+
+      .stars {
+        display: flex;
+        gap: 0.5rem;
+        justify-content: center;
+      }
+
+      p {
+        font-size: var(--fs-600);
+        font-family: var(--ff-header);
+      }
+    }
+  }
+</style>

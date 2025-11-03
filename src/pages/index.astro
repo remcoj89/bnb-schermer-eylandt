@@ -10,6 +10,7 @@ import SurroundingsSection from "../sections/homepage/surroundingsSection.astro"
 
 // Page data
 import data from "../data/nl/homepage.json";
+import SingleReviewSection from "../sections/homepage/singleReviewSection.astro";
 ---
 
 <Layout>
@@ -21,6 +22,10 @@ import data from "../data/nl/homepage.json";
   />
   <SurroundingsSection
     sectionContent={data.surroundings}
+    sectionId="suroundings-section"
+  />
+  <SingleReviewSection
+    sectionContent={data.guestExperience}
     sectionId="suroundings-section"
   />
 </Layout>
