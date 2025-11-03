@@ -58,44 +58,62 @@ import {
         </div>
       </div>
     </div>
+    <span id="copy-right"
+      >© 2025 Schermer Eylandt. Met precisie gemaakt door <a
+        href="https://westend-digital.nl"
+        rel="noopner">Westend Digital</a
+      >.</span
+    >
   </div>
 </footer>
 
 <style>
   footer {
     padding-block: var(--size-8);
+    .wrapper {
+      .footer-container {
+        border-bottom: solid 1px hsl(0, 0%, 29%, 30%);
+        display: flex;
+        padding-block-end: var(--size-8);
 
-    .footer-container {
-      border-bottom: solid 1px hsl(0, 0%, 29%, 30%);
-      display: flex;
-      padding-block-end: var(--size-8);
+        div {
+          padding-inline-end: var(--size-2);
+          width: 100%;
 
-      div {
-        padding-inline-end: var(--size-2);
-        width: 100%;
+          h3 {
+            font-size: var(--fs-500);
+            margin-block-end: var(--size-2);
+          }
 
-        h3 {
-          font-size: var(--fs-500);
-          margin-block-end: var(--size-2);
-        }
+          ul {
+            li {
+              a {
+                align-items: center;
+                display: flex;
+                gap: var(--size-1);
+              }
 
-        ul {
-          li {
-            a {
-              align-items: center;
-              display: flex;
-              gap: var(--size-1);
-            }
-
-            &:hover {
-              text-decoration: underline;
+              &:hover {
+                text-decoration: underline;
+              }
             }
           }
-        }
 
-        .socials-wrapper {
-          display: flex;
-          gap: var(--size-2);
+          .socials-wrapper {
+            display: flex;
+            gap: var(--size-2);
+          }
+        }
+      }
+
+      #copy-right {
+        display: block;
+        margin-block-start: var(--size-4);
+        text-align: center;
+
+        a {
+          font-weight: var(--fw-semi-bold);
+          text-decoration: underline;
         }
       }
     }
