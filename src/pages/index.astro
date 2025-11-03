@@ -3,14 +3,15 @@
 import Layout from "../layouts/Layout.astro";
 
 // Sections
+import FinalCtaSection from "../sections/homepage/finalCtaSection.astro";
 import HeroSection from "../sections/homepage/heroSection.astro";
 import IntroSection from "../sections/homepage/introSection.astro";
-import WhyGuestsLoveItSection from "../sections/homepage/whyGuestsLoveItSection.astro";
+import SingleReviewSection from "../sections/homepage/singleReviewSection.astro";
 import SurroundingsSection from "../sections/homepage/surroundingsSection.astro";
+import WhyGuestsLoveItSection from "../sections/homepage/whyGuestsLoveItSection.astro";
 
 // Page data
 import data from "../data/nl/homepage.json";
-import SingleReviewSection from "../sections/homepage/singleReviewSection.astro";
 ---
 
 <Layout>
@@ -27,5 +28,9 @@ import SingleReviewSection from "../sections/homepage/singleReviewSection.astro"
   <SingleReviewSection
     sectionContent={data.guestExperience}
     sectionId="suroundings-section"
+  />
+  <FinalCtaSection
+    sectionContent={data.finalCta}
+    sectionId="final-cta-section"
   />
 </Layout>

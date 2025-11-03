@@ -92,8 +92,12 @@
     "stars": 5
   },
   "finalCta": {
-    "text": "We heten je van harte welkom in onze bed & breakfast — een plek waar stilte, comfort en gastvrijheid vanzelfsprekend zijn.",
-    "button": "Bekijk beschikbaarheid op Airbnb ↗"
+    "sectionTitle": "We heten je van harte welkom in onze bed & breakfast",
+    "text": "Een plek waar stilte, comfort en gastvrijheid vanzelfsprekend zijn.",
+    "button": {
+      "btnUrl": "https://www.airbnb.nl/rooms/934796483879606222",
+      "btnText": "Bekijk beschikbaarheid op Airbnb"
+    }
   },
   "seo": {
     "title": "B&B Schermer Eylandt – Rust en ruimte in de Schermerpolder",

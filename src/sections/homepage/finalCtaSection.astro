@@ -1,0 +1,37 @@
+---
+// PageData
+const { sectionContent, sectionId } = Astro.props;
+
+// Components
+import SectionTitle from "../../components/global/sectionTitle.astro";
+import Button from "../../components/global/buttons.astro";
+---
+
+<section>
+  <div class="wrapper cta-wrapper">
+    <SectionTitle
+      sectionTitle={sectionContent.sectionTitle}
+      subTitle={sectionContent.text}
+      headerStyle="text-center"
+    />
+    <Button 
+    buttonStyle="primary" 
+    href={sectionContent.button.btnUrl}
+    target="_blank"
+      >{sectionContent.button.btnText}</Button
+    >
+  </div>
+</section>
+
+<style>
+  section {
+    background-color: var(--clr-warm-sand);
+
+    .cta-wrapper {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+</style>
