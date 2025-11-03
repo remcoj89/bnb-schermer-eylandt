@@ -51,12 +51,38 @@
   },
   "surroundings": {
     "sectionTitle": "Omgeving & beleving",
-    "paragraph": "Vanuit Schermer Eylandt ontdek je het beste van Noord-Holland: de historische stad Alkmaar, de duinen, de molens van De Rijp en het strand — allemaal binnen handbereik. Na een dag vol indrukken keer je terug naar de rust van het platteland.",
+    "paragraph": "Vanuit Schermer Eylandt ontdek je het beste van Noord-Holland: de historische stad Alkmaar, de duinen, de molens van De Rijp en het strand, allemaal binnen handbereik. Na een dag vol indrukken keer je terug naar de rust van het platteland.",
     "highlights": [
-      "📸 Wandel door de polder",
-      "🚲 Fiets langs molens",
-      "🏖 Geniet van zee & strand",
-      "🍷 Ontspan in de tuin"
+      {
+        "cardImage": {
+          "imageAlt": "Wandelen in de Eilands polder",
+          "imageUrl": "/assets/images/wandelen-eilandspolder.webp"
+        },
+        "cardTitle": "Wandel door de polder"
+      },
+      {
+        "cardImage": {
+          "imageAlt": "Schermer Molens",
+          "imageUrl": "/assets/images/schermer-molens.webp"
+        },
+        "cardTitle": "Fiets langs molens"
+      },
+      {
+        "cardImage": {
+          "imageAlt": "Noordzee Strand",
+          "imageUrl": "/assets/images/strand-bergen-aan-zee.webp"
+        },
+        "cardTitle": "Geniet van zee & strand"
+      }, {
+        "cardImage": {
+          "imageAlt": "Kaasmarkt Alkmaar",
+          "imageUrl": "/assets/images/kaasmarkt-alkmaar.webp"
+        },
+        "cardTitle": "Bezoek historische steden"
+      }
+
+    
+  
     ]
   },
   "guestExperience": {

@@ -1,0 +1,27 @@
+---
+// Data
+const { sectionTitle, subTitle, headerStyle = null } = Astro.props;
+---
+
+<div class={headerStyle}>
+  <h2>{sectionTitle}</h2>
+  <span>{subTitle}</span>
+</div>
+
+<style>
+  div {
+    display: grid;
+    gap: var(--size-2);
+    margin-block-end: var(--size-5);
+    max-width: 85ch;
+  }
+  .text-center {
+    margin-inline: auto;
+    text-align: center;
+  }
+
+  .on-dark-bg {
+    color: var(--clr-dark-gray);
+  }
+
+</style>
