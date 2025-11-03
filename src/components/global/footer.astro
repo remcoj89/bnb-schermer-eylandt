@@ -1,0 +1,103 @@
+---
+// svg Icons
+import {
+  MailIcon,
+  LocationIcon,
+  InstaIcon,
+  FacebookIcon,
+} from "../../assets/icons";
+---
+
+<footer>
+  <div class="wrapper">
+    <div class="footer-container">
+      <div>
+        <h3>Schermer Eylandt</h3>
+        <p>Rust, ruimte en gastvrijheid in de Schermerpolder.</p>
+      </div>
+      <div>
+        <h3>Navigatie</h3>
+        <ul role="list">
+          <li><a href="/">Home</a></li>
+          <li><a href="/over-ons">Over Ons</a></li>
+          <li><a href="/accomedatie">Het Verblijf</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <ul role="list">
+          <li>
+            <a
+              href="https://maps.app.goo.gl/yCAGh3psB54WxnRn6"
+              rel="noopener noreferrer"
+              target="_blank"><LocationIcon />Schermerhorn, Noord-Holland</a
+            >
+          </li>
+          <li>
+            <a href="mailto:info@schermereylandt.nl"
+              ><MailIcon />info@schermereylandt.nl</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h3>Volg Ons</h3>
+
+        <div class="socials-wrapper">
+          <a
+            href="https://www.instagram.com/schermereylandt10/"
+            target="_blank"
+            rel="noopener noreferrer"><InstaIcon /></a
+          >
+          <a
+            href="https://www.facebook.com/people/Schermer-Eylandt/61550637674193/"
+            target="_blank"
+            rel="noopener noreferrer"><FacebookIcon /></a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<style>
+  footer {
+    padding-block: var(--size-8);
+
+    .footer-container {
+      border-bottom: solid 1px hsl(0, 0%, 29%, 30%);
+      display: flex;
+      padding-block-end: var(--size-8);
+
+      div {
+        padding-inline-end: var(--size-2);
+        width: 100%;
+
+        h3 {
+          font-size: var(--fs-500);
+          margin-block-end: var(--size-2);
+        }
+
+        ul {
+          li {
+            a {
+              align-items: center;
+              display: flex;
+              gap: var(--size-1);
+            }
+
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+
+        .socials-wrapper {
+          display: flex;
+          gap: var(--size-2);
+        }
+      }
+    }
+  }
+</style>
