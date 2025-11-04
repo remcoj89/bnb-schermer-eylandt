@@ -6,6 +6,10 @@ import {
   InstaIcon,
   FacebookIcon,
 } from "../../assets/icons";
+
+
+// Get current Year
+const dateYear = new Date().getFullYear();
 ---
 
 <footer>
@@ -59,9 +63,8 @@ import {
       </div>
     </div>
     <span id="copy-right"
-      >© 2025 Schermer Eylandt. Met precisie gemaakt door <a
-        href="https://westend-digital.nl"
-        rel="noopner">Westend Digital</a
+      >© {dateYear || 2025} Schermer Eylandt. Met precisie gemaakt door
+      <a href="https://westend-digital.nl" rel="noopner">Westend Digital</a
       >.</span
     >
   </div>
