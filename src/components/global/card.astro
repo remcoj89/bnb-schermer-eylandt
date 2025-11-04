@@ -15,6 +15,54 @@ const { cardStyle = null } = Astro.props;
     padding: var(--padding-card);
   }
 
+  .features-with-review {
+    align-items: flex-start;
+    box-shadow: var(--box-shadow);
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-3);
+    justify-content: space-between;
+    transition: all 0.4s ease-in-out;
+
+    .card-title-wrapper {
+      display: flex;
+      gap: var(--size-1);
+
+      h3 {
+        font-size: var(--fs-600);
+        line-height: 1.5;
+      }
+      img {
+        border-radius: var(--border-radius-full);
+        padding: 1rem;
+        height: 50px;
+        width: 50px;
+      }
+      img.gold-icon {
+        background-color: var(--clr-gold);
+      }
+    }
+
+    .review {
+      background-color: var(--clr-warm-sand);
+      border-radius: var(--border-radius-card);
+      padding: var(--size-1);
+      flex-grow: 1;
+      display: grid;
+      width: 100%;
+
+      span {
+        margin-block-start: auto;
+      }
+    }
+
+    &:hover,
+    &:focus {
+      transform: scale(1.05);
+      box-shadow: var(--box-shadow-gold);
+    }
+  }
+
   .usp-card {
     background-color: var(--clr-warm-sand);
     display: flex;
@@ -36,9 +84,6 @@ const { cardStyle = null } = Astro.props;
 
     img.green-icon {
       background-color: var(--clr-green-blue);
-    }
-    img.gold-icon {
-      background-color: var(--clr-gold-dark);
     }
 
     div {

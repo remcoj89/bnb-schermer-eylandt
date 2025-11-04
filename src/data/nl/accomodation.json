@@ -59,25 +59,50 @@
     ]
   },
   "extra_comfort": {
-    "title": "Extra comfort volgens onze gasten",
-    "features": [
+    "title": "Extra comfort & voorzieningen",
+    "features_with_review": [
       {
-        "icon": "💨",
+        "icon": "/assets/svgs/aircon-icon.svg",
         "label": "Airco",
+        "description": "Optimaal comfort bij elk weer",
         "quote": "De airco was heerlijk tijdens warme dagen.",
         "author": "Claire"
       },
       {
-        "icon": "💻",
+        "icon": "/assets/svgs/wifi-icon.svg",
         "label": "Snelle wifi (364 Mbps)",
+        "description": "364 Mbps internet",
         "quote": "Perfect om even te werken.",
         "author": "Jessica"
       },
       {
-        "icon": "🔑",
+        "icon": "/assets/svgs/key-icon.svg",
         "label": "Zelf inchecken",
         "quote": "Sleutelkastje – handig en flexibel!",
+        "description": "Aankomen met sleutelkastje",
         "author": "Georgina"
+      }
+    ],
+    "features": [
+      {
+        "icon": "/assets/svgs/television-icon.svg",
+        "title": "Smart Tv",
+        "description": "Netflix & Youtube"
+      },
+      {
+        "icon": "/assets/svgs/question-icon-round.svg",
+        "title": "Wasmachine",
+        "description": "Inclusief wasmiddel"
+      },
+      {
+        "icon": "/assets/svgs/bike-icon.svg",
+        "title": "Fietsen",
+        "description": "2 Fietsen op aanvraag"
+      },
+      {
+        "icon": "/assets/svgs/games-icon.svg",
+        "title": "Spelletjes",
+        "description": "Voor alle leeftijden"
       }
     ],
     "note": "Bij elk detail is nagedacht over gemak en rust. Zo kun jij je volledig richten op genieten."

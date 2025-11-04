@@ -1,0 +1,82 @@
+---
+// Astro Asstes
+import { Image } from "astro:assets";
+// Components
+import SectionTitle from "../../components/global/sectionTitle.astro";
+import Card from "../../components/global/card.astro";
+import CardGrid from "../../components/global/cardGrid.astro";
+
+// Page Data
+const { sectionContent, sectionId } = Astro.props;
+---
+
+<section id={sectionId}>
+  <div class="wrapper">
+    <SectionTitle
+      sectionTitle={sectionContent.title}
+      headerStyle="text-center"
+    />
+
+    <div class="card-grids">
+        <CardGrid>
+          {
+            sectionContent.features_with_review.map((feature: any) => (
+              <Card cardStyle="features-with-review">
+                <div class="card-title-wrapper">
+                  <Image
+                    src={feature.icon}
+                    alt={`icon - ${feature.label}`}
+                    width={50}
+                    height={50}
+                    class="gold-icon"
+                  />
+        <div class="card-title">
+            <h3>{feature.label}</h3>
+            <span>{feature.description}</span>
+        </div>
+    
+                </div>
+    
+                <div class="review">
+                    <p>"{feature.quote}"</p>
+                    <span>- {feature.author}</span>
+                </div>
+              </Card>
+            ))
+          }
+        </CardGrid>
+
+        <CardGrid cardStyle="small-cards">
+          {
+            sectionContent.features.map((feature: any) => (
+              <Card cardStyle="usp-card">
+                
+                  <Image
+                    src={feature.icon}
+                    alt={`icon - ${feature.label}`}
+                    width={50}
+                    height={50}
+                    class="green-icon"
+                  />
+        <div class="card-title">
+            <h3>{feature.title}</h3>
+            <span>{feature.description}</span>
+        </div>
+    
+                
+    
+       
+              </Card>
+            ))
+          }
+        </CardGrid>
+    </div>
+  </div>
+</section>
+
+<style>
+    .card-grids {
+        display: grid;
+        gap: var(--size-10);
+    }
+</style>
