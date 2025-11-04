@@ -1,0 +1,15 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+// Sections
+import HeroSection from "../sections/accomodation/heroSection.astro";
+import GallerySection from "../sections/accomodation/gallerySection.astro";
+
+// Page data
+import data from "../data/nl/accomodation.json";
+---
+
+<Layout>
+  <HeroSection sectionContent={data.intro} />
+  <GallerySection />
+</Layout>

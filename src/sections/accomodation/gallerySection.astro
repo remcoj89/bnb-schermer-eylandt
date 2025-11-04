@@ -1,0 +1,158 @@
+---
+// Astro Assets
+import { Image } from "astro:assets";
+// Page Data
+const { sectionContent, sectionId } = Astro.props;
+---
+
+<section id={sectionId}>
+  <div class="wrapper container">
+    <h2>Ontdek ons verblijf</h2>
+
+    <div class="gallery-wrapper">
+      <div class="div1">
+        <Image
+          src="/assets/images/schermer-eylandt-living-room.avif"
+          alt=""
+          width={300}
+          height={300}
+        />
+        <div>
+          <h3>Gezellige woonkamer</h3>
+          <span>Ontspan in onze sfeervolle woonkamer</span>
+        </div>
+      </div>
+      <div class="div2">
+        <Image
+          src="/assets/images/schermer-eylandt-living-room.avif"
+          alt=""
+          width={300}
+          height={300}
+        />
+      </div>
+      <div class="div3">
+        <Image
+          src="/assets/images/schermer-eylandt-living-room.avif"
+          alt=""
+          width={300}
+          height={300}
+        />
+      </div>
+      <div class="div4">
+        <Image
+          src="/assets/images/schermer-eylandt-living-room.avif"
+          alt=""
+          width={300}
+          height={300}
+        />
+      </div>
+      <div class="div5">
+        <Image
+          src="/assets/images/schermer-eylandt-living-room.avif"
+          alt=""
+          width={300}
+          height={300}
+        />
+      </div>
+      <div class="div6">
+        <Image
+          src="/assets/images/schermer-eylandt-living-room.avif"
+          alt=""
+          width={300}
+          height={300}
+        />
+      </div>
+      <div class="div7">
+        <Image
+          src="/assets/images/schermer-eylandt-living-room.avif"
+          alt=""
+          width={300}
+          height={300}
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  section {
+    background-color: var(--clr-warm-sand);
+
+    .container {
+      display: grid;
+      gap: var(--size-4);
+      justify-content: center;
+
+      h2 {
+        text-align: center;
+      }
+
+      .gallery-wrapper {
+        column-gap: var(--size-1);
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        row-gap: var(--size-2);
+
+        div {
+          img {
+            display: block;
+            height: 100%;
+          }
+        }
+
+        img {
+          object-fit: cover;
+          border-radius: var(--border-radius-card);
+          box-shadow: var(--box-shadow);
+        }
+
+        .div1 {
+          grid-column: span 3 / span 3;
+          grid-row: span 2 / span 2;
+          max-height: 65rem;
+          overflow: hidden;
+
+          div {
+            height: 15%;
+            margin-block-start: var(--size-1);
+
+            h3 {
+                font-size: var(--fs-600);
+            }
+          }
+
+          img {
+            height: 85%;
+            width: 100%;
+          }
+        }
+
+        .div2 {
+          grid-column-start: 4;
+        }
+
+        .div3 {
+          grid-column-start: 4;
+          grid-row-start: 2;
+        }
+
+        .div4 {
+          grid-row-start: 3;
+        }
+
+        .div5 {
+          grid-row-start: 3;
+        }
+
+        .div6 {
+          grid-row-start: 3;
+        }
+
+        .div7 {
+          grid-row-start: 3;
+        }
+      }
+    }
+  }
+</style>

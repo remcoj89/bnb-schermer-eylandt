@@ -1,0 +1,49 @@
+---
+// Components
+import Card from "../../components/global/card.astro";
+
+// svg Components
+import { StarIcon } from "../../assets/icons";
+
+// Page Data
+const { sectionContent } = Astro.props;
+---
+
+<header>
+  <div class="wrapper header-container">
+    <h1>{sectionContent.headline}</h1>
+    <p>{sectionContent.paragraph_1}</p>
+    <Card cardStyle="testemonial-card">
+      <div class="stars">
+        {Array.from({ length: 5 }, () => <StarIcon />)}
+      </div>
+      <span>"{sectionContent.testimonial.quote}"</span>
+      <span>{sectionContent.testimonial.author}</span>
+    </Card>
+  </div>
+</header>
+
+<style>
+  header {
+    padding-block: var(--size-16) var(--size-11);
+
+    .header-container {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: var(--size-3);
+        justify-content: center;
+        text-align: center;
+
+        h1 {
+            font-size: var(--fs-900);
+            text-align: center;
+
+        }
+
+        p {
+            margin-inline: auto;
+        }
+    }
+  }
+</style>
