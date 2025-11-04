@@ -17,7 +17,7 @@ const { sectionContent, sectionId } = Astro.props;
       {
         sectionContent.features.map((feature) => (
           <Card cardStyle="usp-card">
-            <img src={feature.icon} alt="" />
+            <img src={feature.icon} alt={`icon - ${feature.title}`} class="grey-icon" />
             <div>
               <h3>{feature.title}</h3>
               <p>{feature.text}</p>

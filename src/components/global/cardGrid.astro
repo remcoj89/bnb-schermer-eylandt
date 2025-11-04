@@ -1,5 +1,5 @@
 ---
-const { cardStyle = "card-grid" } = Astro.props;
+const { cardStyle = null } = Astro.props;
 ---
 
 <div class=`card-grid ${cardStyle}`>
@@ -11,7 +11,7 @@ const { cardStyle = "card-grid" } = Astro.props;
     align-items: stretch;
     display: grid;
     gap: var(--size-2);
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     width: 100%;
 
     a {

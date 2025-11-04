@@ -16,42 +16,45 @@
     "note": " Luchtige foto’s van slaapkamer, woonkamer, keuken en tuin. (Lightbox-weergave met korte beschrijvingen per ruimte.)"
   },
   "rooms_and_facilities": {
-    "title": "Overzicht van kamers & voorzieningen",
+    "title": "Ruimtes & voorzieningen",
     "items": [
       {
-        "icon": "🛏",
+        "icon": "/assets/svgs/bed-icon-white.svg",
         "title": "Slaapkamer 1",
-        "description": "Tweepersoons boxspringbed"
+        "description": "Comforabel Queensize bed voor 2 personen",
+        "list": [    "Boxspring 160x200cm", "Kleding kast", "Natuurlijk licht"]
       },
       {
-        "icon": "🛏",
+        "icon": "/assets/svgs/bed-icon-white.svg",
         "title": "Slaapkamer 2",
-        "description": "Stapelbed (ideaal voor kids)"
+        "description": "Stapelbed ideaal voor kinderen of vrienden",
+        "list": ["Stapelbed (ideaal voor kids)", "Opbergruimte", "Speelse inrichting "]
       },
-      {
-        "icon": "🍳",
+      {           
+        "icon": "/assets/svgs/kitchen-icon.svg",             
         "title": "Keuken",
-        "description": "Volledig uitgerust met vaatwasser en koffiezetapparaat"
+        "description": "Volledig uitgeruste keuken",
+        "list": ["Kookeiland met bar", "Inductiekookplaat", "Combinatie over" ]
       },
       {
-        "icon": "🛋",
+        "icon": "/assets/svgs/sofa-icon.svg",
         "title": "Woonkamer",
-        "description": "Comfortabele slaapbank, tv en massagestoel"
+        "description": "Gezellige ruimte om samen te zijn",
+        "list": ["Comfortabele slaapbank", "Smart tv", "massagestoel"]
       },
       {
-        "icon": "🚿",
+        "icon": "/assets/svgs/shower-icon.svg",
         "title": "Badkamer",
-        "description": "Inloopdouche en frisse badlinnenservice"
+        "description": "Moderne badkamer met alle comfort",
+        "list": [
+          "Ruime inloopdouche", "Handdoekenn aanwezig", "Toiletartikelen"
+        ]
       },
       {
-        "icon": "🚗",
+        "icon": "/assets/svgs/car-icon-white.svg",
         "title": "Parkeren",
-        "description": "Gratis parkeren voor de deur"
-      },
-      {
-        "icon": "👶",
-        "title": "Voor de kleintjes",
-        "description": "Kinderstoel en bedje beschikbaar op aanvraag"
+        "description": "Gratis parkeren voor de deur",
+        "list":["parkeer plaats voor de deur", "Direct toegankelijk", "Veilig & verlicht"]
       }
     ]
   },

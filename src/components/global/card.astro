@@ -14,21 +14,31 @@ const { cardStyle = null } = Astro.props;
     box-shadow: var(--box-shadow-light);
     padding: var(--padding-card);
   }
-  
+
   .usp-card {
     background-color: var(--clr-warm-sand);
-    text-align: center;
     display: flex;
-
     flex-direction: column;
     gap: var(--size-1);
+    text-align: center;
+    transition: all 0.4s ease-in-out;
 
     img {
       border-radius: var(--border-radius-full);
-      background-color: var(--clr-light-gray);
       padding: 1rem;
       height: 50px;
       width: 50px;
+    }
+
+    img.grey-icon {
+      background-color: var(--clr-light-gray);
+    }
+
+    img.green-icon {
+      background-color: var(--clr-green-blue);
+    }
+    img.gold-icon {
+      background-color: var(--clr-gold-dark);
     }
 
     div {
@@ -39,8 +49,14 @@ const { cardStyle = null } = Astro.props;
       justify-content: space-between;
 
       h3 {
-        font-size: var(--fs-600);
+        font-size: var(--fs-500);
       }
+    }
+
+    &:hover,
+    &:focus {
+      transform: scale(1.05);
+      box-shadow: var(--box-shadow);
     }
   }
 

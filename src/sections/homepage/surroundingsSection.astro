@@ -20,11 +20,11 @@ const { sectionContent, sectionId } = Astro.props;
       {
         sectionContent.highlights.map((card) => (
           <Card cardStyle="image-card">
-            <Image 
-            alt={card.cardImage.imageAlt} 
-            height={400}
-            src={card.cardImage.imageUrl} 
-            width={400}
+            <Image
+              alt={card.cardImage.imageAlt}
+              height={400}
+              src={card.cardImage.imageUrl}
+              width={400}
             />
             <h3>{card.cardTitle}</h3>
           </Card>

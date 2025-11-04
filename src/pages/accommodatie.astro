@@ -7,9 +7,11 @@ import GallerySection from "../sections/accomodation/gallerySection.astro";
 
 // Page data
 import data from "../data/nl/accomodation.json";
+import SpacesAndLayoutSection from "../sections/accomodation/spacesAndLayoutSection.astro";
 ---
 
 <Layout>
   <HeroSection sectionContent={data.intro} />
   <GallerySection />
+  <SpacesAndLayoutSection sectionContent={data.rooms_and_facilities} />
 </Layout>

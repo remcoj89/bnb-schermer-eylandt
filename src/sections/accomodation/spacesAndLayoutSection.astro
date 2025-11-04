@@ -1,0 +1,44 @@
+---
+// Astro Asstes
+import { Image } from "astro:assets";
+// Components
+import SectionTitle from "../../components/global/sectionTitle.astro";
+import Card from "../../components/global/card.astro";
+import CardGrid from "../../components/global/cardGrid.astro";
+
+// Page Data
+const { sectionContent, sectionId } = Astro.props;
+---
+
+<section id={sectionId}>
+  <div class="wrapper">
+    <SectionTitle
+      sectionTitle={sectionContent.title}
+      headerStyle="text-center"
+    />
+    <CardGrid>
+      {
+        sectionContent.items.map((usp: any) => (
+          <Card cardStyle="usp-card">
+            <Image
+              alt={`icon - ${usp.title}`}
+              class="green-icon"
+              height={50}
+              src={usp.icon}
+              width={50}
+            />
+            <div>
+              <h3>{usp.title}</h3>
+              <span>{usp.description}</span>
+              <ul role="list">
+                {usp.list.map((li: string) => (
+                  <li>• {li}</li>
+                ))}
+              </ul>
+            </div>
+          </Card>
+        ))
+      }
+    </CardGrid>
+  </div>
+</section>
