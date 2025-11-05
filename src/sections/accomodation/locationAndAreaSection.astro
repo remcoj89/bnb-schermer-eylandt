@@ -1,6 +1,10 @@
 ---
+// Astro Assets
+import { Image } from "astro:assets";
 // Components
 import SectionTitle from "../../components/global/sectionTitle.astro";
+import CardGrid from "../../components/global/cardGrid.astro";
+import Card from "../../components/global/card.astro";
 
 // Page Data
 const { sectionContent, sectionId } = Astro.props;
@@ -8,6 +12,80 @@ const { sectionContent, sectionId } = Astro.props;
 
 <section id={sectionId}>
   <div class="wrapper">
-    <SectionTitle sectionTitle={sectionContent.title}/>
+    <SectionTitle
+      headerStyle="text-center"
+      sectionTitle={sectionContent.title}
+    />
+
+    <div class="flex-container">
+      <div>
+        <h3>{sectionContent.sectionIntro.title}</h3>
+        <p set:html={sectionContent.sectionIntro.paragraph} />
+        <ul role="list">
+          {
+            sectionContent.sectionIntro.list.map((li: any) => (
+              <li>
+                <Image src={li.iconUrl} alt="" width={25} height={25} />
+                {li.iconText}
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+      <Image
+        src={sectionContent.sectionIntro.image.imageUrl}
+        alt={sectionContent.sectionIntro.image.imageAlt}
+        width={500}
+        height={500}
+        class="section-image"
+      />
+    </div>
+
+    <CardGrid>
+      {
+        sectionContent.cards.map((card: any) => (
+          <Card cardStyle="usp-card">
+            <Image
+              alt=""
+              class="green-icon"
+              height={50}
+              src={card.iconUrl}
+              width={50}
+            />
+            <h3>{card.title}</h3>
+            <p set:html={card.text}></p>
+          </Card>
+        ))
+      }
+    </CardGrid>
   </div>
 </section>
+
+<style>
+  .flex-container {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-block-end: var(--size-8);
+
+    h3 {
+      font-size: var(--fs-600);
+      margin-block-end: var(--size-2);
+    }
+
+    li {
+      align-items: center;
+      display: flex;
+      gap: var(--size-1);
+      line-height: 3;
+    }
+
+    .section-image {
+      border-radius: var(--border-radius-img);
+      box-shadow: var(--box-shadow);
+      object-fit: cover;
+      object-position: center;
+      height: 50vh;
+    }
+  }
+</style>

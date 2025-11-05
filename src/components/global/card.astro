@@ -236,7 +236,6 @@ const { cardStyle = "", cardId = "" } = Astro.props;
   .review-card {
     background-color: var(--clr-warm-sand);
 
-
     .author {
       display: flex;
       align-items: center;
@@ -254,5 +253,10 @@ const { cardStyle = "", cardId = "" } = Astro.props;
         border-radius: var(--border-radius-full);
       }
     }
+  }
+
+  #rating-card {
+    display: flex;
+    gap: var(--size-4);
   }
 </style>

@@ -1,7 +1,7 @@
 ---
 // Props
 const {
-  href = null,
+  href = "",
   buttonStyle = null,
   buttonType = "btn",
   onClick = null,
@@ -29,7 +29,7 @@ const rel = isExternal && openInNewTab ? "noopener noreferrer" : undefined;
 <style>
   .btn {
     border-radius: var(--border-radius-btn);
-    
+
     cursor: pointer;
     font-size: var(--fs-body);
     font-weight: var(--fw-light-bold);
@@ -72,6 +72,15 @@ const rel = isExternal && openInNewTab ? "noopener noreferrer" : undefined;
     &:active {
       transform: scale(0.9);
       background-color: var(--clr-gold-dark);
+    }
+  }
+  .btn.white-btn {
+    background-color: var(--clr-white);
+    color: var(--clr-gold);
+
+    &:hover,
+    &:focus {
+      background-color: var(--clr-warm-sand);
     }
   }
 </style>

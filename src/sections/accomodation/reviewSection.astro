@@ -14,7 +14,7 @@ const { sectionContent, sectionId } = Astro.props;
 ---
 
 <section id={sectionId}>
-  <div class="wrapper">
+  <div class="wrapper container">
     <SectionTitle
       sectionTitle={sectionContent.title}
       headerStyle="text-center"
@@ -41,11 +41,49 @@ const { sectionContent, sectionId } = Astro.props;
                 <p>{review.author}</p>
                 <span>{review.date}</span>
               </div>
-
             </div>
           </Card>
         ))
       }
     </CardGrid>
+
+    <a
+      href={sectionContent.airbnbScore.reviewLink.url}
+      target="_blank"
+      rel="norefer noopener"
+    >
+      <Card cardStyle="review-card" cardId="rating-card">
+        <div class="stars">
+          {Array.from({ length: 5 }, () => <StarIcon />)}
+        </div>
+
+        <div>
+          <span id="rating">{sectionContent.airbnbScore.rating}</span>
+          <span id="review-amount"
+            >{sectionContent.airbnbScore.reviewAmount}</span
+          >
+        </div>
+      </Card>
+    </a>
   </div>
 </section>
+
+<style>
+  .container {
+    a {
+      display: block;
+      margin-block-start: var(--size-4);
+      margin-inline: auto;
+      width: fit-content;
+    }
+
+    span {
+      display: block;
+    }
+
+    #rating {
+      font-size: var(--fs-600);
+      font-weight: var(--fw-light-bold);
+    }
+  }
+</style>

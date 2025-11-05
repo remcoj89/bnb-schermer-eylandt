@@ -7,11 +7,12 @@ import GallerySection from "../sections/accomodation/gallerySection.astro";
 import HeroSection from "../sections/accomodation/heroSection.astro";
 import LocationAndAreaSection from "../sections/accomodation/locationAndAreaSection.astro";
 import PracticalInfoSection from "../sections/accomodation/practicalInfoSection.astro";
+import ReviewSection from "../sections/accomodation/reviewSection.astro";
 import SpacesAndLayoutSection from "../sections/accomodation/spacesAndLayoutSection.astro";
 
 // Page data
 import data from "../data/nl/accomodation.json";
-import ReviewSection from "../sections/accomodation/reviewSection.astro";
+import LastCallCtaSection from "../sections/accomodation/lastCallCtaSection.astro";
 ---
 
 <Layout>
@@ -36,5 +37,9 @@ import ReviewSection from "../sections/accomodation/reviewSection.astro";
   <LocationAndAreaSection
     sectionContent={data.locationAndArea}
     sectionId="location-and-area-section"
+  />
+  <LastCallCtaSection
+    sectionContent={data.closing_cta}
+    sectionId="closing-cta-section"
   />
 </Layout>

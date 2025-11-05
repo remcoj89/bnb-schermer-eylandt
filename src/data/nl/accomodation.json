@@ -157,7 +157,7 @@
       }
     ],
     "airbnbScore": {
-      "reviewAmount": "Gebaseert op 86 review",
+      "reviewAmount": "Gebaseert op 86 reviews",
       "rating": "4.98 / 5",
       "reviewLink": {
         "url": "https://www.airbnb.nl/rooms/934796483879606222/reviews?",
@@ -168,7 +168,7 @@
   "locationAndArea": {
     "title": "Locatie & Omgeving",
     "sectionIntro": {
-      "titlle": "Midden in de Schermerpolder",
+      "title": "Midden in de Schermerpolder",
       "paragraph": "Ons historische pand ligt verscholen in het hart van de Schermerpolder, omringd door weidse polderland, glinsterende kanalen en authentieke Nederlandse molens. Een perfecte uitvalsbasis om Noord-Holland te ontdekken.",
       "list": [
         {
@@ -187,7 +187,11 @@
           "iconUrl": "/assets/svgs/leave-icon.svg",
           "iconText": "Fietsroutes direct vanaf de deur"
         }
-      ]
+      ],
+      "image": {
+        "imageUrl": "/assets/images/schermer-molens.webp",
+        "imageAlt": "Helikoper overzicht van Schermerhorn"
+      }
     },
     "cards": [
       {
@@ -210,7 +214,33 @@
   "closing_cta": {
     "title": "Plan je verblijf",
     "description": "Word wakker met uitzicht over de polder en sluit de dag af met het geluid van weidevogels. Bij Schermer Eylandt is het alsof de tijd even stilstaat.",
-    "button": "Bekijk prijzen en beschikbaarheid op Airbnb ↗"
+    "bookingButton": {
+      "text":"Bekijk prijzen en beschikbaarheid op Airbnb ↗",
+      "iconUrl":"/assets/svgs/leave-icon.svg",
+      "bookingLink": {
+        "url": "https://www.airbnb.nl/rooms/934796483879606222?s",
+        "target": "_blank"
+      }
+    },
+    "contactButton": {
+      "text": "Neem contact met ons op",
+      "link": "/contact"
+    },
+    "safetyList": [
+      {
+        "iconUrl": "/assets/svgs/leave-icon.svg",
+        "text": "Flexibel annuleren"
+      },
+      {
+        "iconUrl": "/assets/svgs/leave-icon.svg",
+        "text": "Veilig boeken"
+      },
+      {
+        "iconUrl": "/assets/svgs/leave-icon.svg",
+        "text": "24/7 support"
+      }
+    ]
+
   },
   "seo": {
     "title": "Kamers & voorzieningen – B&B Schermer Eylandt Schermerhorn",
