@@ -18,6 +18,10 @@ const { sectionContent, sectionId } = Astro.props;
 <style>
   section {
     background-color: var(--clr-green-blue);
+    &::selection {
+      background-color: var(--clr-gold);
+      color: var(--clr-warm-sand);
+    }
 
     .review {
       color: var(--clr-warm-sand);

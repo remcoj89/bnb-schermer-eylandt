@@ -22,19 +22,23 @@
         "icon": "/assets/svgs/bed-icon-white.svg",
         "title": "Slaapkamer 1",
         "description": "Comforabel Queensize bed voor 2 personen",
-        "list": [    "Boxspring 160x200cm", "Kleding kast", "Natuurlijk licht"]
+        "list": ["Boxspring 160x200cm", "Kleding kast", "Natuurlijk licht"]
       },
       {
         "icon": "/assets/svgs/bed-icon-white.svg",
         "title": "Slaapkamer 2",
         "description": "Stapelbed ideaal voor kinderen of vrienden",
-        "list": ["Stapelbed (ideaal voor kids)", "Opbergruimte", "Speelse inrichting "]
+        "list": [
+          "Stapelbed (ideaal voor kids)",
+          "Opbergruimte",
+          "Speelse inrichting "
+        ]
       },
-      {           
-        "icon": "/assets/svgs/kitchen-icon.svg",             
+      {
+        "icon": "/assets/svgs/kitchen-icon.svg",
         "title": "Keuken",
         "description": "Volledig uitgeruste keuken",
-        "list": ["Kookeiland met bar", "Inductiekookplaat", "Combinatie over" ]
+        "list": ["Kookeiland met bar", "Inductiekookplaat", "Combinatie over"]
       },
       {
         "icon": "/assets/svgs/sofa-icon.svg",
@@ -47,14 +51,20 @@
         "title": "Badkamer",
         "description": "Moderne badkamer met alle comfort",
         "list": [
-          "Ruime inloopdouche", "Handdoekenn aanwezig", "Toiletartikelen"
+          "Ruime inloopdouche",
+          "Handdoekenn aanwezig",
+          "Toiletartikelen"
         ]
       },
       {
         "icon": "/assets/svgs/car-icon-white.svg",
         "title": "Parkeren",
         "description": "Gratis parkeren voor de deur",
-        "list":["parkeer plaats voor de deur", "Direct toegankelijk", "Veilig & verlicht"]
+        "list": [
+          "parkeer plaats voor de deur",
+          "Direct toegankelijk",
+          "Veilig & verlicht"
+        ]
       }
     ]
   },
@@ -115,6 +125,86 @@
       "Gratis annuleren binnen 24 uur",
       "Geen huisdieren toegestaan",
       "Roken niet toegestaan binnen"
+    ]
+  },
+  "reviewSection": {
+    "title": "Wat onze gasten zeggen",
+    "reviews": [
+      {
+        "quote": "Na een zeer vriendelijke ontvangst waren we direct al onder de indruk van het appartement. Bijzonder ruime woonkamer met schitterende en volwaardige keuken. Ruimte genoeg om lekker te eten of een spelletje te spelen. Daarnaast twee losse slaapkamers met ieder toegang tot de badkamer - ideaal voor onze gezinssamenstelling (2 kids).",
+        "author": "Kees",
+        "date": "januari 2025",
+        "avatar": {
+          "altText": "foto van Kees",
+          "url": "/assets/images/bas-linda-evi.png"
+        }
+      },     {
+        "quote": "Mijn familie en ik hebben Linda's b&b vijf dagen bezocht. De plek leek precies op de foto's, erg mooi, schoon en rustig. Voor mijn dochter en zoon was alles aanwezig, we hebben niets gemist. Linda was zo aardig en hielp me een apotheek te vinden toen mijn Sphn ziek werd. Dus overal waren we echt blij en zouden terugkomen.",
+        "author": "Irene",
+        "date": "juni 2025",
+        "avatar": {
+          "altText": "foto van Irene",
+          "url": "/assets/images/bas-linda-evi.png"
+        }
+      },     {
+        "quote": "Linda en Bas zijn het liefste verhuurderspaar. We hadden veel goede gesprekken met hen en leenden zelfs hun kajak voor een trip over het kanaal. Het appartement is prachtig en heeft alles wat je nodig hebt. Schermerhorn is een heel gezellig dorp, en we hadden zelfs het geluk om een stadsfestival te ervaren met een carnaval en lokale sporten.",
+        "author": "Anders",
+        "date": "juli 2025",
+        "avatar": {
+          "altText": "foto van Anders",
+          "url": "/assets/images/bas-linda-evi.png"
+        }
+      }
+    ],
+    "airbnbScore": {
+      "reviewAmount": "Gebaseert op 86 review",
+      "rating": "4.98 / 5",
+      "reviewLink": {
+        "url": "https://www.airbnb.nl/rooms/934796483879606222/reviews?",
+        "target": "_blank"
+      }
+    }
+  },
+  "locationAndArea": {
+    "title": "Locatie & Omgeving",
+    "sectionIntro": {
+      "titlle": "Midden in de Schermerpolder",
+      "paragraph": "Ons historische pand ligt verscholen in het hart van de Schermerpolder, omringd door weidse polderland, glinsterende kanalen en authentieke Nederlandse molens. Een perfecte uitvalsbasis om Noord-Holland te ontdekken.",
+      "list": [
+        {
+          "iconUrl": "/assets/svgs/leave-icon.svg",
+          "iconText": "Alkmaar centrum: 15 minuten rijden"
+        },
+        {
+          "iconUrl": "/assets/svgs/leave-icon.svg",
+          "iconText": "Strand Bergen aan Zee: 30 minuten"
+        },
+        {
+          "iconUrl": "/assets/svgs/leave-icon.svg",
+          "iconText": "Amsterdam: 45 minuten met de auto"
+        },
+        {
+          "iconUrl": "/assets/svgs/leave-icon.svg",
+          "iconText": "Fietsroutes direct vanaf de deur"
+        }
+      ]
+    },
+    "cards": [
+      {
+        "iconUrl": "/assets/svgs/leave-icon.svg",
+        "title": "Natuur & wandelen",
+        "text": "Ontdek de unieke polderlandschappen met hun rijke flora en fauna. Ideaal voor natuur fotografie"
+      },
+      {
+        "iconUrl": "/assets/svgs/leave-icon.svg",
+        "title": "Historische molens",
+        "text": "Bezoek de authentieke Nederlandse molens in de omgeving en leer over onze watergeschiedenis."
+      },
+      {
+        "iconUrl": "/assets/svgs/leave-icon.svg",
+        "title": "Lokale restaurants",
+        "text": "Proef de lokale keuken in gezellige restaurants en cafés in Alkmaar en omliggende dorpjes."
+      }
     ]
   },
   "closing_cta": {

@@ -175,7 +175,7 @@ const { cardStyle = "", cardId = "" } = Astro.props;
 
         h4 {
           margin-block-start: var(--size-2);
-         line-height: 1.5;
+          line-height: 1.5;
         }
       }
     }
@@ -231,5 +231,28 @@ const { cardStyle = "", cardId = "" } = Astro.props;
     display: flex;
     gap: var(--size-2);
     width: fit-content;
+  }
+
+  .review-card {
+    background-color: var(--clr-warm-sand);
+
+
+    .author {
+      display: flex;
+      align-items: center;
+      gap: var(--size-1);
+
+      p {
+        margin: unset;
+      }
+
+      img {
+        object-fit: cover;
+        object-position: center;
+        height: var(--size-8);
+        width: var(--size-8);
+        border-radius: var(--border-radius-full);
+      }
+    }
   }
 </style>

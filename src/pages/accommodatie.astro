@@ -5,11 +5,13 @@ import Layout from "../layouts/Layout.astro";
 import ComfortAndAmenitiesSection from "../sections/accomodation/comfortAndAmenitiesSection.astro";
 import GallerySection from "../sections/accomodation/gallerySection.astro";
 import HeroSection from "../sections/accomodation/heroSection.astro";
+import LocationAndAreaSection from "../sections/accomodation/locationAndAreaSection.astro";
 import PracticalInfoSection from "../sections/accomodation/practicalInfoSection.astro";
+import SpacesAndLayoutSection from "../sections/accomodation/spacesAndLayoutSection.astro";
 
 // Page data
 import data from "../data/nl/accomodation.json";
-import SpacesAndLayoutSection from "../sections/accomodation/spacesAndLayoutSection.astro";
+import ReviewSection from "../sections/accomodation/reviewSection.astro";
 ---
 
 <Layout>
@@ -23,8 +25,16 @@ import SpacesAndLayoutSection from "../sections/accomodation/spacesAndLayoutSect
     sectionContent={data.extra_comfort}
     sectionId="comfort-and-amenties-section"
   />
+  <ReviewSection
+    sectionContent={data.reviewSection}
+    sectionId="location-and-area-section"
+  />
   <PracticalInfoSection
     sectionContent={data.practical_info}
     sectionId="practical-info-section"
+  />
+  <LocationAndAreaSection
+    sectionContent={data.locationAndArea}
+    sectionId="location-and-area-section"
   />
 </Layout>

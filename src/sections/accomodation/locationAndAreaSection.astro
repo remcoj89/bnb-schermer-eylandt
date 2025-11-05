@@ -1,0 +1,13 @@
+---
+// Components
+import SectionTitle from "../../components/global/sectionTitle.astro";
+
+// Page Data
+const { sectionContent, sectionId } = Astro.props;
+---
+
+<section id={sectionId}>
+  <div class="wrapper">
+    <SectionTitle sectionTitle={sectionContent.title}/>
+  </div>
+</section>
