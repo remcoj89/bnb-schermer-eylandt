@@ -16,15 +16,14 @@ import Button from "./buttons.astro";
     </ul>
 
     <div class="buttons-nav">
+      <select name="lang" id="lang">
+        <option value="Dutch">NL</option>
+        <option value="English">EN</option>
+        <option value="German">GE</option>
+        <option value="French">FR</option>
+      </select>
+      <span class="custom-arrow"></span>
 
-        <select name="lang" id="lang">
-          <option value="Dutch">NL</option>
-          <option value="English">EN</option>
-          <option value="German">GE</option>
-          <option value="French">FR</option>
-        </select>
-        <span class="custom-arrow"></span>
- 
       <Button href="/contact" buttonStyle="primary">Contact</Button>
     </div>
   </div>
@@ -38,6 +37,7 @@ import Button from "./buttons.astro";
     position: fixed;
     top: 0;
     inset-inline: 0;
+    transition: background-color 0.3s ease;
     z-index: 1000;
 
     .nav-bar {
@@ -78,7 +78,7 @@ import Button from "./buttons.astro";
         display: flex;
         align-self: center;
         justify-content: center;
-       
+
         select {
           background-color: transparent;
           cursor: pointer;
@@ -87,7 +87,7 @@ import Button from "./buttons.astro";
           padding-block: 0.5rem;
           height: fit-content;
           margin-block: auto;
-  
+
           &:focus,
           &:active {
             border: 0;
@@ -96,4 +96,22 @@ import Button from "./buttons.astro";
       }
     }
   }
+
+  nav.scrolled {
+    background-color: var(--clr-warm-sand); /* donkere solid achtergrond */
+  }
 </style>
+
+<script>
+  const header = document.querySelector("header");
+  const headerHeight = header?.offsetHeight;
+  const nav = document.querySelector("nav");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > headerHeight) {
+      nav.classList.add("scrolled");
+    } else {
+      nav.classList.remove("scrolled");
+    }
+  });
+</script>
