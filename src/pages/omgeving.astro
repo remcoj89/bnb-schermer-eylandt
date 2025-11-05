@@ -4,9 +4,31 @@ import Layout from "../layouts/Layout.astro";
 
 // Sections
 import DarkFooter from "../sections/global/dark-footer.astro";
+import HeaderSection from "../sections/surroundings/headerSection.astro";
+import ActivitysSection from "../sections/surroundings/activitysSection.astro";
+import IdealLocationSection from "../sections/surroundings/idealLocationSection.astro";
+import SingleReviewSection from "../sections/surroundings/singleReviewSection.astro";
+import FullbleedReviewSection from "../sections/surroundings/fullbleedReviewSection.astro";
+import SeasonsSection from "../sections/surroundings/seasonsSection.astro";
+import RecomodationsSection from "../sections/surroundings/recomodationsSection.astro";
+import ExplorationSection from "../sections/surroundings/explorationSection.astro";
+import BestTimeToVisitSection from "../sections/surroundings/bestVisitTimeSection.astro";
+import LastCallCtaSection from "../sections/surroundings/lastCallCtaSection.astro";
+
+// Page data
+import data from "../data/nl/surroundings.json";
 ---
 
 <Layout>
-  <h1>Omgeving</h1>
+  <HeaderSection />
+  <IdealLocationSection sectionId="ideal-location" />
+  <ActivitysSection sectionId="acitvitys-section" />
+  <SingleReviewSection sectionId="single-review-section" />
+  <FullbleedReviewSection sectionId="fullbleed-review-section" />
+  <SeasonsSection sectionId="seasons-section" />
+  <RecomodationsSection sectionId="recomodations-section" />
+  <ExplorationSection sectionId="recomodations-section" />
+  <BestTimeToVisitSection sectionId="best-time-to-visit-section" />
+  <LastCallCtaSection sectionId="last-call-cta-section" />
   <DarkFooter />
 </Layout>
