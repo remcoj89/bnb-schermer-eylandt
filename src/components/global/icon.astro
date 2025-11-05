@@ -1,0 +1,32 @@
+---
+// Page Data
+const { iconStyle = "green-icon" } = Astro.props;
+---
+
+<div class={`icon ${iconStyle}`}>
+  <slot />
+</div>
+
+<style>
+  .icon {
+    align-items: center;
+    border-radius: var(--border-radius-full);
+    display: grid;
+    height: 50px;
+    justify-content: center;
+    padding: 0.5rem;
+    width: 50px;
+  }
+
+  .green-icon {
+    background-color: var(--clr-green-blue);
+  }
+
+  .gold-icon {
+    background-color: var(--clr-gold);
+  }
+
+  .grey-icon {
+    background-color: var(--clr-light-gray);
+  }
+</style>

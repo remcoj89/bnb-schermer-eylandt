@@ -9,19 +9,16 @@ import {
 
 // Get current Year
 const dateYear = new Date().getFullYear();
-
-// Page Data
-const { footerStyle = "light" } = Astro.props;
 ---
 
 <footer>
   <div class="wrapper">
     <div class="footer-container">
-      <div>
+      <div class="footer-block">
         <h3>Schermer Eylandt</h3>
         <p>Rust, ruimte en gastvrijheid in de Schermerpolder.</p>
       </div>
-      <div>
+      <div class="footer-block">
         <h3>Navigatie</h3>
         <ul role="list">
           <li><a href="/">Home</a></li>
@@ -30,7 +27,7 @@ const { footerStyle = "light" } = Astro.props;
           <li><a href="/contact">Contact</a></li>
         </ul>
       </div>
-      <div>
+      <div class="footer-block">
         <h3>Contact</h3>
         <ul role="list">
           <li>
@@ -47,7 +44,7 @@ const { footerStyle = "light" } = Astro.props;
           </li>
         </ul>
       </div>
-      <div>
+      <div class="footer-block">
         <h3>Volg Ons</h3>
 
         <div class="socials-wrapper">
@@ -81,7 +78,7 @@ const { footerStyle = "light" } = Astro.props;
         display: flex;
         padding-block-end: var(--size-8);
 
-        div {
+        .footer-block {
           padding-inline-end: var(--size-2);
           width: 100%;
 

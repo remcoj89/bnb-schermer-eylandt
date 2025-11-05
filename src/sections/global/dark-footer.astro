@@ -1,0 +1,182 @@
+---
+// Astro Asstes
+import { Image } from "astro:assets";
+// svg Icons
+import { MailIcon, LocationIcon } from "../../assets/icons";
+// Components
+import Icon from "../../components/global/icon.astro";
+import Button from "../../components/global/buttons.astro";
+// Get current Year
+const dateYear = new Date().getFullYear();
+---
+
+<footer>
+  <div class="wrapper">
+    <div class="footer-container">
+      <div class="footer-block" id="brand">
+        <h2><a href="/">Schermer Eylandt</a></h2>
+        <p>Rust, ruimte en gastvrijheid in het hart van de Schermerpolder</p>
+        <div class="socials-wrapper">
+          <a
+            href="https://www.instagram.com/schermereylandt10/"
+            target="_blank"
+            rel="nooref noopener"
+          >
+            <Icon iconStyle="green-icon">
+              <Image
+                alt="socials-icon"
+                height={25}
+                src="/assets/svgs/bike-icon.svg"
+                width={25}
+              />
+            </Icon>
+          </a>
+          <a
+            href="https://www.instagram.com/schermereylandt10/"
+            target="_blank"
+            rel="nooref noopener"
+            ><Icon iconStyle="green-icon">
+              <Image
+                alt="socials-icon"
+                height={25}
+                src="/assets/svgs/bike-icon.svg"
+                width={25}
+              />
+            </Icon></a
+          >
+          <a
+            href="https://www.instagram.com/schermereylandt10/"
+            target="_blank"
+            rel="nooref noopener"
+            ><Icon iconStyle="green-icon">
+              <Image
+                alt="socials-icon"
+                height={25}
+                src="/assets/svgs/bike-icon.svg"
+                width={25}
+              />
+            </Icon></a
+          >
+        </div>
+      </div>
+      <div class="footer-block">
+        <h3>Navigatie</h3>
+        <ul role="list">
+          <li><a href="/">Home</a></li>
+          <li><a href="/over-ons">Over Ons</a></li>
+          <li><a href="/accomedatie">Het Verblijf</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-block">
+        <h3>Contact</h3>
+        <ul role="list">
+          <li>
+            <a
+              href="https://maps.app.goo.gl/yCAGh3psB54WxnRn6"
+              rel="noopener noreferrer"
+              target="_blank"><LocationIcon />Schermerhorn, Noord-Holland</a
+            >
+          </li>
+          <li>
+            <a href="mailto:info@schermereylandt.nl"
+              ><MailIcon />info@schermereylandt.nl</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="footer-block" id="booking">
+        <h3>Boeken</h3>
+        <p>
+          Boek direct via ons Airbnb-profiel voor de beste service en prijzen
+        </p>
+        <Button
+          href="https://www.airbnb.nl/rooms/934796483879606222?s"
+          buttonStyle="gold"
+          target="_blank">Naar Airbnb</Button
+        >
+      </div>
+    </div>
+    <span id="copy-right"
+      >© {dateYear || 2025} Schermer Eylandt. Met precisie gemaakt door
+      <a href="https://westend-digital.nl" rel="noopner">Westend Digital</a
+      >.</span
+    >
+  </div>
+</footer>
+
+<style>
+  footer {
+    background-color: var(--clr-dark-gray);
+    color: var(--clr-off-white);
+    padding-block: var(--size-8);
+
+    h2,
+    h3,
+    h4 {
+      color: var(--clr-white);
+    }
+
+    .wrapper {
+      .footer-container {
+        border-bottom: solid 1px hsla(0, 0%, 95%, 0.3);
+        display: flex;
+        padding-block-end: var(--size-8);
+        justify-content: space-between;
+
+        .footer-block {
+          padding-inline-end: var(--size-2);
+          width: 100%;
+
+          h2,
+          h3 {
+            margin-block-end: var(--size-2);
+          }
+
+          h2 {
+            font-size: var(--fs-600);
+          }
+          h3 {
+            font-size: var(--fs-500);
+          }
+
+          ul {
+            li {
+              a {
+                align-items: center;
+                display: flex;
+                gap: var(--size-1);
+              }
+
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
+
+          .socials-wrapper {
+            display: flex;
+            gap: var(--size-1);
+          }
+        }
+      }
+
+      #copy-right {
+        display: block;
+        margin-block-start: var(--size-4);
+        text-align: center;
+
+        a {
+          font-weight: var(--fw-semi-bold);
+          text-decoration: underline;
+        }
+      }
+
+      #booking {
+        p {
+          margin-block-end: var(--size-3);
+        }
+      }
+    }
+  }
+</style>

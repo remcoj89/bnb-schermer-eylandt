@@ -38,9 +38,8 @@ const rel = isExternal && openInNewTab ? "noopener noreferrer" : undefined;
     transition:
       background-color 0.3s ease-in-out,
       transform 0.3s ease-in-out;
-      width: fit-content;
+    width: fit-content;
   }
-
 
   .btn.primary {
     background-color: var(--clr-gold-dark);
@@ -51,6 +50,23 @@ const rel = isExternal && openInNewTab ? "noopener noreferrer" : undefined;
     &:focus {
       background-color: transparent;
       color: var(--clr-gold-dark);
+    }
+
+    &:active {
+      transform: scale(0.9);
+      background-color: var(--clr-gold-dark);
+    }
+  }
+
+  .btn.gold {
+    background-color: var(--clr-gold);
+    color: var(--clr-warm-sand);
+    border: solid 2px var(--clr-gold);
+
+    &:hover,
+    &:focus {
+      background-color: transparent;
+      color: var(--clr-gold);
     }
 
     &:active {
