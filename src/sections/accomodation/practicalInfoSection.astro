@@ -1,0 +1,118 @@
+---
+// Astro Assets
+import { Image } from "astro:assets";
+
+// Components
+import SectionTitle from "../../components/global/sectionTitle.astro";
+import Card from "../../components/global/card.astro";
+
+// Page Data
+const { sectionContent, sectionId } = Astro.props;
+---
+
+<section id={sectionId}>
+  <div class="wrapper">
+    <SectionTitle
+      sectionTitle={sectionContent.title}
+      headerStyle="text-center"
+    />
+
+    <div class="grid">
+      <Card cardStyle="practical-info-card usp-card" cardId="card-1">
+        <h3>Check-in & Check-out</h3>
+        <ul role="list">
+          <li class="flex">
+            <img src="/assets/svgs/bike-icon.svg" alt="" class="green-icon">
+            <div>
+              <h4>Check in tijden</h4>
+              <span class="semi-bold">Vanaf 15:00 uur</span>
+              <span>Zelf inchecken met sleutelkastje</span>
+            </div>
+          </li>
+          <li class="flex">
+            <img src="/assets/svgs/bike-icon.svg" alt="" class="green-icon">
+            <div>
+              <h4>Check out tijden</h4>
+              <span class="semi-bold">Vanaf 11:00 uur</span>
+              <span>Sleutels in kastje terugplaatsen</span>
+            </div>
+          </li>
+          <li class="flex">
+            <img src="/assets/svgs/bike-icon.svg" alt="" class="green-icon">
+            <div>
+              <h4>Aantal gasten</h4>
+              <span class="semi-bold">Maximaal 4 personen</span>
+              <span>Ideaal voor gezinnen of vrienden</span>
+            </div>
+          </li>
+        </ul>
+      </Card>
+      <Card cardStyle="practical-info-card usp-card" cardId="card-2">
+        <h3>Check-in & Check-out</h3>
+        <ul role="list">
+          <li class="flex">
+            <img src="/assets/svgs/bike-icon.svg" alt="" class="gold-icon">
+            <div>
+              <h4>Check in tijden</h4>
+              <span class="semi-bold">Vanaf 15:00 uur</span>
+              <span>Zelf inchecken met sleutelkastje</span>
+            </div>
+          </li>
+          <li class="flex">
+            <img src="/assets/svgs/bike-icon.svg" alt="" class="gold-icon">
+            <div>
+              <h4>Check out tijden</h4>
+              <span class="semi-bold">Vanaf 11:00 uur</span>
+              <span>Sleutels in kastje terugplaatsen</span>
+            </div>
+          </li>
+          <li class="flex">
+            <img src="/assets/svgs/bike-icon.svg" alt="" class="gold-icon">
+            <div>
+              <h4>Aantal gasten</h4>
+              <span class="semi-bold">Maximaal 4 personen</span>
+              <span>Ideaal voor gezinnen of vrienden</span>
+            </div>
+          </li>
+        </ul>
+      </Card>
+
+      <Card cardStyle="practical-info-card usp-card" cardId="card-3">
+        <h3>Wat is inbegrepen?</h3>
+        <ul role="list">
+          <li>
+            <img src="/assets/svgs/bike-icon.svg" alt="" class="green-icon">
+            <h4>Beddengoed</h4>
+            <span>Schone lakens & dekbedden</span>
+          </li>
+          <li>
+            <img src="/assets/svgs/bike-icon.svg" alt="" class="green-icon">
+            <h4>Handdoeken</h4>
+            <span>Voor alle gasten</span>
+          </li>
+          <li>
+            <img src="/assets/svgs/bike-icon.svg" alt="" class="green-icon">
+            <h4>Koffie & thee</h4>
+            <span>Welkomstpakket</span>
+          </li>
+          <li>
+            <img src="/assets/svgs/bike-icon.svg" alt="" class="green-icon">
+            <h4>Parkeren</h4>
+            <span>Gratis voor de deur</span>
+          </li>
+        </ul>
+      </Card>
+    </div>
+  </div>
+</section>
+
+<style>
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: var(--size-2);
+  }
+
+=
+</style>

@@ -24,7 +24,7 @@
 }
 @font-face {
   font-display: swap;
-  font-family: "Playfair", serif;
+  font-family: "Playfair Display", serif;
   font-optical-sizing: auto;
   font-style: normal;
   font-weight: 400;
@@ -64,7 +64,7 @@
 
   /* Fonts Family */
   --ff-body: "Lato", sans-serif;
-  --ff-header: "Playfair", serif;
+  --ff-header: "Playfair Display", serif;
   --ff-logo: "Bellefair", serif;
 
   /* Font sizes */

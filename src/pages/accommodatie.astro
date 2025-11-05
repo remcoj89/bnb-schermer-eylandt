@@ -5,6 +5,7 @@ import Layout from "../layouts/Layout.astro";
 import ComfortAndAmenitiesSection from "../sections/accomodation/comfortAndAmenitiesSection.astro";
 import GallerySection from "../sections/accomodation/gallerySection.astro";
 import HeroSection from "../sections/accomodation/heroSection.astro";
+import PracticalInfoSection from "../sections/accomodation/practicalInfoSection.astro";
 
 // Page data
 import data from "../data/nl/accomodation.json";
@@ -13,7 +14,17 @@ import SpacesAndLayoutSection from "../sections/accomodation/spacesAndLayoutSect
 
 <Layout>
   <HeroSection sectionContent={data.intro} />
-  <GallerySection />
-  <SpacesAndLayoutSection sectionContent={data.rooms_and_facilities} />
-  <ComfortAndAmenitiesSection sectionContent={data.extra_comfort} />
+  <GallerySection sectionId="gallery-section" />
+  <SpacesAndLayoutSection
+    sectionContent={data.rooms_and_facilities}
+    sectionId="spaces-and-layout-section"
+  />
+  <ComfortAndAmenitiesSection
+    sectionContent={data.extra_comfort}
+    sectionId="comfort-and-amenties-section"
+  />
+  <PracticalInfoSection
+    sectionContent={data.practical_info}
+    sectionId="practical-info-section"
+  />
 </Layout>
