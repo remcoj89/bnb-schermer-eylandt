@@ -5,6 +5,7 @@ import { Image } from "astro:assets";
 import SectionTitle from "../../components/global/sectionTitle.astro";
 import Card from "../../components/global/card.astro";
 import CardGrid from "../../components/global/cardGrid.astro";
+import Icon from "../../components/global/icon.astro";
 
 // Page Data
 const { sectionContent, sectionId } = Astro.props;
@@ -23,13 +24,15 @@ const { sectionContent, sectionId } = Astro.props;
           sectionContent.features_with_review.map((feature: any) => (
             <Card cardStyle="features-with-review">
               <div class="card-title-wrapper">
-                <Image
-                  src={feature.icon}
-                  alt={`icon - ${feature.label}`}
-                  width={50}
-                  height={50}
-                  class="gold-icon"
-                />
+                <Icon iconStyle="gold-icon">
+                  <Image
+                    alt={`icon - ${feature.label}`}
+                    height={50}
+                    src={feature.icon}
+                    width={50}
+                  />
+                </Icon>
+
                 <div class="card-title">
                   <h3>{feature.label}</h3>
                   <span>{feature.description}</span>
@@ -49,13 +52,14 @@ const { sectionContent, sectionId } = Astro.props;
         {
           sectionContent.features.map((feature: any) => (
             <Card cardStyle="usp-card">
-              <Image
-                src={feature.icon}
-                alt={`icon - ${feature.label}`}
-                width={50}
-                height={50}
-                class="green-icon"
-              />
+              <Icon iconStyle="green-icon">
+                <Image
+                  alt={`icon - ${feature.label}`}
+                  height={50}
+                  src={feature.icon}
+                  width={50}
+                />
+              </Icon>
               <div class="card-title">
                 <h3>{feature.title}</h3>
                 <span>{feature.description}</span>
@@ -71,7 +75,7 @@ const { sectionContent, sectionId } = Astro.props;
 <style>
   section {
     background-color: var(--clr-warm-sand);
-    
+
     .card-grids {
       display: grid;
       gap: var(--size-10);

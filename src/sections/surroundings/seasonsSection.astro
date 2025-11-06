@@ -1,10 +1,38 @@
 ---
+// Astro Assets
+import { Image } from "astro:assets";
+// Components
+import Icon from "../../components/global/icon.astro";
+import CardGrid from "../../components/global/cardGrid.astro";
+import Card from "../../components/global/card.astro";
+import SectionTitle from "../../components/global/sectionTitle.astro";
 // page Data
-const { pageContent, sectionId } = Astro.props;
+const { sectionContent, sectionId } = Astro.props;
 ---
 
 <section id={sectionId}>
   <div class="wrapper">
-    <h2>Seasons section</h2>
+    <SectionTitle
+      sectionTitle={sectionContent.title}
+      subtitle={sectionContent.description}
+      headerStyle="text-center"
+    />
+
+    <CardGrid cardStyle="small-cards">
+      {
+        sectionContent.seasons.map((season) => (
+          <Card >
+            <Icon iconStyle={season.iconStyle}>
+              <Image
+                alt={`${season.icon} icon`}
+                height={25}
+                src={season.iconUrl}
+                width={25}
+              />
+            </Icon>
+          </Card>
+        ))
+      }
+    </CardGrid>
   </div>
 </section>

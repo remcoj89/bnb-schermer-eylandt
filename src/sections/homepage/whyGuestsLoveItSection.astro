@@ -1,7 +1,11 @@
 ---
+// Astro Assets
+import { Image } from "astro:assets";
+
 // Components
 import Card from "../../components/global/card.astro";
 import CardGrid from "../../components/global/cardGrid.astro";
+import Icon from "../../components/global/icon.astro";
 // Page Data
 const { sectionContent, sectionId } = Astro.props;
 ---
@@ -17,7 +21,9 @@ const { sectionContent, sectionId } = Astro.props;
       {
         sectionContent.features.map((feature) => (
           <Card cardStyle="usp-card">
-            <img src={feature.icon} alt={`icon - ${feature.title}`} class="grey-icon" />
+            <Icon iconStyle="grey-icon">
+              <Image src={feature.icon} alt={`icon - ${feature.title}`} width={50} height={50}/>
+            </Icon>
             <div>
               <h3>{feature.title}</h3>
               <p>{feature.text}</p>

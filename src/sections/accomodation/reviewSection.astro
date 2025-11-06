@@ -8,6 +8,8 @@ import { StarIcon } from "../../assets/icons";
 import Card from "../../components/global/card.astro";
 import CardGrid from "../../components/global/cardGrid.astro";
 import SectionTitle from "../../components/global/sectionTitle.astro";
+import FiveStars from "../../components/global/fiveStars.astro";
+import CustomerAvatar from "../../components/global/customerAvatar.astro";
 
 // Page Data
 const { sectionContent, sectionId } = Astro.props;
@@ -22,13 +24,9 @@ const { sectionContent, sectionId } = Astro.props;
 
     <CardGrid>
       {
-        sectionContent.reviews.map((review) => (
+        sectionContent.reviews.map((review: any) => (
           <Card cardStyle="review-card">
-            <div class="stars">
-              {Array.from({ length: 5 }, () => (
-                <StarIcon />
-              ))}
-            </div>
+            <FiveStars />
             <p class="quote">"{review.quote}"</p>
             <div class="author">
               <Image
@@ -37,6 +35,7 @@ const { sectionContent, sectionId } = Astro.props;
                 width={100}
                 height={100}
               />
+              <CustomerAvatar componentContent={review} />
               <div>
                 <p>{review.author}</p>
                 <span>{review.date}</span>
@@ -53,9 +52,7 @@ const { sectionContent, sectionId } = Astro.props;
       rel="norefer noopener"
     >
       <Card cardStyle="review-card" cardId="rating-card">
-        <div class="stars">
-          {Array.from({ length: 5 }, () => <StarIcon />)}
-        </div>
+        <FiveStars />
 
         <div>
           <span id="rating">{sectionContent.airbnbScore.rating}</span>

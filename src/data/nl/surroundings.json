@@ -133,6 +133,36 @@
     "author": "David",
     "date": "September 2024"
   },
+  "seasons": {
+    "title": "Het hele jaar door te bleven",
+    "subTitle": "Elk seizon bied zijn eigen charme en unieke ervaringen in de Schermerpolder",
+    "seasons": [
+      {
+        "iconUrl": "/assets/svgs/spring-icon.svg",
+        "iconStyle": "gradient-gold-green",
+        "title": "Lente",
+        "description": "Bloeiende bollenvelden, lammetjes in de wei, en de eerste warme dagen voor lange fiets tochten."
+      },
+      {
+        "iconUrl": "/assets/svgs/summer-icon.svg",
+        "iconStyle": "gradient-gold-green-90",
+        "title": "Zomer",
+        "description": "Lange dagen, varen op de kanalen, strandbezoeken en gezellige terassen in Alkmaar."
+      },
+      {
+        "iconUrl": "/assets/svgs/fall-icon.svg",
+        "iconStyle": "gradient-gold-green-180",
+        "title": "Herfst",
+        "description": "Kleurrijke landschappen, gezellige binnenactiviteiten en de knusse sfeer van het seizoen."
+      },
+      {
+        "iconUrl": "/assets/svgs/winter-icon.svg",
+        "iconStyle": "gradient-gold-green-270",
+        "title": " Winter",
+        "description": "Winterse wandelingen, warme kachel, en met geluk schaatsen op de bevroren kanalen "
+      }
+    ]
+  },
   "cta": {
     "title": "Boek jouw verblijf",
     "description": "Klaar om het echte Noord-Holland te ervaren? Laat de drukte achter je en ontdek hoe heerlijk het is om weer even écht stil te staan.",

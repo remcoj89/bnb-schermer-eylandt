@@ -18,7 +18,7 @@ const { sectionContent, sectionId } = Astro.props;
     />
     <CardGrid cardStyle="small-cards">
       {
-        sectionContent.highlights.map((card) => (
+        sectionContent.highlights.map((card: any) => (
           <Card cardStyle="image-card">
             <Image
               alt={card.cardImage.imageAlt}

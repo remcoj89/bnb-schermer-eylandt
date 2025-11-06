@@ -5,6 +5,7 @@ import { Image } from "astro:assets";
 // Components
 import SectionTitle from "../../components/global/sectionTitle.astro";
 import Card from "../../components/global/card.astro";
+import Icon from "../../components/global/icon.astro";
 
 // Page Data
 const { sectionContent, sectionId } = Astro.props;
@@ -18,11 +19,21 @@ const { sectionContent, sectionId } = Astro.props;
     />
 
     <div class="grid">
-      <Card cardStyle="practical-info-card usp-card" cardId="card-1">
+      <Card
+        cardStyle="practical-info-card vertical-card"
+        cardId="card-1"
+      >
         <h3>Check-in & Check-out</h3>
         <ul role="list">
           <li class="flex">
-            <img src="/assets/svgs/bike-icon.svg" alt="" class="green-icon">
+            <Icon iconStyle="green-icon">
+              <Image
+                width={50}
+                height={50}
+                src="/assets/svgs/bike-icon.svg"
+                alt=""
+              />
+            </Icon>
             <div>
               <h4>Check in tijden</h4>
               <span class="semi-bold">Vanaf 15:00 uur</span>
@@ -30,7 +41,14 @@ const { sectionContent, sectionId } = Astro.props;
             </div>
           </li>
           <li class="flex">
-            <img src="/assets/svgs/bike-icon.svg" alt="" class="green-icon">
+            <Icon iconStyle="green-icon">
+              <Image
+                width={50}
+                height={50}
+                src="/assets/svgs/bike-icon.svg"
+                alt=""
+              />
+            </Icon>
             <div>
               <h4>Check out tijden</h4>
               <span class="semi-bold">Vanaf 11:00 uur</span>
@@ -38,7 +56,14 @@ const { sectionContent, sectionId } = Astro.props;
             </div>
           </li>
           <li class="flex">
-            <img src="/assets/svgs/bike-icon.svg" alt="" class="green-icon">
+            <Icon iconStyle="green-icon">
+              <Image
+                width={50}
+                height={50}
+                src="/assets/svgs/bike-icon.svg"
+                alt=""
+              />
+            </Icon>
             <div>
               <h4>Aantal gasten</h4>
               <span class="semi-bold">Maximaal 4 personen</span>
@@ -47,11 +72,21 @@ const { sectionContent, sectionId } = Astro.props;
           </li>
         </ul>
       </Card>
-      <Card cardStyle="practical-info-card usp-card" cardId="card-2">
+      <Card
+        cardStyle="practical-info-card vertical-card"
+        cardId="card-2"
+      >
         <h3>Check-in & Check-out</h3>
         <ul role="list">
           <li class="flex">
-            <img src="/assets/svgs/bike-icon.svg" alt="" class="gold-icon">
+            <Icon iconStyle="gold-icon">
+              <Image
+                width={50}
+                height={50}
+                src="/assets/svgs/bike-icon.svg"
+                alt=""
+              />
+            </Icon>
             <div>
               <h4>Check in tijden</h4>
               <span class="semi-bold">Vanaf 15:00 uur</span>
@@ -59,7 +94,14 @@ const { sectionContent, sectionId } = Astro.props;
             </div>
           </li>
           <li class="flex">
-            <img src="/assets/svgs/bike-icon.svg" alt="" class="gold-icon">
+            <Icon iconStyle="gold-icon">
+              <Image
+                width={50}
+                height={50}
+                src="/assets/svgs/bike-icon.svg"
+                alt=""
+              />
+            </Icon>
             <div>
               <h4>Check out tijden</h4>
               <span class="semi-bold">Vanaf 11:00 uur</span>
@@ -67,7 +109,14 @@ const { sectionContent, sectionId } = Astro.props;
             </div>
           </li>
           <li class="flex">
-            <img src="/assets/svgs/bike-icon.svg" alt="" class="gold-icon">
+            <Icon iconStyle="gold-icon">
+              <Image
+                width={50}
+                height={50}
+                src="/assets/svgs/bike-icon.svg"
+                alt=""
+              />
+            </Icon>
             <div>
               <h4>Aantal gasten</h4>
               <span class="semi-bold">Maximaal 4 personen</span>
@@ -77,26 +126,57 @@ const { sectionContent, sectionId } = Astro.props;
         </ul>
       </Card>
 
-      <Card cardStyle="practical-info-card usp-card" cardId="card-3">
+      <Card
+        cardStyle="practical-info-card horizontal-card"
+        cardId="card-3"
+      >
         <h3>Wat is inbegrepen?</h3>
         <ul role="list">
-          <li>
-            <img src="/assets/svgs/bike-icon.svg" alt="" class="green-icon">
+          <li class="flex-column">
+            <Icon iconStyle="green-icon">
+              <Image
+                width={50}
+                height={50}
+                src="/assets/svgs/bike-icon.svg"
+                alt=""
+              />
+            </Icon>
             <h4>Beddengoed</h4>
             <span>Schone lakens & dekbedden</span>
           </li>
-          <li>
-            <img src="/assets/svgs/bike-icon.svg" alt="" class="green-icon">
+          <li class="flex-column">
+            <Icon iconStyle="green-icon">
+              <Image
+                width={50}
+                height={50}
+                src="/assets/svgs/bike-icon.svg"
+                alt=""
+              />
+            </Icon>
             <h4>Handdoeken</h4>
             <span>Voor alle gasten</span>
           </li>
-          <li>
-            <img src="/assets/svgs/bike-icon.svg" alt="" class="green-icon">
+          <li class="flex-column">
+            <Icon iconStyle="green-icon">
+              <Image
+                width={50}
+                height={50}
+                src="/assets/svgs/bike-icon.svg"
+                alt=""
+              />
+            </Icon>
             <h4>Koffie & thee</h4>
             <span>Welkomstpakket</span>
           </li>
-          <li>
-            <img src="/assets/svgs/bike-icon.svg" alt="" class="green-icon">
+          <li class="flex-column">
+            <Icon iconStyle="green-icon">
+              <Image
+                width={50}
+                height={50}
+                src="/assets/svgs/bike-icon.svg"
+                alt=""
+              />
+            </Icon>
             <h4>Parkeren</h4>
             <span>Gratis voor de deur</span>
           </li>
@@ -109,7 +189,7 @@ const { sectionContent, sectionId } = Astro.props;
 <style>
   section {
     background-color: var(--clr-warm-sand);
-    
+
     .grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);

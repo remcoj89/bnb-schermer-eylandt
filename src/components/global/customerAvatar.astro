@@ -6,17 +6,16 @@ const { componentContent } = Astro.props;
 ---
 
 <div class="author-wrapper">
-  <Image
-    src={componentContent.avatar.imageUrl}
-    alt={componentContent.avatar.altText}
-    width={150}
-    height={150}
-  />
-
-  <div>
-    <h4>{componentContent.author}</h4>
-    <span>{componentContent.date}</span>
-  </div>
+  {
+    componentContent.avatar.imageUrl && (
+      <Image
+        src={componentContent.avatar.imageUrl}
+        alt={componentContent.avatar.altText}
+        width={150}
+        height={150}
+      />
+    )
+  }
 </div>
 
 <style>

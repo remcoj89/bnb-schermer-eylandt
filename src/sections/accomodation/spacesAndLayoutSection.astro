@@ -1,10 +1,12 @@
 ---
 // Astro Asstes
 import { Image } from "astro:assets";
+
 // Components
 import SectionTitle from "../../components/global/sectionTitle.astro";
 import Card from "../../components/global/card.astro";
 import CardGrid from "../../components/global/cardGrid.astro";
+import Icon from "../../components/global/icon.astro";
 
 // Page Data
 const { sectionContent, sectionId } = Astro.props;
@@ -20,13 +22,14 @@ const { sectionContent, sectionId } = Astro.props;
       {
         sectionContent.items.map((usp: any) => (
           <Card cardStyle="usp-card">
-            <Image
-              alt={`icon - ${usp.title}`}
-              class="green-icon"
-              height={50}
-              src={usp.icon}
-              width={50}
-            />
+            <Icon iconStyle="green-icon">
+              <Image
+                alt={`icon - ${usp.title}`}
+                height={50}
+                src={usp.icon}
+                width={50}
+              />
+            </Icon>
             <div>
               <h3>{usp.title}</h3>
               <span>{usp.description}</span>
@@ -42,3 +45,4 @@ const { sectionContent, sectionId } = Astro.props;
     </CardGrid>
   </div>
 </section>
+
