@@ -29,8 +29,14 @@ import data from "../data/nl/surroundings.json";
     sectionContent={data.experiences}
     sectionId="acitvitys-section"
   />
-  <SingleReviewSection sectionId="single-review-section" />
-  <FullbleedReviewSection sectionId="fullbleed-review-section" />
+  <SingleReviewSection
+    sectionContent={data.guestExperience}
+    sectionId="single-review-section"
+  />
+  <FullbleedReviewSection
+    sectionContent={data.guestExperienceWithBgImage}
+    sectionId="fullbleed-review-section"
+  />
   <SeasonsSection sectionId="seasons-section" />
   <RecomodationsSection sectionId="recomodations-section" />
   <ExplorationSection sectionId="recomodations-section" />

@@ -1,0 +1,16 @@
+---
+// svg Components
+import { StarIcon } from "../../assets/icons";
+---
+
+<div class="stars">
+  {Array.from({ length: 5 }, () => <StarIcon />)}
+</div>
+
+<style>
+  .stars {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+  }
+</style>

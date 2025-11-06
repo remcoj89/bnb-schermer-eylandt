@@ -1,0 +1,41 @@
+---
+// Astro Assets
+import { Image } from "astro:assets";
+// PageData
+const { componentContent } = Astro.props;
+---
+
+<div class="author-wrapper">
+  <Image
+    src={componentContent.avatar.imageUrl}
+    alt={componentContent.avatar.altText}
+    width={150}
+    height={150}
+  />
+
+  <div>
+    <h4>{componentContent.author}</h4>
+    <span>{componentContent.date}</span>
+  </div>
+</div>
+
+<style>
+  .author-wrapper {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: var(--size-1);
+    text-align: left;
+
+    h4 {
+      font-size: var(--fs-500);
+    }
+
+    img {
+      border-radius: var(--border-radius-full);
+      width: 7.5rem;
+      height: 7.5rem;
+      object-fit: cover;
+    }
+  }
+</style>

@@ -1,15 +1,13 @@
 ---
-// svg Components
-import { StarIcon } from "../../assets/icons";
+// Components
+import FiveStars from "../../components/global/fiveStars.astro";
 // Page Data
 const { sectionContent, sectionId } = Astro.props;
 ---
 
 <section>
   <div class="wrapper review">
-    <div class="stars">
-      {Array.from({ length: 5 }, () => <StarIcon />)}
-    </div>
+    <FiveStars />
     <p>"{sectionContent.quote}"</p>
     <span>- {sectionContent.author}</span>
   </div>
@@ -29,12 +27,6 @@ const { sectionContent, sectionId } = Astro.props;
       justify-content: center;
       gap: var(--size-3);
       text-align: center;
-
-      .stars {
-        display: flex;
-        gap: 0.5rem;
-        justify-content: center;
-      }
 
       p {
         font-size: var(--fs-600);

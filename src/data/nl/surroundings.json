@@ -114,9 +114,24 @@
       "rating": 5
     }
   },
-  "guest_experience": {
-    "quote": "We konden overal heen: strand, Amsterdam, Texel — en elke avond terug naar de rust van Schermerhorn.",
-    "author": "David ★ 5 / 5"
+  "guestExperience": {
+    "quote": "Ideale uitvalsbasis om Noord-Holland te verkennen. De ligging is perfect - rustig gelegen maar toch dicht bij alle bezienswaardigheden. We hebben genoten van de fietstochten door de polder en het bezoek aan Alkmaar",
+    "avatar" :{
+      "imageUrl": "/assets/images/bas-linda-evi.png",
+      "altText": "airbnb profiel foto van David"
+    },
+    "author": "Georgina",
+    "date": "September 2024"
+  },
+  "guestExperienceWithBgImage": {
+    "quote": "Elke avond terug naar de rust van Schermerhorn",
+    "text": "Na een dag vol ontdekkingen keer je terug naar je eigen rustige plekje in de polder. Hier vind je de perfecte balans tussen avontuur en ontspanning.",
+    "avatar" :{
+      "imageUrl": "/assets/images/bas-linda-evi.png",
+      "altText": "airbnb profiel foto van David"
+    },
+    "author": "David",
+    "date": "September 2024"
   },
   "cta": {
     "title": "Boek jouw verblijf",

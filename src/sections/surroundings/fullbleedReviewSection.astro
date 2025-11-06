@@ -1,10 +1,40 @@
 ---
+// SVG Icons
+import { QuoteIcon } from "../../assets/icons";
+import CustomerAvatar from "../../components/global/customerAvatar.astro";
 // page Data
-const { pageContent, sectionId } = Astro.props;
+const { sectionContent, sectionId } = Astro.props;
 ---
 
 <section id={sectionId}>
-  <div class="wrapper">
-    <h2>Full width review met fullbleed achtergrond foto</h2>
+  <div class="wrapper customer-experiance-wrapper">
+    <QuoteIcon />
+    <h2>"{sectionContent.quote}"</h2>
+    <p>{sectionContent.text}</p>
+    <CustomerAvatar componentContent={sectionContent} />
   </div>
 </section>
+
+<style>
+  section {
+    background: linear-gradient(
+        hsl(168, 12%, 51%, 75%),
+        hsl(168, 12%, 51%, 75%)
+      ),
+      url("/assets/images/schermer-molens.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    padding-block: var(--size-10);
+    .customer-experiance-wrapper {
+      align-items: center;
+      color: var(--clr-warm-sand);
+      display: flex;
+      flex-direction: column;
+      gap: var(--size-4);
+      justify-content: center;
+      text-align: center;
+    }
+  }
+</style>
