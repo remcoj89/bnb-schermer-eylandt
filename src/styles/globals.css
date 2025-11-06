@@ -48,12 +48,14 @@
 
   /* Colors */
   --clr-light-gray: hsl(220, 13%, 91%);
+  --clr-gray: hsl(0, 0%, 29%, 50%);
   --clr-dark-gray: hsl(0, 0%, 29%);
   --clr-darker-gray: hsl(0, 0%, 15%);
   --clr-gold: hsl(36, 46%, 69%);
   --clr-gold-dark: hsl(36, 96%, 41%);
   --clr-green-blue: hsl(168, 12%, 51%);
-  --clr-warm-sand-transparend: hsla(40, 36%, 95%, 0.8);
+  --clr-warm-sand-transparend: hsla(40, 36%, 95%, 0.5);
+  --clr-warm-sand-navbar: hsla(40, 36%, 95%, 0.8);
   --clr-warm-sand: hsl(40, 36%, 95%);
   --clr-off-white: hsl(40, 24%, 98%);
   --clr-white: hsl(0, 0%, 100%);

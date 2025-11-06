@@ -116,7 +116,7 @@
   },
   "guestExperience": {
     "quote": "Ideale uitvalsbasis om Noord-Holland te verkennen. De ligging is perfect - rustig gelegen maar toch dicht bij alle bezienswaardigheden. We hebben genoten van de fietstochten door de polder en het bezoek aan Alkmaar",
-    "avatar" :{
+    "avatar": {
       "imageUrl": "/assets/images/bas-linda-evi.png",
       "altText": "airbnb profiel foto van David"
     },
@@ -126,7 +126,7 @@
   "guestExperienceWithBgImage": {
     "quote": "Elke avond terug naar de rust van Schermerhorn",
     "text": "Na een dag vol ontdekkingen keer je terug naar je eigen rustige plekje in de polder. Hier vind je de perfecte balans tussen avontuur en ontspanning.",
-    "avatar" :{
+    "avatar": {
       "imageUrl": "/assets/images/bas-linda-evi.png",
       "altText": "airbnb profiel foto van David"
     },
@@ -162,6 +162,54 @@
         "description": "Winterse wandelingen, warme kachel, en met geluk schaatsen op de bevroren kanalen "
       }
     ]
+  },
+  "recomodations": {
+    "title": "Onze persoonlijke aanbevelingen",
+    "subTitle": "Als locals delen we graag onze favorite plekjes en geheime tips met je",
+    "recomodationList": [
+      {
+        "iconUrl": "/assets/svgs/cutlery-icon.svg",
+        "iconStyle": "green-icon",
+        "title": "Restaurant 1612",
+        "description": "Uitstekend restaurant in de Beemster met verse, lokale ingrediënten. Perfect voor een romantisch diner na een dag vol ontdekkingen.",
+        "distance": "10 minuten rijden • €€€",
+        "distanceStyle": "green-text",
+        "link": {
+          "url": "https://www.restaurant-1612.nl/",
+          "target": "_blank"
+        }
+      },
+      {
+        "iconUrl": "/assets/svgs/cutlery-icon.svg",
+        "iconStyle": "gold-icon",
+        "title": "Fietsroute onder de zeespiegel",
+        "description": "Voor wie graag de omgeving op de fiets ontdekt, is de route Onder de Zeespiegel een echte aanrader. Je fietst ruim 50 kilometer langs molens, dijken en pittoreske dorpen als De Rijp en Oosthuizen, een prachtige tocht door het échte Hollandse polderlandschap.",
+        "distance": "55km fietsen • 3 uur",
+        "distanceStyle": "gold-text",
+        "link": {
+          "url": "https://www.fietsnetwerk.nl/fietsroutes/fietsroute-onder-de-zeespiegel",
+          "target": "_blank"
+        }
+      },
+      {
+        "iconUrl": "/assets/svgs/cutlery-icon.svg",
+        "iconStyle": "green-icon",
+        "title": "Museum molen",
+        "description": "Ontdek de Museummolen in Schermerhorn en beleef van dichtbij hoe de Nederlanders eeuwen geleden het water bedwongen. Een charmant uitje midden in het polderlandschap, op slechts een paar minuten van onze B&B.",
+        "distance": "1.5 km wandelen • • €€€",
+        "distanceStyle": "green-text",
+        "link": "https://www.museummolen.nl/"
+      }
+    ],
+    "practicalTips": {
+      "title": "Praktische tips",
+      "tips": [
+        "<strong>Fietsverhuur:</strong> Bij ons kan je gratis 2 fietsen lenen voor je verblijf",
+        "<strong>Parkeren:</strong> Gratis parkeren direct voor de deur",
+        "<strong>Supermarkt:</strong> De dichtstbijzijnde supermarkt vind je in Stompetoren, op ongeveer tien minuten rijden."
+      ],
+      "extraTip": "Check altijd het weer voordat je op pad gaat. De polder kan winderig zijn, dus neem een windjas mee!"
+    }
   },
   "cta": {
     "title": "Boek jouw verblijf",

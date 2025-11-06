@@ -21,7 +21,7 @@ const { sectionContent, sectionId } = Astro.props;
     <CardGrid cardStyle="small-cards">
       {
         sectionContent.seasons.map((season) => (
-          <Card >
+          <Card cardStyle="usp-card white-bg">
             <Icon iconStyle={season.iconStyle}>
               <Image
                 alt={`${season.icon} icon`}
@@ -30,9 +30,17 @@ const { sectionContent, sectionId } = Astro.props;
                 width={25}
               />
             </Icon>
+            <h3>{season.title}</h3>
+            <p>{season.description}</p>
           </Card>
         ))
       }
     </CardGrid>
   </div>
 </section>
+
+<style>
+  section {
+    background-color: var(--clr-warm-sand);
+  }
+</style>
