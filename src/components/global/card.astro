@@ -259,4 +259,27 @@ const { cardStyle = "", cardId = "" } = Astro.props;
     display: flex;
     gap: var(--size-4);
   }
+
+  .locations-card {
+    padding: unset;
+    overflow: hidden;
+    box-shadow: var(--box-shadow);
+
+    img {
+      object-fit: cover;
+      width: 100%;
+    }
+
+    div {
+      padding: var(--size-1);
+
+      h3 {
+        font-size: var(--fs-600);
+        display: flex;
+        align-items: center;
+        gap: var(--size-1);
+        margin-block-end: var(--size-1);
+      }
+    }
+  }
 </style>

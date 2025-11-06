@@ -51,7 +51,7 @@
         "iconUrl": "/assets/svgs/bike-icon.svg",
         "iconStyle": "green-icon",
         "image": {
-          "imageUrl": "",
+          "imageUrl": "/assets/images/wandelen-eilandspolder.webp",
           "altText": "foto van"
         },
         "title": "Fietsen door de polder",
@@ -61,7 +61,7 @@
         "iconUrl": "/assets/svgs/bike-icon.svg",
         "iconStyle": "gold-icon",
         "image": {
-          "imageUrl": "",
+          "imageUrl": "/assets/images/wandelen-eilandspolder.webp",
           "altText": "foto van"
         },
         "title": "Molens bezoeken",
@@ -71,7 +71,7 @@
         "iconUrl": "/assets/svgs/bike-icon.svg",
         "iconStyle": "green-icon",
         "image": {
-          "imageUrl": "",
+          "imageUrl": "/assets/images/wandelen-eilandspolder.webp",
           "altText": "foto van"
         },
         "title": "Varen op de kanalen",
@@ -81,17 +81,17 @@
         "iconUrl": "/assets/svgs/bike-icon.svg",
         "iconStyle": "gold-icon",
         "image": {
-          "imageUrl": "",
+          "imageUrl": "/assets/images/wandelen-eilandspolder.webp",
           "altText": "foto van"
         },
         "title": "Ontdek de cultuur en historie",
-        "description": "Van musea in Alkmaar tot de Zaanse Schans — alles is dichtbij, maar ver weg van de drukte."
+        "description": "Van musea in Alkmaar tot de Zaanse Schans, alles is dichtbij, maar ver weg van de drukte."
       },
       {
         "iconUrl": "/assets/svgs/bike-icon.svg",
         "iconStyle": "green-icon",
         "image": {
-          "imageUrl": "",
+          "imageUrl": "/assets/images/wandelen-eilandspolder.webp",
           "altText": "foto van"
         },
         "title": "Kaasmarkt Alkmaar",
@@ -101,7 +101,7 @@
         "iconUrl": "/assets/svgs/bike-icon.svg",
         "iconStyle": "gold-icon",
         "image": {
-          "imageUrl": "",
+          "imageUrl": "/assets/images/wandelen-eilandspolder.webp",
           "altText": "foto van"
         },
         "title": "Dagje strand",
@@ -111,7 +111,7 @@
     "testimonial": {
       "quote": "Ideale uitvalsbasis om Noord-Holland te verkennen.",
       "author": "Georgina",
-      "rating": "⭐⭐⭐⭐⭐"
+      "rating": 5
     }
   },
   "guest_experience": {
