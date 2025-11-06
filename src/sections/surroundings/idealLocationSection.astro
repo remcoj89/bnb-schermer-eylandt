@@ -1,11 +1,115 @@
 ---
-
+// Astro Assets
+import { Image } from "astro:assets";
+// Components
+import SectionTitle from "../../components/global/sectionTitle.astro";
+import Icon from "../../components/global/icon.astro";
 // page Data
-const {pageContent, sectionId} = Astro.props
+const { sectionContent, sectionId } = Astro.props;
 ---
 
-<section id{sectionId}>
+<section id={sectionId}>
   <div class="wrapper">
-    <h2>Ideale Ligging</h2>
+    <SectionTitle
+      headerStyle="text-center"
+      sectionTitle={sectionContent.title}
+      subTitle={sectionContent.description}
+    />
+
+    <div class="flex-box">
+      <picture>
+        <Image
+          src={sectionContent.sectionImage.imageUrl}
+          alt={sectionContent.sectionImage.altText}
+          width={500}
+          height={500}
+        />
+
+        <label class="label">
+          <h3>{sectionContent.label.title}</h3>
+          <span>{sectionContent.label.text}</span>
+        </label>
+      </picture>
+
+      <ul class="highlights" role="list">
+        {
+          sectionContent.locations.map((location) => (
+            <li>
+              <Icon iconStyle={location.iconStyle}>
+                <Image src={location.icon} alt="" width={25} height={25} />
+              </Icon>
+
+              <div>
+                <h3>{location.title}</h3>
+                <span>{location.description}</span>
+              </div>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
   </div>
 </section>
+
+<style>
+  .flex-box {
+    align-items: center;
+    display: flex;
+    gap: var(--size-4);
+    justify-content: space-between;
+    margin-block-start: var(--size-10);
+
+    picture {
+      background-color: var(--clr-warm-sand);
+      border-radius: var(--border-radius-card-big);
+      box-shadow: var(--box-shadow-light);
+      padding: var(--size-3);
+      position: relative;
+
+      img {
+        object-fit: cover;
+      }
+
+      .label {
+        background-color: var(--clr-off-white);
+        border-radius: var(--border-radius-card);
+        box-shadow: var(--box-shadow-light);
+        inset-block-start: var(--size-5);
+        inset-inline: var(--size-6) auto;
+        padding: var(--size-1);
+        position: absolute;
+
+        h3 {
+          font-size: var(--fs-500);
+        }
+      }
+    }
+
+    picture,
+    picture > img {
+      border-radius: var(--border-radius-card-big);
+      width: 100%;
+    }
+
+    .highlights {
+      display: flex;
+      flex-direction: column;
+      gap: var(--size-2);
+      width: 100%;
+
+      li {
+        padding: var(--size-1);
+        display: flex;
+        align-items: center;
+        background-color: var(--clr-warm-sand);
+        border-radius: var(--border-radius-card);
+
+        gap: var(--size-1);
+
+        h3 {
+          font-size: var(--fs-600);
+        }
+      }
+    }
+  }
+</style>

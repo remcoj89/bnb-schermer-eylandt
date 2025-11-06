@@ -36,6 +36,7 @@
   /* Border Radius */
   --border-radius-btn: 500vw;
   --border-radius-card: 8px;
+  --border-radius-card-big: 24px;
   --border-radius-full: 100%;
   --border-radius-img: 8px;
   --border-radius-input-field: 4px;

@@ -2,54 +2,117 @@
   "page_title": "Ontdek Noord-Holland",
   "hero": {
     "headline": "Het echte Holland, midden in de natuur",
-    "paragraph": "Vanuit onze bed & breakfast stap je zo het echte Holland in: weidse uitzichten, oude molens en smalle dijkweggetjes die je leiden naar charmante dorpjes en het strand. Hier ervaar je nog de rust van het platteland — zonder ver van alles te zijn.",
+    "paragraph": "Vanuit onze bed & breakfast stap je zo het echte Holland in: weidse uitzichten, oude molens en smalle dijkweggetjes die je leiden naar charmante dorpjes en het strand. Hier ervaar je nog de rust van het platteland, zonder ver van alles te zijn.",
+    "backgroundImage": "/assets/images/schermer-molens.webp"
+  },
+  "idealLocationSection": {
+    "title": "Ideale ligging",
+    "description": "Geniet van de rust van het platteland, terwijl de mooiste plekken van Noord-Holland binnen handberijk zijn",
+    "sectionImage": {
+      "imageUrl": "/assets/images/kaart-buurt-schermerhorn-alkmaar.webp",
+      "altText": "Schermerhorn op de kaart"
+    },
+    "label": {
+      "title": "Schermer Eylandt",
+      "text": "Jouw rustpunt"
+    },
+    "locations": [
+      {
+        "icon": "/assets/svgs/bike-icon.svg",
+        "iconStyle": "green-icon",
+        "title": "Alkmaar ",
+        "description": "15 minuten rijden"
+      },
+      {
+        "icon": "/assets/svgs/bike-icon.svg",
+        "iconStyle": "gold-icon",
+        "title": "Stand Bergen aan Zee",
+        "description": "30 minuten rijden"
+      },
+      {
+        "icon": "/assets/svgs/bike-icon.svg",
+        "iconStyle": "green-icon",
+        "title": "Amsterdam",
+        "description": "35 minuten rijden"
+      },
+      {
+        "icon": "/assets/svgs/bike-icon.svg",
+        "iconStyle": "gold-icon",
+        "title": "Texel (veerboot)",
+        "description": "50 minuten rijden"
+      }
+    ]
+  },
+  "experiences": {
+    "title": "Activiteiten & bezienswaardigheden",
+    "description": "Van historische molens tot bruisende markten, van natuurwandelingen tot culturele uitjes",
+    "items": [
+      {
+        "iconUrl": "/assets/svgs/bike-icon.svg",
+        "iconStyle": "green-icon",
+        "image": {
+          "imageUrl": "",
+          "altText": "foto van"
+        },
+        "title": "Fietsen door de polder",
+        "description": "Ontdek de Schermerpolder op de fiets. Geniet van eindeloze vergezichten, molens en authentieke Nederlandse landschappen."
+      },
+      {
+        "iconUrl": "/assets/svgs/bike-icon.svg",
+        "iconStyle": "gold-icon",
+        "image": {
+          "imageUrl": "",
+          "altText": "foto van"
+        },
+        "title": "Molens bezoeken",
+        "description": "Bezoek de historische museum molen van Schermerhorn en leer over de rijke geschiedenis van de Nederlandse waterbeheersing."
+      },
+      {
+        "iconUrl": "/assets/svgs/bike-icon.svg",
+        "iconStyle": "green-icon",
+        "image": {
+          "imageUrl": "",
+          "altText": "foto van"
+        },
+        "title": "Varen op de kanalen",
+        "description": "Huur een bootje of sluit je aan bij een rondvaart door de karakteristieke kanalen en vaarten van de regio."
+      },
+      {
+        "iconUrl": "/assets/svgs/bike-icon.svg",
+        "iconStyle": "gold-icon",
+        "image": {
+          "imageUrl": "",
+          "altText": "foto van"
+        },
+        "title": "Ontdek de cultuur en historie",
+        "description": "Van musea in Alkmaar tot de Zaanse Schans — alles is dichtbij, maar ver weg van de drukte."
+      },
+      {
+        "iconUrl": "/assets/svgs/bike-icon.svg",
+        "iconStyle": "green-icon",
+        "image": {
+          "imageUrl": "",
+          "altText": "foto van"
+        },
+        "title": "Kaasmarkt Alkmaar",
+        "description": "Ervaar de wereldberoemde kaasmarkt van Alkmaar, een eeuwenoude traditie die nog steeds wekelijks plaatsvindt."
+      },
+      {
+        "iconUrl": "/assets/svgs/bike-icon.svg",
+        "iconStyle": "gold-icon",
+        "image": {
+          "imageUrl": "",
+          "altText": "foto van"
+        },
+        "title": "Dagje strand",
+        "description": "Geniet van de frisse zeelucht aan het strand van Bergen aan Zee of Egmond aan Zee, beide op korte rijafstand."
+      }
+    ],
     "testimonial": {
       "quote": "Ideale uitvalsbasis om Noord-Holland te verkennen.",
       "author": "Georgina",
       "rating": "⭐⭐⭐⭐⭐"
     }
-  },
-  "highlights": [
-    {
-      "icon": "📍",
-      "title": "Alkmaar – 15 min",
-      "description": "🧀 Kaasmarkt & historische binnenstad"
-    },
-    {
-      "icon": "🌊",
-      "title": "Strand – 30 min",
-      "description": "🏖 Schoorl, Bergen of Egmond aan Zee"
-    },
-    {
-      "icon": "🏙",
-      "title": "Amsterdam – 35 min",
-      "description": "🚆 Gemakkelijk bereikbaar met de auto of trein"
-    }
-  ],
-  "experiences": {
-    "title": "Belevenissen in de omgeving",
-    "items": [
-      {
-        "icon": "🚲",
-        "title": "Fiets tussen de molens van de Schermer",
-        "description": "De polders zijn gemaakt voor fietsliefhebbers. Geniet van de rust, het weidse uitzicht en de typische Hollandse luchten."
-      },
-      {
-        "icon": "🧀",
-        "title": "Bezoek de kaasmarkt van Alkmaar",
-        "description": "Elke vrijdag verandert het Waagplein in een bruisend spektakel van geur, kleur en traditie."
-      },
-      {
-        "icon": "🏖",
-        "title": "Een dagje strand of varen in De Rijp",
-        "description": "Combineer een middag zon of water met een gezellig etentje in een historisch dorp."
-      },
-      {
-        "icon": "🎨",
-        "title": "Ontdek de cultuur en historie",
-        "description": "Van musea in Alkmaar tot de Zaanse Schans — alles is dichtbij, maar ver weg van de drukte."
-      }
-    ]
   },
   "guest_experience": {
     "quote": "We konden overal heen: strand, Amsterdam, Texel — en elke avond terug naar de rust van Schermerhorn.",

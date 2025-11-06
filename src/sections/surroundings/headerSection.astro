@@ -1,9 +1,45 @@
 ---
+// Components
+import Button from "../../components/global/buttons.astro";
 
+// SVG Icon
+import { OutBountIcon } from "../../assets/icons";
+// page Data
+const { sectionContent, sectionId } = Astro.props;
 ---
 
-<header>
-  <div class="wrapper">
-    <h1>Omgeving</h1>
+<header id={sectionId}>
+  <div class="wrapper hero-wrapper">
+    <h1>{sectionContent.headline}</h1>
+    <p>{sectionContent.paragraph}</p>
+    <Button buttonStyle="gold">Boek via Airbnb<OutBountIcon /></Button>
   </div>
 </header>
+
+<style>
+  header {
+    align-items: center;
+    background-image: url("/assets/images/surroundings-hero.png");
+    background-image: url("/assets/images/schermerhorn-north-holland.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--clr-warm-sand);
+    display: grid;
+    height: 75vh;
+
+    .hero-wrapper {
+      -webkit-backdrop-filter: blur(5px);
+      align-items: center;
+      backdrop-filter: blur(2px);
+      background: rgba(38, 38, 38, 0.18);
+      border-radius: var(--border-radius-card);
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      gap: var(--size-2);
+      justify-content: center;
+      padding: var(--size-5);
+    }
+  }
+</style>
