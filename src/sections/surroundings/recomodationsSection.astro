@@ -2,8 +2,9 @@
 // Astro Assets
 import { Image } from "astro:assets";
 // Components
-import SectionTitle from "../../components/global/sectionTitle.astro";
+import FlexSection from "../../components/global/flex-section.astro";
 import Icon from "../../components/global/icon.astro";
+import SectionTitle from "../../components/global/sectionTitle.astro";
 
 // page Data
 const { sectionContent, sectionId } = Astro.props;
@@ -17,7 +18,7 @@ const { sectionContent, sectionId } = Astro.props;
       headerStyle="text-center"
     />
 
-    <div class="flex-container">
+    <FlexSection>
       <ul class="recomodations-list" role="list">
         {
           sectionContent.recomodationList.map((recomodation: any) => (
@@ -60,89 +61,84 @@ const { sectionContent, sectionId } = Astro.props;
         <div class="breaker"></div>
         <p>{sectionContent.practicalTips.extraTip}</p>
       </div>
-    </div>
+    </FlexSection>
   </div>
 </section>
 
 <style>
-  .flex-container {
-    display: flex;
-    gap: var(--size-3);
+  .recomodations-list {
+    width: 75%;
 
-    .recomodations-list {
-      width: 75%;
-
-      li,
-      a {
-        max-width: unset;
-      }
-
-      li:not(:last-child) {
-        margin-block-end: var(--size-2);
-      }
-
-      li > a {
-        background-color: var(--clr-warm-sand-transparend);
-
-        border-radius: var(--border-radius-card);
-        display: flex;
-        gap: var(--size-1);
-        padding: var(--size-1);
-        transition: transform 0.4s ease-in-out;
-
-        h3 {
-          font-size: var(--fs-500);
-          margin-block-end: var(--size-1);
-        }
-
-        .green-text {
-          color: var(--clr-green-blue);
-        }
-        .gold-text {
-          color: var(--clr-gold);
-        }
-
-        &:hover,
-        &:focus {
-          transform: scale(1.05);
-          background-color: var(--clr-warm-sand);
-        }
-      }
+    li,
+    a {
+      max-width: unset;
     }
 
-    .practical-tips {
-      align-items: flex-start;
-      background-color: var(--clr-warm-sand);
+    li:not(:last-child) {
+      margin-block-end: var(--size-2);
+    }
+
+    li > a {
+      background-color: var(--clr-warm-sand-transparend);
+
       border-radius: var(--border-radius-card);
       display: flex;
-      flex-direction: column;
       gap: var(--size-1);
-      padding: var(--size-2);
+      padding: var(--size-1);
+      transition: transform 0.4s ease-in-out;
 
       h3 {
-        font-size: var(--fs-600);
+        font-size: var(--fs-500);
+        margin-block-end: var(--size-1);
       }
 
-      .breaker {
-        background-color: var(--clr-gray);
-        height: 1px;
-        border-radius: var(--border-radius-full);
-        width: 100%;
+      .green-text {
+        color: var(--clr-green-blue);
+      }
+      .gold-text {
+        color: var(--clr-gold);
       }
 
-      ul {
-        li {
-          padding-inline-start: var(--size-1);
+      &:hover,
+      &:focus {
+        transform: scale(1.05);
+        background-color: var(--clr-warm-sand);
+      }
+    }
+  }
 
-          &:not(:last-child) {
-            margin-block-end: var(--size-1);
-          }
+  .practical-tips {
+    align-items: flex-start;
+    background-color: var(--clr-warm-sand);
+    border-radius: var(--border-radius-card);
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-1);
+    padding: var(--size-2);
+
+    h3 {
+      font-size: var(--fs-600);
+    }
+
+    .breaker {
+      background-color: var(--clr-gray);
+      height: 1px;
+      border-radius: var(--border-radius-full);
+      width: 100%;
+    }
+
+    ul {
+      li {
+        padding-inline-start: var(--size-1);
+
+        &:not(:last-child) {
+          margin-block-end: var(--size-1);
         }
-        li::marker {
-          content: "✓";
-          font-weight: var(--fw-bold);
-          color: var(--clr-green-blue);
-        }
+      }
+      li::marker {
+        content: "✓";
+        font-weight: var(--fw-bold);
+        color: var(--clr-green-blue);
       }
     }
   }

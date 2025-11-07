@@ -168,9 +168,7 @@ h6 {
   font-size: var(--fs-800);
 }
 
-p,
-li,
-figcaption {
+p {
   text-wrap: pretty;
   max-width: 65ch;
 }

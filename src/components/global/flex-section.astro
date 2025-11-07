@@ -1,0 +1,25 @@
+---
+// flex setting
+const {alignment = ""} = Astro.props
+---
+
+<div class={`flex-section ${alignment}`}>
+  <slot />
+</div>
+
+<style>
+  .flex-section {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-5);
+    margin-block-start: var(--size-10);
+    
+    @media (width >= 800px) {
+        flex-direction: row;
+    }
+}
+
+.flex-align-center {
+    align-items: center;
+  }
+</style>

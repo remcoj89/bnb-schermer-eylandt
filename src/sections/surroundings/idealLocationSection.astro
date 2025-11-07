@@ -4,6 +4,7 @@ import { Image } from "astro:assets";
 // Components
 import SectionTitle from "../../components/global/sectionTitle.astro";
 import Icon from "../../components/global/icon.astro";
+import FlexSection from "../../components/global/flex-section.astro";
 // page Data
 const { sectionContent, sectionId } = Astro.props;
 ---
@@ -16,7 +17,7 @@ const { sectionContent, sectionId } = Astro.props;
       subTitle={sectionContent.description}
     />
 
-    <div class="flex-box">
+    <FlexSection alignment="flex-align-center">
       <picture>
         <Image
           src={sectionContent.sectionImage.imageUrl}
@@ -33,7 +34,7 @@ const { sectionContent, sectionId } = Astro.props;
 
       <ul class="highlights" role="list">
         {
-          sectionContent.locations.map((location) => (
+          sectionContent.locations.map((location: any) => (
             <li>
               <Icon iconStyle={location.iconStyle}>
                 <Image src={location.icon} alt="" width={25} height={25} />
@@ -46,69 +47,68 @@ const { sectionContent, sectionId } = Astro.props;
             </li>
           ))
         }
-      </ul>
-    </div>
+      </ul></FlexSection
+    >
   </div>
 </section>
 
 <style>
-  .flex-box {
-    align-items: center;
-    display: flex;
-    gap: var(--size-4);
-    justify-content: space-between;
-    margin-block-start: var(--size-10);
+  picture {
+    background-color: var(--clr-warm-sand);
+    border-radius: var(--border-radius-card-big);
+    box-shadow: var(--box-shadow-light);
+    flex: 1;
+    min-width: 0;
+    padding: var(--size-3);
+    position: relative;
+    width: 100%;
 
-    picture {
-      background-color: var(--clr-warm-sand);
-      border-radius: var(--border-radius-card-big);
+    img {
+      object-fit: cover;
+    }
+
+    .label {
+      background-color: var(--clr-off-white);
+      border-radius: var(--border-radius-card);
       box-shadow: var(--box-shadow-light);
-      padding: var(--size-3);
-      position: relative;
+      inset-block-start: var(--size-5);
+      inset-inline: var(--size-6) auto;
+      padding: var(--size-1);
+      position: absolute;
 
-      img {
-        object-fit: cover;
-      }
-
-      .label {
-        background-color: var(--clr-off-white);
-        border-radius: var(--border-radius-card);
-        box-shadow: var(--box-shadow-light);
-        inset-block-start: var(--size-5);
-        inset-inline: var(--size-6) auto;
-        padding: var(--size-1);
-        position: absolute;
-
-        h3 {
-          font-size: var(--fs-500);
-        }
+      h3 {
+        font-size: var(--fs-500);
       }
     }
+  }
 
-    picture,
-    picture > img {
-      border-radius: var(--border-radius-card-big);
-      width: 100%;
-    }
+  picture,
+  picture > img {
+    border-radius: var(--border-radius-card-big);
+    width: 100%;
+  }
 
-    .highlights {
+  .highlights {
+    display: block;
+    flex: 1;
+    min-width: 0;
+    width: 100%;
+
+    li {
+      align-items: center;
+      background-color: var(--clr-warm-sand);
+      border-radius: var(--border-radius-card);
       display: flex;
-      flex-direction: column;
-      gap: var(--size-2);
+      gap: var(--size-1);
+      padding: var(--size-1);
       width: 100%;
 
-      li {
-        padding: var(--size-1);
-        display: flex;
-        align-items: center;
-        background-color: var(--clr-warm-sand);
-        border-radius: var(--border-radius-card);
+      h3 {
+        font-size: var(--fs-600);
+      }
 
-        gap: var(--size-1);
-
-        h3 {
-          font-size: var(--fs-600);
-        }
+      &:not(:last-child) {
+        margin-block-end: var(--size-2);
       }
     }
   }

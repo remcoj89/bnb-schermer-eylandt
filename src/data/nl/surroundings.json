@@ -211,6 +211,55 @@
       "extraTip": "Check altijd het weer voordat je op pad gaat. De polder kan winderig zijn, dus neem een windjas mee!"
     }
   },
+  "bestTimeToVisit": {
+    "title": "Beste tijden om te bezoeken",
+    "subTitle": "Plan je verblijf optimaal met onze lokale kennis over weer en seizoenen",
+    "climateAndWeather": {
+      "title": "Klimaat & weer",
+      "list": [
+        {
+          "title": "Gemiddelde temeratruur",
+          "iconUrl": "/assets/svgs/temprature-icon-green.svg",
+          "text": "Lente: 12-16°C • Zomer: 20-23°C <br> Herfts: 14-18°C • Winter: 5-8°C"
+        },
+        {
+          "title": "Neerslag",
+          "iconUrl": "/assets/svgs/rain-cloud-icon-green.svg",
+          "text": "Droogste maanden: april, mei, juli <br> Natse maanden: oktober, november"
+        },
+        {
+          "title": "Wind",
+          "iconUrl": "/assets/svgs/wind-icon-green.svg",
+          "text": "De polder kan winderig zijn, vooral in de herst en winter <br> Ideaal voor kitesurfenn aan de kust!"
+        }
+      ]
+    },
+    "seasonActivities": {
+      "title": "Seizoen activiteiten",
+      "list": [
+        {
+          "title": "Maart - mei",
+          "borderStyle": "green-blue",
+          "text": "Bollenvelden in bloei, lammetjes, perfecte fietstemperaturen. Minder druk bij attracties."
+        },
+        {
+          "title": "Juni - Augustus",
+          "borderStyle": "gold",
+          "text": "Hoogseizoen: lange dagen, warm weer, alle attracties open. Ideaal voor strandbezoeken."
+        },
+        {
+          "title": "September - November",
+          "borderStyle": "green-blue",
+          "text": "Herfstsfeer, minder drukte, mooie kleuren. Gezellig seizoen voor binnen activiteiten."
+        },
+        {
+          "title": "December - Februari",
+          "borderStyle": "gold",
+          "text": "Winterse rust, kans op ijs en sneeuw. Gezellige kerstmarkten in Alkmaar."
+        }
+      ]
+    }
+  },
   "cta": {
     "title": "Boek jouw verblijf",
     "description": "Klaar om het echte Noord-Holland te ervaren? Laat de drukte achter je en ontdek hoe heerlijk het is om weer even écht stil te staan.",

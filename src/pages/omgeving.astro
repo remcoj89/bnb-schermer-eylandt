@@ -42,8 +42,11 @@ import data from "../data/nl/surroundings.json";
     sectionContent={data.recomodations}
     sectionId="recomodations-section"
   />
-  <ExplorationSection sectionId="recomodations-section" />
-  <BestTimeToVisitSection sectionId="best-time-to-visit-section" />
+  <!-- <ExplorationSection sectionId="recomodations-section" /> -->
+  <BestTimeToVisitSection
+    sectionContent={data.bestTimeToVisit}
+    sectionId="best-time-to-visit-section"
+  />
   <LastCallCtaSection sectionId="last-call-cta-section" />
   <DarkFooter />
 </Layout>

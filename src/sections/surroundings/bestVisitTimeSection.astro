@@ -1,10 +1,107 @@
 ---
+// Astro asstets
+import { Image } from "astro:assets";
+// Components
+import SectionTitle from "../../components/global/sectionTitle.astro";
+import FlexSection from "../../components/global/flex-section.astro";
 // page Data
-const { pageContent, sectionId } = Astro.props;
+const { sectionContent, sectionId } = Astro.props;
 ---
 
 <section id={sectionId}>
   <div class="wrapper">
-    <h2>Best time to visit Section</h2>
+    <SectionTitle
+      sectionTitle={sectionContent.title}
+      subTitle={sectionContent.subTitle}
+      headerStyle="text-center"
+    />
+
+    <FlexSection>
+      <div class="climate-and-weather-wrapper">
+        <h3>{sectionContent.climateAndWeather.title}</h3>
+
+        <ul role="list">
+          {
+            sectionContent.climateAndWeather.list.map((item: any) => (
+              <li>
+                <div>
+                  <h4>{item.title}</h4>
+                  <span set:html={item.text} />
+                </div>
+                <Image src={item.iconUrl} alt="icon" width={25} height={25} />
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+
+      <div class="seasons-and-acitivities-wrapper">
+        <h3>{sectionContent.seasonActivities.title}</h3>
+        <ul role="list">
+          {
+            sectionContent.seasonActivities.list.map((item: any) => (
+              <li class={item.borderStyle}>
+                <h4>{item.title}</h4>
+                <span set:html={item.text} />
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+    </FlexSection>
   </div>
 </section>
+
+<style>
+
+
+    h3 {
+      font-size: var(--fs-700);
+      margin-block-end: var(--size-3);
+    }
+    h4 {
+      font-size: var(--fs-500);
+      margin-block-end: var(--size-1);
+    }
+
+    li:not(:last-child) {
+      margin-block-end: var(--size-1);
+    }
+
+    .climate-and-weather-wrapper {
+      width: 100%;
+      ul {
+        li {
+          align-items: flex-start;
+          background-color: var(--clr-warm-sand-transparend);
+          border-radius: var(--border-radius-card);
+          display: flex;
+          justify-content: space-between;
+          padding: var(--size-1);
+
+          img {
+            height: 25px;
+            width: 25px;
+          }
+        }
+      }
+    }
+
+    .seasons-and-acitivities-wrapper {
+      width: 100%;
+
+      ul {
+        li {
+          padding-inline-start: var(--size-3);
+        }
+
+        .gold {
+          border-left: solid 5px var(--clr-gold);
+        }
+        .green-blue {
+          border-left: solid 5px var(--clr-green-blue);
+        }
+      }
+    }
+
+</style>
