@@ -1,0 +1,95 @@
+---
+// Astro Assets
+import { Image } from "astro:assets";
+// Componenents
+import FlexSection from "../../components/global/flex-section.astro";
+import Card from "../../components/global/card.astro";
+
+// Data
+const { sectionContent, sectionId } = Astro.props;
+---
+
+<section id={sectionId}>
+  <div class="wrapper">
+    <FlexSection>
+      <article>
+        <h2>{sectionContent.title}</h2>
+        {sectionContent.paragraphs.map((p) => <p set:html={p} />)}
+        <div class="quote-card">
+          <quote>"{sectionContent.quote.text}"</quote>
+          <span>- {sectionContent.quote.author}</span>
+        </div>
+      </article>
+
+      <aside>
+        <Card cardStyle="wide-border-card-with-image">
+          <Image
+            height={250}
+            src={sectionContent.renovationImage.url}
+            width={250}
+            alt={sectionContent.renovationImage.altText}
+          />
+          <div class="card-text">
+            <h3>{sectionContent.renovationImage.title}</h3>
+            <p>{sectionContent.renovationImage.text}</p>
+          </div>
+        </Card>
+        <Card cardStyle="wide-border-card-with-image">
+          <Image
+            height={250}
+            src={sectionContent.areaImage.url}
+            width={250}
+            alt={sectionContent.areaImage.altText}
+          />
+          <div class="card-text">
+            <h3>{sectionContent.areaImage.title}</h3>
+            <p>{sectionContent.areaImage.text}</p>
+          </div>
+        </Card>
+      </aside>
+    </FlexSection>
+  </div>
+</section>
+
+<style>
+  section {
+    background-color: var(--clr-warm-sand);
+
+    article {
+      width: 70%;
+      h2 {
+        margin-block-end: var(--size-3);
+      }
+
+      p {
+        max-width: unset;
+      }
+
+      .quote-card {
+        padding-inline: var(--size-4);
+        padding-block: var(--size-2);
+        background-color: var(--clr-off-white);
+        margin-block-start: var(--size-3);
+        border: solid 1px var(--clr-gray);
+        border-radius: var(--border-radius-card-big);
+        box-shadow: var(--box-shadow-light);
+
+        quote {
+          font-size: var(--fs-600);
+        }
+
+        span {
+          padding-block-start: var(--size-2);
+          display: block;
+          color: var(--clr-green-blue);
+        }
+      }
+    }
+
+    aside {
+      display: grid;
+      gap: var(--size-3);
+      width: 30%;
+    }
+  }
+</style>

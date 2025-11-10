@@ -3,9 +3,18 @@
 import Layout from "../layouts/Layout.astro";
 import LightFooter from "../sections/global/light-footer.astro";
 // Sections
+import HeroSection from "../sections/aboutUs/heroSection.astro";
+import OurStorySection from "../sections/aboutUs/ourStorySection.astro";
+
+// pageData
+import pageData from "../data/nl/about-us.json";
 ---
 
 <Layout>
-  <h1>Over ons</h1>
+  <HeroSection sectionContent={pageData.intro} />
+  <OurStorySection
+    sectionContent={pageData.ourStory}
+    sectionId="our-story-section"
+  />
   <LightFooter />
 </Layout>

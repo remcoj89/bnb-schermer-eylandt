@@ -256,4 +256,22 @@ const { cardStyle = "", cardId = "" } = Astro.props;
       }
     }
   }
+
+  .wide-border-card-with-image {
+    display: grid;
+    gap: var(--size-2);
+
+    h3 {
+      font-size: var(--fs-600);
+      margin-block-end: var(--size-1);
+    }
+    img {
+      overflow: hidden;
+      border-radius: var(--border-radius-card);
+      height: var(--size-16);
+      object-fit: cover;
+      object-position: center;
+      width: 100%;
+    }
+  }
 </style>

@@ -1,0 +1,118 @@
+---
+// Astro Assets
+import { Image } from "astro:assets";
+// Components
+import FlexSection from "../../components/global/flex-section.astro";
+// Page Data
+const { sectionContent } = Astro.props;
+
+// SVG
+import goldenHart from "/assets/svgs/hart-icon-gold.svg?raw";
+
+// Logic
+const startDate = new Date("2023-07-01");
+const currentDate = new Date();
+
+const startYear = startDate.getFullYear();
+const currentYear = currentDate.getFullYear();
+const yearsActive = currentYear - startYear;
+---
+
+<header>
+  <div class="wrapper">
+    <FlexSection alignment="flex-align-center">
+      <div class="text-wrapper">
+        <h1>{sectionContent.headline}</h1>
+        <p>{sectionContent.paragraph_1}</p>
+        <label>
+          <div id="divider"></div>
+          <span>{sectionContent.paragraph_2}</span>
+        </label>
+      </div>
+      <picture>
+        <Image
+          alt={sectionContent.image.altText}
+          height={500}
+          src={sectionContent.image.url}
+          width={500}
+        />
+        <div id="sticker">
+          <Fragment set:html={goldenHart} />
+          <div id="sticker-text">
+            <span id="title">{yearsActive}+ {sectionContent.sticker.title}</span
+            >
+            <span id="text">{sectionContent.sticker.text}</span>
+          </div>
+        </div>
+      </picture>
+    </FlexSection>
+  </div>
+</header>
+
+<style>
+  header {
+    padding-block: var(--size-15) var(--size-11);
+
+    .text-wrapper {
+      display: grid;
+      gap: var(--size-2);
+      width: 100%;
+      h1 {
+        font-size: var(--fs-900);
+        line-height: 1;
+      }
+
+      label {
+        align-items: center;
+        color: var(--clr-green-blue);
+        display: flex;
+        gap: var(--size-1);
+
+        #divider {
+          background-color: var(--clr-green-blue);
+          height: 5px;
+          width: var(--size-7);
+        }
+      }
+    }
+
+    picture {
+      border-radius: var(--border-radius-card-big);
+      box-shadow: var(--box-shadow);
+      position: relative;
+      width: 100%;
+      z-index: 0;
+
+      img {
+        object-fit: cover;
+        border-radius: inherit;
+        object-position: center;
+        width: 100%;
+      }
+
+      #sticker {
+        align-items: center;
+        background-color: var(--clr-off-white);
+        border-radius: var(--border-radius-card);
+        bottom: -20px;
+        box-shadow: var(--box-shadow);
+        display: flex;
+        gap: var(--size-1);
+        left: -20px;
+        padding-block: var(--size-1);
+        padding-inline: var(--size-2);
+        position: absolute;
+        z-index: 1;
+
+        span {
+          display: block;
+        }
+
+        span#title {
+          font-weight: var(--fw-semi-bold);
+          font-size: var(--fs-500);
+        }
+      }
+    }
+  }
+</style>

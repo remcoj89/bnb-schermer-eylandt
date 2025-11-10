@@ -113,7 +113,7 @@
   --size-16: 25rem;
 
   /* Padding and Margin */
-   --padding-card: var(--size-3);
+   --padding-card: var(--size-2);
 }
 
 *,
@@ -197,5 +197,5 @@ img {
 }
 
 section {
-  padding-block: var(--size-15);
+  padding-block: var(--size-14);
 }
