@@ -37,6 +37,66 @@
       "altText": "Schermerhorn vanuit helikopter zicht"
     }
   },
+  "uspSection": {
+    "title": "Wat Schermer Eylandt bijzonder maakt",
+    "subTitle": "De elementen die onze plek haar eigen karakter en charme geven.",
+    "values": [
+      {
+        "iconColor": "green-blue",
+        "title": "Rust & Ruimte",
+        "text": "Midden in een klein dorpje, weg van de drukte, waar je echt kunt ontspannen"
+      },
+      {
+        "iconColor": "gold",
+        "title": "Gastvrijheid",
+        "text": "Persoonlijke ontvangst en aandacht voor elk detail van je verblijf"
+      },
+      {
+        "iconColor": "green-blue",
+        "title": "Authenticiteit",
+        "text": "Historisch pand midden in een pitoresk dorpje"
+      },
+      {
+        "iconColor": "gold",
+        "title": "Gastvrijheid",
+        "text": "Persoonlijke ontvangst en aandacht voor elk detail van je verblijf"
+      }
+    ]
+  },
+  "reviewSection": {
+    "title": "Wat onze gasten zeggen",
+    "subTitle": "Echte verhalen vanuit Airbnb van mensen die bij ons hebben verbleven",
+    "reviews": [
+      {
+        "author": {
+          "name": "Isablle",
+          "avatarUrl": "/assets/images/bas-linda-evi.png",
+          "altText": "profiel foto van"
+        },
+        "stars": 5,
+        "text": "Warm welkom met ontbijt en tips, Bas en Linda maken je verblijf echt bijzonder met hun persoonlijke aandacht."
+      },
+      {
+        "author": {
+          "name": "Kees",
+          "avatarUrl": "/assets/images/bas-linda-evi.png",
+          "altText": "profiel foto van"
+        },
+        "stars": 5,
+        "text": "Reageren supersnel en helpen direct. Service zoals je het wilt ervaren, professioneel en hartelijk."
+      },
+      {
+        "author": {
+          "name": "Sooyeong",
+          "avatarUrl": "/assets/images/bas-linda-evi.png",
+          "altText": "profiel foto van"
+        },
+        "stars": 5,
+        "text": "De vriendelijkste hosts die ik ooit heb ontmoet. Je voelt je meteen welkom en thuis"
+      }
+    ]
+  },
+
   "cta": {
     "title": "Voel je welkom bij ons",
     "text": "We nodigen je van harte uit om het zelf te ervaren. Laat de rust van de polder je omarmen, geniet van de ruimte, en voel je thuis bij Schermer Eylandt.",

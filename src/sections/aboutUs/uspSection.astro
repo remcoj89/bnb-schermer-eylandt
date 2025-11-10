@@ -1,0 +1,59 @@
+---
+// Components
+import CardGrid from "../../components/global/cardGrid.astro";
+import SectionTitle from "../../components/global/sectionTitle.astro";
+// Data
+const { sectionContent, sectionId } = Astro.props;
+---
+
+<section id={sectionId}>
+  <div class="wrapper">
+    <SectionTitle
+      sectionTitle={sectionContent.title}
+      subTitle={sectionContent.subTitle}
+      headerStyle="text-center"
+    />
+
+    <CardGrid cardStyle="small-cards">
+        {
+            sectionContent.values.map((value: any) => (
+                <div class="usp">
+                    <div class={`icon ${value.iconColor}`}></div>
+                    <h3>{value.title}</h3>
+                    <span>{value.text}</span>
+                </div>
+            ))
+        }
+    </CardGrid>
+  </div>
+</section>
+
+<style>
+
+.usp{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-1);
+    justify-content: flex-start;
+    text-align: center;
+
+    .icon {
+        height: 10rem;
+        width: 10rem;
+        border-radius: 100%;
+    }
+
+    .icon.gold {
+        background-color: var(--clr-gold);
+    }
+
+    .icon.green-blue {
+        background-color: var(--clr-green-blue);
+    }
+
+    h3 {
+        font-size: var(--fs-500);
+    }
+ }
+</style>

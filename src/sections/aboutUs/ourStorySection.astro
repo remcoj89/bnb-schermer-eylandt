@@ -14,7 +14,7 @@ const { sectionContent, sectionId } = Astro.props;
     <FlexSection>
       <article>
         <h2>{sectionContent.title}</h2>
-        {sectionContent.paragraphs.map((p) => <p set:html={p} />)}
+        {sectionContent.paragraphs.map((p: any) => <p set:html={p} />)}
         <div class="quote-card">
           <quote>"{sectionContent.quote.text}"</quote>
           <span>- {sectionContent.quote.author}</span>
@@ -66,22 +66,22 @@ const { sectionContent, sectionId } = Astro.props;
       }
 
       .quote-card {
-        padding-inline: var(--size-4);
-        padding-block: var(--size-2);
-        background-color: var(--clr-off-white);
-        margin-block-start: var(--size-3);
-        border: solid 1px var(--clr-gray);
+        background-color: var(--clr-warm-sand);
         border-radius: var(--border-radius-card-big);
+        border: solid 1px var(--clr-green-blue);
         box-shadow: var(--box-shadow-light);
+        margin-block-start: var(--size-3);
+        padding-block: var(--size-2);
+        padding-inline: var(--size-4);
 
         quote {
           font-size: var(--fs-600);
         }
 
         span {
-          padding-block-start: var(--size-2);
-          display: block;
           color: var(--clr-green-blue);
+          display: block;
+          padding-block-start: var(--size-2);
         }
       }
     }

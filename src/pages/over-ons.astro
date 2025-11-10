@@ -5,6 +5,8 @@ import LightFooter from "../sections/global/light-footer.astro";
 // Sections
 import HeroSection from "../sections/aboutUs/heroSection.astro";
 import OurStorySection from "../sections/aboutUs/ourStorySection.astro";
+import ReviewSection from "../sections/aboutUs/reviewSection.astro";
+import UspSection from "../sections/aboutUs/uspSection.astro";
 
 // pageData
 import pageData from "../data/nl/about-us.json";
@@ -15,6 +17,11 @@ import pageData from "../data/nl/about-us.json";
   <OurStorySection
     sectionContent={pageData.ourStory}
     sectionId="our-story-section"
+  />
+  <UspSection sectionContent={pageData.uspSection} sectionId="usp-section" />
+  <ReviewSection
+    sectionContent={pageData.reviewSection}
+    sectionId="review-section"
   />
   <LightFooter />
 </Layout>
