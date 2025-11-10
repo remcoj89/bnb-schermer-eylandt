@@ -28,6 +28,7 @@ const rel = isExternal && openInNewTab ? "noopener noreferrer" : undefined;
 
 <style>
   .btn {
+    align-items: center;
     border-radius: var(--border-radius-btn);
     cursor: pointer;
     display: flex;
@@ -37,8 +38,7 @@ const rel = isExternal && openInNewTab ? "noopener noreferrer" : undefined;
     padding: var(--size-1) var(--size-2);
     text-transform: capitalize;
     transition:
-      background-color 0.3s ease-in-out,
-      transform 0.3s ease-in-out;
+      all 0.3s ease-in-out;
     width: fit-content;
   }
 
@@ -98,6 +98,31 @@ const rel = isExternal && openInNewTab ? "noopener noreferrer" : undefined;
     &:hover,
     &:focus {
       background-color: var(--clr-warm-sand);
+    }
+  }
+
+  .btn.white-btn-green-text {
+    background-color: var(--clr-white);
+    border: solid 1px var(--clr-white);
+    color: var(--clr-green-blue);
+
+
+    &:hover,
+    &:focus {
+      background-color: transparent;
+      color: var(--clr-white);
+    }
+  }
+
+  .btn.white-btn-open {
+    background-color: transparent;
+    border: solid 1px var(--clr-white);
+    color: var(--clr-white);
+
+    &:hover,
+    &:focus {
+      background-color: var(--clr-white);
+      color: var(--clr-green-blue);
     }
   }
 </style>

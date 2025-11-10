@@ -1,10 +1,90 @@
 ---
+// Astro Assets
+import { Image } from "astro:assets";
+
+// Componenent
+import Button from "../../components/global/buttons.astro";
+import ButtonsWrapper from "../../components/global/buttonsWrapper.astro";
 // page Data
-const { pageContent, sectionId } = Astro.props;
+const { sectionContent, sectionId } = Astro.props;
+
+// Icons
+
+// import airBnbIcon from "/assets/svgs/newTabIcon.svg?raw";
+import airBnbIcon from "/assets/svgs/newTabIcon.svg?raw";
+import { useOptimistic } from "react";
 ---
 
 <section id={sectionId}>
-  <div class="wrapper">
-    <h2>Last calll CTA Section</h2>
+  <div class="wrapper cta-container">
+    <h2>{sectionContent.title}</h2>
+    <p set:html={sectionContent.description} />
+    <ButtonsWrapper>
+      <Button
+        buttonStyle={sectionContent.airBnbButton.btnStyle}
+        href={sectionContent.airBnbButton.btnUrl}
+        target={sectionContent.airBnbButton.target}
+        >{sectionContent.airBnbButton.btnText}
+
+        <Fragment set:html={airBnbIcon} />
+      </Button>
+      <Button
+        buttonStyle={sectionContent.contactButton.btnStyle}
+        href={sectionContent.contactButton.btnUrl}
+        >{sectionContent.contactButton.btnText}</Button
+      >
+    </ButtonsWrapper>
+    <div class="usp-wrapper">
+      {
+        sectionContent.usps.map((usp: any) => (
+          <div>
+            <span class="number">{usp.number}</span>
+            <span class="text">{usp.text}</span>
+          </div>
+        ))
+      }
+    </div>
   </div>
 </section>
+
+<style>
+  section {
+    background-image: linear-gradient(
+        90deg,
+        hsl(168, 12%, 51%, 75%),
+        hsl(36, 46%, 69%, 75%)
+      ),
+      url("/assets/images/sunset-mills.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .cta-container {
+      align-items: center;
+      color: var(--clr-off-white);
+      display: flex;
+      flex-direction: column;
+      gap: var(--size-3);
+      justify-content: center;
+      text-align: center;
+
+      .usp-wrapper {
+        display: flex;
+        gap: var(--size-6);
+
+        span {
+          display: block;
+          text-align: center;
+        }
+
+        span.number {
+          font-size: var(--fs-700);
+          line-height: 1.5;
+        }
+
+        span.text {
+          opacity: 0.85;
+        }
+      }
+    }
+  }
+</style>

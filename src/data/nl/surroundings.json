@@ -261,9 +261,33 @@
     }
   },
   "cta": {
-    "title": "Boek jouw verblijf",
-    "description": "Klaar om het echte Noord-Holland te ervaren? Laat de drukte achter je en ontdek hoe heerlijk het is om weer even écht stil te staan.",
-    "button": "Boek via Airbnb ↗"
+    "title": "Plan je verblijf en ontdek de rust van Schermer Eylandt",
+    "description": "Ervaar de perfecte combinatie van rust en avontuur. Boek nu je verblijf en laat je verassen door de schoonheid van Noord-Holland",
+    "airBnbButton": {
+      "btnText": "Boek via Airbnb",
+      "btnUrl": "https://www.airbnb.nl/rooms/934796483879606222",
+      "target": "_blank",
+      "btnStyle": "white-btn-green-text"
+    },
+    "contactButton": {
+      "btnText": "Stuur ons een bericht",
+      "btnUrl": "/contact",
+      "btnStyle": "white-btn-open"
+    },
+    "usps": [
+      {
+        "number": "2 - 4",
+        "text": "Personen"
+      },
+      {
+        "number": "4,98★",
+        "text": "Gemiddelde beoordeling"
+      },
+      {
+        "number": "150+",
+        "text": "Tevreden gasten"
+      }
+    ]
   },
   "seo": {
     "title": "Ontdek Noord-Holland – B&B Schermer Eylandt in Schermerhorn",
