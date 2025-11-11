@@ -4,9 +4,13 @@ import Layout from "../layouts/Layout.astro";
 import DarkFooter from "../sections/global/dark-footer.astro";
 
 // Sections
+
+// pageData
+import pageData from "../data/nl/contact.json";
+import HeroSection from "../sections/contact/heroSection.astro";
 ---
 
 <Layout>
-  <h1>Contact</h1>
+  <HeroSection sectionContent={pageData.intro} sectionId="hero-section"/>
   <DarkFooter />
 </Layout>

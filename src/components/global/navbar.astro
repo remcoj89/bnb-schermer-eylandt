@@ -81,16 +81,16 @@ import Button from "./buttons.astro";
 
         select {
           background-color: transparent;
-          cursor: pointer;
           border: 0;
-          padding-inline: var(--size-1) var(--size-2);
-          padding-block: 0.5rem;
+          cursor: pointer;
           height: fit-content;
           margin-block: auto;
+          outline: 0;
+          padding-block: 0.5rem;
 
-          &:focus,
-          &:active {
-            border: 0;
+          &:focus {
+            border: 1px solid var(--clr-dark-gray);
+            outline: 1;
           }
         }
       }

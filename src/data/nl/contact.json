@@ -1,12 +1,9 @@
 {
   "page_title": "Contact & Boeking",
   "intro": {
-    "headline": "Plan je verblijf — we horen graag van je",
-    "paragraph": "Wil je even helemaal weg uit de drukte? Of heb je een vraag over ons verblijf, de omgeving of beschikbaarheid? Je kunt ons altijd even een bericht sturen — we reageren meestal binnen een uur.",
-    "testimonial": {
-      "quote": "De communicatie was perfect, we kregen snel reactie.",
-      "author": "Kees ★ 5 / 5"
-    }
+    "headline": "Plan je verblijf",
+    "subTitle": "We horen graag van je",
+    "paragraph": "Wil je even helemaal weg uit de drukte? Of heb je een vraag over ons verblijf, de omgeving of beschikbaarheid? Je kunt ons altijd even een bericht sturen — we reageren meestal binnen 24 uur."
   },
   "contact_form": {
     "title": "Neem contact op",

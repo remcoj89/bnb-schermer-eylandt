@@ -1,0 +1,38 @@
+---
+// Data
+const { sectionContent, sectionId } = Astro.props;
+---
+
+<header id={sectionId}>
+  <div class="wrapper text-wrapper">
+    <h1>{sectionContent.headline}</h1>
+    <span>{sectionContent.subTitle}</span>
+    <p>{sectionContent.paragraph}</p>
+  </div>
+</header>
+
+<style>
+  header {
+    padding-block: var(--size-15) var(--size-11);
+
+    .text-wrapper {
+      display: grid;
+      gap: var(--size-2);
+      width: 100%;
+      text-align: center;
+      h1 {
+        font-size: var(--fs-900);
+        line-height: 1;
+      }
+
+      span {
+        color: var(--clr-green-blue);
+        font-size: var(--fs-500);
+      }
+
+      p {
+        margin-inline: auto;
+      }
+    }
+  }
+</style>
