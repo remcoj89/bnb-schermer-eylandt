@@ -1,0 +1,107 @@
+---
+// Astro Assets
+import { Image } from "astro:assets";
+// Components
+import FlexSection from "../../components/global/flex-section.astro";
+import Icon from "../../components/global/icon.astro";
+import SectionTitle from "../../components/global/sectionTitle.astro";
+
+// Data
+const { sectionContent, sectionId } = Astro.props;
+---
+
+<section id={sectionId}>
+  <div class="wrapper">
+    <FlexSection alignment="flex-align-center">
+      <article>
+        <SectionTitle
+          sectionTitle={sectionContent.title}
+          subTitle={sectionContent.text}
+        />
+        <ul role="list">
+          {
+            sectionContent.list.map((item: any) => (
+              <li>
+                <Icon iconStyle={item.iconStyle} />
+                <div>
+                  <h3>{item.title}</h3>
+                  <span>{item.text}</span>
+                </div>
+              </li>
+            ))
+          }
+        </ul>
+      </article>
+      <picture>
+        <Image
+          alt={sectionContent.image.altText}
+          height={500}
+          src={sectionContent.image.url}
+          width={500}
+        />
+        <div class="sticker">
+          <span class="title">{sectionContent.sticker.title}</span>
+          <span class="text">{sectionContent.sticker.text}</span>
+        </div>
+      </picture>
+    </FlexSection>
+  </div>
+</section>
+
+<style>
+  article,
+  picture {
+    width: 100%;
+  }
+
+  article {
+    ul {
+      display: grid;
+      gap: var(--size-2);
+
+      li {
+        display: flex;
+        gap: var(--size-1);
+
+        h3 {
+          font-size: var(--fs-600);
+        }
+      }
+    }
+  }
+
+  picture {
+    border-radius: var(--border-radius-card);
+    box-shadow: var(--box-shadow);
+    height: 50rem;
+    position: relative;
+
+    img {
+      border-radius: inherit;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      width: 100%;
+    }
+
+    .sticker {
+      background-color: var(--clr-off-white);
+      border-radius: var(--border-radius-card);
+      box-shadow: var(--box-shadow-light);
+      inset-block-start: var(--size-1);
+      inset-inline-end: var(--size-1);
+      padding: var(--size-1) var(--size-2);
+      position: absolute;
+
+      span {
+        display: block;
+      }
+      span.title {
+        font-size: var(--fs-600);
+        font-weight: var(--fw-semi-bold);
+        text-transform: uppercase;
+        font-family: var(--ff-header);
+      }
+    }
+  }
+</style>

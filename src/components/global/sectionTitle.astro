@@ -1,9 +1,9 @@
 ---
 // Data
-const { sectionTitle, subTitle = null, headerStyle = null } = Astro.props;
+const { sectionTitle, subTitle = null, headerStyle = null, textStyle = null } = Astro.props;
 ---
 
-<div class={headerStyle}>
+<div class={`${headerStyle} ${textStyle}`}>
   <h2>{sectionTitle}</h2>
   { subTitle && <span>{subTitle}</span> }
 </div>
@@ -22,6 +22,10 @@ const { sectionTitle, subTitle = null, headerStyle = null } = Astro.props;
 
   .on-dark-bg {
     color: var(--clr-dark-gray);
+  }
+
+  .white-text {
+    color: var(--clr-off-white)
   }
 
 </style>

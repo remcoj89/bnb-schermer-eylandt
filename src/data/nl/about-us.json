@@ -120,69 +120,166 @@
       "url": "/assets/images/bas-linda-evi.png",
       "altText": "Bas en Linda voor hun B&B"
     },
-    "sticker":  {
+    "sticker": {
       "title": "200+",
       "text": "Tevreden gasten"
     }
   },
   "amenitiesAndComfort": {
-  "title": "Voorzieningen & comfort",
-  "subTitle":"Alles wat je nodig hebt voor een perfect verblijf",
-  "list": [
-    {
-      "iconStyle": "green-icon",
-      "iconUrl": "/assets/svgs/wifi-icon.svg",
-      "title": "Snelle WIFI",
-      "text": "365 MB/s wifi"
-    },
-    {
-      "iconStyle": "gold-icon",
-      "iconUrl": "/assets/svgs/wifi-icon.svg",
-      "title": "Gratis Parkeren",
-      "text": "Direct voor de deur"
-    },
-    {
-      "iconStyle": "green-icon",
-      "iconUrl": "/assets/svgs/wifi-icon.svg",
-      "title": "Airconditioning",
-      "text": "Optimaal comfort"
-    },
-    {
-      "iconStyle": "gold-icon",
-      "iconUrl": "/assets/svgs/wifi-icon.svg",
-      "title": "Massage stoel",
-      "text": "Kom heerlijk tot rust"
-    },
-    {
-      "iconStyle": "green-icon",
-      "iconUrl": "/assets/svgs/wifi-icon.svg",
-      "title": "Keuken",
-      "text": "Volledig uitgerust"
-    },
-    {
-      "iconStyle": "gold-icon",
-      "iconUrl": "/assets/svgs/wifi-icon.svg",
-      "title": "Smart TV",
-      "text": "Netflix & streaming"
-    },
-    {
-      "iconStyle": "green-icon",
-      "iconUrl": "/assets/svgs/wifi-icon.svg",
-      "title": "Was/Droog machine",
-      "text": "Altijd schone kleding"
-    },
-    {
-      "iconStyle": "gold-icon",
-      "iconUrl": "/assets/svgs/wifi-icon.svg",
-      "title": "Fietsenverhuur",
-      "text": "2 fietsen beschikbaar"
-    }
-  ]
+    "title": "Voorzieningen & comfort",
+    "subTitle": "Alles wat je nodig hebt voor een perfect verblijf",
+    "list": [
+      {
+        "iconStyle": "green-icon",
+        "iconUrl": "/assets/svgs/wifi-icon.svg",
+        "title": "Snelle WIFI",
+        "text": "365 MB/s wifi"
+      },
+      {
+        "iconStyle": "gold-icon",
+        "iconUrl": "/assets/svgs/wifi-icon.svg",
+        "title": "Gratis Parkeren",
+        "text": "Direct voor de deur"
+      },
+      {
+        "iconStyle": "green-icon",
+        "iconUrl": "/assets/svgs/wifi-icon.svg",
+        "title": "Airconditioning",
+        "text": "Optimaal comfort"
+      },
+      {
+        "iconStyle": "gold-icon",
+        "iconUrl": "/assets/svgs/wifi-icon.svg",
+        "title": "Massage stoel",
+        "text": "Kom heerlijk tot rust"
+      },
+      {
+        "iconStyle": "green-icon",
+        "iconUrl": "/assets/svgs/wifi-icon.svg",
+        "title": "Keuken",
+        "text": "Volledig uitgerust"
+      },
+      {
+        "iconStyle": "gold-icon",
+        "iconUrl": "/assets/svgs/wifi-icon.svg",
+        "title": "Smart TV",
+        "text": "Netflix & streaming"
+      },
+      {
+        "iconStyle": "green-icon",
+        "iconUrl": "/assets/svgs/wifi-icon.svg",
+        "title": "Was/Droog machine",
+        "text": "Altijd schone kleding"
+      },
+      {
+        "iconStyle": "gold-icon",
+        "iconUrl": "/assets/svgs/wifi-icon.svg",
+        "title": "Fietsenverhuur",
+        "text": "2 fietsen beschikbaar"
+      }
+    ]
   },
-  "cta": {
+  "locationSection": {
+    "title": "Omringt door 4 polders",
+    "text": "Onze unieke locatie in de Schermerhorn biedt je een authentieke Nederlandse ervaring. Omringd door water, weilanden en historische molens, ervaar je hier de rust en ruimte waar Nederland beroemd om is.",
+    "list": [
+      {
+        "iconStyle": "green-icon",
+        "title": "15 min naar Alkmaar",
+        "text": "Historische kaasstad met gezellige terrassen"
+      },
+      {
+        "iconStyle": "gold-icon",
+        "title": "30 min naar de kust",
+        "text": "Prachtige stranden van Bergen aan Zee"
+      },
+      {
+        "iconStyle": "green-icon",
+        "title": "45 min naar Amsterdam",
+        "text": "Directe treinverbinding vanaf Alkmaar"
+      }
+    ],
+    "image": {
+      "url": "/assets/images/schermer-molens.webp",
+      "altText": "Overzicht van de Schermermolens"
+    },
+    "sticker": {
+      "title": "UNESCO",
+      "text": "Werelderfgoed"
+    }
+  },
+  "experianceSection": {
+    "title": "Jouw ervaring bij Schermer Eylandt",
+    "subTitle": "Van aankomst tot vertrek, elk moment is doordacht",
+    "list": [
+      {
+        "image": {
+          "url": "/assets/images/schermer-molens.webp",
+          "altText": "image"
+        },
+        "title": "Hartelijk welkom",
+        "text": "Persoonlijk ontvangst met lokale tips"
+      },
+      {
+        "image": {
+          "url": "/assets/images/schermer-molens.webp",
+          "altText": "image"
+        },
+        "title": "Comfortabel verblijf",
+        "text": "Stijlvol ingerichte kamers met alle moderne gemakken"
+      },
+      {
+        "image": {
+          "url": "/assets/images/schermer-molens.webp",
+          "altText": "image"
+        },
+        "title": "Heerlijk ontbijt",
+        "text": "Verse lokale producten van Linda's huisgemaakte specialiteiten"
+      },
+      {
+        "image": {
+          "url": "/assets/images/schermer-molens.webp",
+          "altText": "image"
+        },
+        "title": "Ontdek de omgeving",
+        "text": "Fietsroutes door de polder en wandelingen langs het water"
+      },
+      {
+        "image": {
+          "url": "/assets/images/schermer-molens.webp",
+          "altText": "image"
+        },
+        "title": "Ontspanninng pur sang",
+        "text": "Kom volledig tot rust in de proffecionel massage stoel"
+      },
+      {
+        "image": {
+          "url": "/assets/images/schermer-molens.webp",
+          "altText": "image"
+        },
+        "title": "Tot ziens!",
+        "text": "Vertrek met prachtige herrinneringen en plannen om terug te komen"
+      }
+    ]
+  },
+  "ctaSection": {
     "title": "Voel je welkom bij ons",
     "text": "We nodigen je van harte uit om het zelf te ervaren. Laat de rust van de polder je omarmen, geniet van de ruimte, en voel je thuis bij Schermer Eylandt.",
-    "buttons": ["Neem contact op", "Boek via Airbnb ↗"]
+    "buttons": [
+      {
+        "btnText": "Book via Airbnb",
+        "btnLink": "https://www.airbnb.nl/rooms/934796483879606222"
+      },
+      {
+        "btnText": "Neem contact met ons op",
+        "btnLink": "/contact"
+      }
+    ],
+    "phoneNumber": {
+      "text": "+316-43219974",
+      "link": "+316-43219974"
+    },
+    "email": "info@schermereylandt.com"
   },
   "seo": {
     "title": "Over ons – Bas & Linda van B&B Schermer Eylandt",

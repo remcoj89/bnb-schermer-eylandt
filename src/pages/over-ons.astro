@@ -4,7 +4,9 @@ import Layout from "../layouts/Layout.astro";
 import LightFooter from "../sections/global/light-footer.astro";
 // Sections
 import AmenitiesAndComfortSection from "../sections/aboutUs/amenitiesAndComfortSection.astro";
+import ExperianceSection from "../sections/aboutUs/experianceSection.astro";
 import HeroSection from "../sections/aboutUs/heroSection.astro";
+import LocationSection from "../sections/aboutUs/locationSection.astro";
 import OurStorySection from "../sections/aboutUs/ourStorySection.astro";
 import OwnersSection from "../sections/aboutUs/ownersSection.astro";
 import ReviewSection from "../sections/aboutUs/reviewSection.astro";
@@ -12,6 +14,7 @@ import UspSection from "../sections/aboutUs/uspSection.astro";
 
 // pageData
 import pageData from "../data/nl/about-us.json";
+import CtaSection from "../sections/aboutUs/ctaSection.astro";
 ---
 
 <Layout>
@@ -32,6 +35,18 @@ import pageData from "../data/nl/about-us.json";
   <AmenitiesAndComfortSection
     sectionContent={pageData.amenitiesAndComfort}
     sectionId="amenities-and-comfort-section"
+  />
+  <LocationSection
+    sectionContent={pageData.locationSection}
+    sectionId="location-section"
+  />
+  <ExperianceSection
+    sectionContent={pageData.experianceSection}
+    sectionId="experiance-section"
+  />
+  <CtaSection
+    sectionContent={pageData.ctaSection}
+    sectionId="cta-section"
   />
   <LightFooter />
 </Layout>

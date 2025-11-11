@@ -275,4 +275,24 @@ const { cardStyle = "", cardId = "" } = Astro.props;
       width: 100%;
     }
   }
+
+  .experiance-card {
+    padding: unset;
+    overflow: hidden;
+
+    img {
+      object-fit: cover;
+      object-position: center;
+      height: 30rem;
+      width: 100%;
+    }
+    div {
+      padding: var(--size-1) var(--size-2);
+      
+
+      h3 {
+        font-size: var(--fs-600);
+      }
+    }
+  }
 </style>

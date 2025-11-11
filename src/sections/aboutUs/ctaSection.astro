@@ -1,0 +1,79 @@
+---
+// Components
+import Button from "../../components/global/buttons.astro";
+import ButtonsWrapper from "../../components/global/buttonsWrapper.astro";
+import SectionTitle from "../../components/global/sectionTitle.astro";
+// Data
+const { sectionContent, sectionId } = Astro.props;
+
+// Icons
+import {
+  BookingCalendarIcon,
+  PhoneIcon,
+  EmailIcon,
+} from "../../assets/icons.jsx";
+---
+
+<section id={sectionId}>
+  <div class="wrapper cta-wrapper">
+    <SectionTitle
+      headerStyle="text-center"
+      sectionTitle={sectionContent.title}
+      subTitle={sectionContent.text}
+      textStyle="white-text"
+    />
+    <ButtonsWrapper>
+      <Button
+        href={sectionContent.buttons[0].btnLink}
+        target="_blank"
+        buttonStyle="gold"
+      >
+        <BookingCalendarIcon />
+        {sectionContent.buttons[0].btnText}</Button
+      >
+      <Button
+        href={sectionContent.buttons[1].btnLink}
+        buttonStyle="white-btn-green-text"
+      >
+        <EmailIcon />
+        {sectionContent.buttons[1].btnText}</Button
+      >
+    </ButtonsWrapper>
+    <div class="contact-wrapper">
+      <a href={`tel:${sectionContent.phoneNumber.link}`}
+        ><PhoneIcon /> {sectionContent.phoneNumber.text}</a
+      >
+      <a href={`mailto:${sectionContent.email}`}
+        ><PhoneIcon /> {sectionContent.email}</a
+      >
+    </div>
+  </div>
+</section>
+
+<style>
+  section {
+    background-color: var(--clr-green-blue);
+
+    .cta-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .contact-wrapper {
+        display: flex;
+        gap: var(--size-3);
+        margin-block-start: var(--size-5);
+        color: var(--clr-off-white);
+
+        a {
+          transition: border-color 0.5s ease-in-out;
+          border-bottom: 2px solid transparent;
+        }
+      }
+
+      .contact-wrapper a:hover {
+        border-bottom: 2px solid var(--clr-off-white);
+      }
+    }
+  }
+</style>
