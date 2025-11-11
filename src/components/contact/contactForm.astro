@@ -1,0 +1,122 @@
+---
+// Components
+import Button from "../global/buttons.astro";
+// Data
+const { componentContent } = Astro.props;
+
+// Icons
+import { PlaneIcon } from "../../assets/icons";
+
+// Logic
+const date = new Date();
+let day = date.getDate();
+let month = date.getMonth() + 1;
+let year = date.getFullYear();
+---
+
+<form>
+  <!-- Name and last name -->
+  <div class="double-field">
+    <div class="input-wrapper">
+      <label for="name">Voornaam *</label>
+      <input type="text" name="name" required />
+    </div>
+    <div class="input-wrapper">
+      <label for="lastName">Achternaam *</label>
+      <input type="text" name="lastName" required />
+    </div>
+  </div>
+  <!-- Email -->
+  <div class="input-wrapper">
+    <label for="email">Voornaam *</label>
+    <input type="email" name="email" required />
+  </div>
+  <!-- Phone -->
+  <div class="input-wrapper">
+    <label for="phone">Telefoonnummer</label>
+    <input type="tel" name="phone" />
+  </div>
+  <!-- Arival and Departure -->
+  <div class="double-field">
+    <div class="input-wrapper">
+      <label for="arival">Gewenste aankomst datum</label>
+      <input
+        name="arival"
+        type="date"
+        min={`${year}-${month}-${day}`}
+        max={`${year + 1}-${month}-${day}`}
+      />
+    </div>
+    <div class="input-wrapper">
+      <label for="departure">Achternaam *</label>
+      <input
+        name="departure"
+        type="date"
+        min={`${year}-${month}-${day + 2}`}
+        max={`${year + 1}-${month}-${day}`}
+      />
+    </div>
+  </div>
+  <!-- Number of guests -->
+  <div class="input-wrapper">
+    <label for="guest">aantal gasten</label>
+    <select name="guests" id="guests">
+      <option value="" disabled selected>Selecteer aantal gasten</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+    </select>
+  </div>
+  <!-- Message -->
+  <div class="input-wrapper">
+    <label for="message">Bericht *</label>
+    <textarea name="message" id="" required placeholder="Text"></textarea>
+  </div>
+
+  <Button
+    buttonType="submit"
+    buttonStyle="submit-btn"
+    buttonStatus="disabled"
+    onClick="submitFormData"><PlaneIcon /> Verstuur bericht</Button
+  >
+</form>
+
+<style>
+  .double-field {
+    display: flex;
+    gap: var(--size-1);
+  }
+
+  .input-wrapper {
+    width: 100%;
+
+    &:not(:last-child) {
+      margin-block-end: var(--size-1);
+    }
+    label {
+      display: block;
+      line-height: 2;
+    }
+
+    input,
+    select,
+    textarea {
+      border-radius: var(--border-radius-card);
+      border: 1px solid var(--clr-gray);
+      outline: 0;
+      padding: 0.5rem 1rem;
+      width: 100%;
+
+      &:focus,
+      &:active {
+        outline: solid 1px var(--clr-gold);
+        border: solid 1px var(--clr-gold);
+      }
+    }
+
+    textarea {
+      height: var(--size-10);
+    }
+  }
+</style>

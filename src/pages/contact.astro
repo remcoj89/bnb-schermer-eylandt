@@ -8,9 +8,19 @@ import DarkFooter from "../sections/global/dark-footer.astro";
 // pageData
 import pageData from "../data/nl/contact.json";
 import HeroSection from "../sections/contact/heroSection.astro";
+import BookingCards from "../sections/contact/bookingCards.astro";
+import ContactFormSection from "../sections/contact/contactFormSection.astro";
 ---
 
 <Layout>
-  <HeroSection sectionContent={pageData.intro} sectionId="hero-section"/>
+  <HeroSection sectionContent={pageData.intro} sectionId="hero-section" />
+  <BookingCards
+    sectionContent={pageData.bookingCards}
+    sectionId="booking-cards-section"
+  />
+  <ContactFormSection
+    sectionContent={pageData.contactSection}
+    sectionId="form-section"
+  />
   <DarkFooter />
 </Layout>

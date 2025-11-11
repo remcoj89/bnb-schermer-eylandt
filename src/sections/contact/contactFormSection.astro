@@ -1,0 +1,68 @@
+---
+// Components
+import ContactForm from "../../components/contact/contactForm.astro";
+import FlexSection from "../../components/global/flex-section.astro";
+import Card from "../../components/global/card.astro";
+import Icon from "../../components/global/icon.astro";
+import FiveStars from "../../components/global/fiveStars.astro";
+import SectionTitle from "../../components/global/sectionTitle.astro";
+// Data
+const { sectionContent, sectionId } = Astro.props;
+
+// Icons
+import { StarIcon } from "../../assets/icons";
+---
+
+<section id={sectionId}>
+  <div class="wrapper">
+    <FlexSection>
+      <div class="form-wrapper">
+        <Card>
+          <SectionTitle sectionTitle={sectionContent.title} />
+          <ContactForm />
+        </Card>
+      </div>
+      <div class="cards-wrapper">
+        <Card cardStyle="review-card white-bg">
+          <div class="review-with-icon">
+            <div class="star-icon-wrapper">
+              <Icon iconStyle="gold-icon">
+                <StarIcon />
+              </Icon>
+            </div>
+            <div>
+              <p>"{sectionContent.review.quote}"</p>
+              <div class="author">
+                <p>{sectionContent.review.author}</p>
+                <FiveStars />
+              </div>
+            </div>
+          </div>
+        </Card>
+        <Card cardStyle="green-list-card" />
+        <Card cardStyle="contact-card" />
+      </div>
+    </FlexSection>
+  </div>
+</section>
+
+<style>
+  section {
+    padding-block-start: unset;
+  }
+
+  .form-wrapper,
+  .cards-wrapper {
+    width: 100%;
+  }
+
+  .cards-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-2);
+  }
+
+  .star-icon-wrapper {
+    color: var(--clr-off-white);
+  }
+</style>

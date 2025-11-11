@@ -47,6 +47,7 @@ const { cardStyle = "", cardId = "" } = Astro.props;
     display: flex;
     flex-direction: column;
     gap: var(--size-1);
+    height: 100%;
     text-align: center;
     transition: all 0.4s ease-in-out;
 
@@ -56,8 +57,14 @@ const { cardStyle = "", cardId = "" } = Astro.props;
 
     &:hover,
     &:focus {
-      transform: scale(1.05);
       box-shadow: var(--box-shadow);
+      transform: scale(1.05);
+    }
+
+    .link-text {
+      align-items: center;
+      display: flex;
+      gap: var(--size-1);
     }
   }
 
@@ -210,6 +217,11 @@ const { cardStyle = "", cardId = "" } = Astro.props;
     display: grid;
     gap: var(--size-1);
 
+    .review-with-icon {
+      display: flex;
+      gap: var(--size-1);
+    }
+
     .author {
       display: flex;
       align-items: center;
@@ -229,6 +241,10 @@ const { cardStyle = "", cardId = "" } = Astro.props;
     }
   }
 
+  .review-card.white-bg {
+    background-color: var(--clr-off-white);
+  }
+  
   #rating-card {
     display: flex;
     gap: var(--size-4);
@@ -288,7 +304,6 @@ const { cardStyle = "", cardId = "" } = Astro.props;
     }
     div {
       padding: var(--size-1) var(--size-2);
-      
 
       h3 {
         font-size: var(--fs-600);

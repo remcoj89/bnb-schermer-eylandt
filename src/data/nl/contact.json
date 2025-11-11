@@ -5,17 +5,103 @@
     "subTitle": "We horen graag van je",
     "paragraph": "Wil je even helemaal weg uit de drukte? Of heb je een vraag over ons verblijf, de omgeving of beschikbaarheid? Je kunt ons altijd even een bericht sturen — we reageren meestal binnen 24 uur."
   },
-  "contact_form": {
-    "title": "Neem contact op",
-    "subtitle": "📬 Stuur ons een bericht",
-    "description": "Vul het formulier in en we nemen zo snel mogelijk contact met je op.",
-    "fields": {
-      "name": "Naam",
-      "email": "E-mailadres",
-      "message": "Bericht",
-      "submit": "Verstuur bericht"
+  "bookingCards": [
+    {
+      "iconStyle": "green-icon",
+      "iconUrl": "/assets/svgs/booking-calendar-icon.svg",
+      "title": "Direct Boeken",
+      "text": "Bekijk beschikbaarheid en boek direct via Airbnb",
+      "link": {
+        "url": "https://www.airbnb.nl/rooms/934796483879606222",
+        "text": "Naar Airbnb",
+        "target": "_blank",
+        "iconUrl": "/assets/svgs/right-arrow-icon-green.svg",
+        "textColor": "var(--clr-green-blue)"
+      }
     },
-    "response_time": "💬 We reageren meestal binnen één uur."
+    {
+      "iconStyle": "gold-icon",
+      "iconUrl": "/assets/svgs/email-icon-white.svg",
+      "title": "Stel een vraag",
+      "text": "Heb je vragen? Stuur ons een bericht",
+      "link": {
+        "url": "#contact-form",
+        "text": "Naar formulier",
+        "target": "",
+        "iconUrl": "/assets/svgs/down-arrow-icon-gold.svg",
+        "textColor": "var(--clr-gold)"
+      }
+    },
+    {
+      "iconStyle": "green-icon",
+      "iconUrl": "/assets/svgs/phone-icon.svg",
+      "title": "Stel een vraag",
+      "text": "Heb je vragen? Stuur ons een bericht",
+      "link": {
+        "url": "tel:+31643219974",
+        "text": "+316-43219974",
+        "target": "",
+        "iconUrl": "/assets/svgs/phone-icon-green.svg",
+        "textColor": "var(--clr-green-blue)"
+      }
+    }
+  ],
+  "contactSection": {
+    "title": "Stuur ons een bericht",
+    "contact_form": {
+      "fields": {
+        "name": "Voornaam *",
+        "lastName": "Achternaam *",
+        "email": "E-mailadres *",
+        "phone": "telefoonnummer",
+        "arivalDate": {
+          "label": "Gewenste aankomst",
+          "placeHolder": "dd//mm/yyyy"
+        },
+        "despartureDate": {
+          "label": "Gewenste vertrek",
+          "placeHolder": "dd//mm/yyyy"
+        },
+        "select": "Selecteer aantal gasten",
+        "message": {
+          "label": "Bericht *",
+          "placeHolder": "Vertel ons over je verblijfswensen, speciale verzoeken of stel je vraag..."
+        },
+        "submit": "Verstuur bericht"
+      },
+      "response_time": "💬 We reageren meestal binnen één uur."
+    },
+    "review": {
+      "iconStyle": "green-icon",
+      "quote": "De communicatie was perfect, we kregen snel reactie op al onze vragen. Alles was precies zoals beloofd.",
+      "author": "Kees"
+    },
+    "whyContact": {
+      "title": "Waarom contact opnemen?",
+      "list": [
+        "Persoonslijk advies over activiteiten in de omgeving",
+        "Hulp bij speciale verzoeken of arrangementen",
+        "Informatie over seizoensgebonden aanbiedingen",
+        "Antwoord meestal binnen 24 uur"
+      ],
+      "directContact": {
+        "title": "Direct contact",
+        "list": [
+        {
+          "iconUrl": "/assets/svgs/email-icon-green.svg",
+          "text": "info@schermereylandt.com"
+        },
+        {
+          "iconUrl": "/assets/svgs/phone-icon-green.svg",
+          "text": "+316-43219974"
+        },
+        {
+          "iconUrl": "/assets/svgs/clock-icon-green.svg",
+          "text": "Ma-Zo: 08:30 - 22:00"
+        }
+        ]
+      }
+    }
   },
   "airbnb_booking": {
     "title": "Of boek direct via Airbnb",

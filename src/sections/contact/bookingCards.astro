@@ -1,0 +1,43 @@
+---
+// Astro Assets
+import { Image } from "astro:assets";
+// Components
+import Icon from "../../components/global/icon.astro";
+import Card from "../../components/global/card.astro";
+import CardGrid from "../../components/global/cardGrid.astro";
+
+// Data
+const { sectionContent, sectionId } = Astro.props;
+---
+
+<section id={sectionId}>
+  <div class="wrapper">
+    <CardGrid>
+      {
+        sectionContent.map((card: any) => (
+          <a href={card.link.url} target={card.link.target}>
+            <Card cardStyle="usp-card">
+              <Icon iconStyle={card.iconStyle}>
+                <Image alt="" src={card.iconUrl} width={50} height={50} />
+              </Icon>
+              <h3>{card.title}</h3>
+              <p>{card.text}</p>
+              <span class="link-text" style={`color: ${card.link.textColor}`}>{card.link.text} <Image
+                src={card.link.iconUrl}
+                alt=""
+                width={20}
+                height={20}
+              /></span>
+            </Card>
+          </a>
+        ))
+      }
+    </CardGrid>
+  </div>
+</section>
+
+<style>
+  section {
+    padding-block-start: unset;
+  }
+</style>
