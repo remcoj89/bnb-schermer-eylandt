@@ -1,18 +1,18 @@
 ---
 // Data
-const { sectionTitle, subTitle, headerStyle = null } = Astro.props;
+const { sectionTitle, subTitle = null, headerStyle = null } = Astro.props;
 ---
 
 <div class={headerStyle}>
   <h2>{sectionTitle}</h2>
-  <span>{subTitle}</span>
+  { subTitle && <span>{subTitle}</span> }
 </div>
 
 <style>
   div {
     display: grid;
     gap: var(--size-1);
-    margin-block-end: var(--size-7);
+    margin-block-end: var(--size-4);
     max-width: 85ch;
   }
   .text-center {

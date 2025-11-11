@@ -3,8 +3,10 @@
 import Layout from "../layouts/Layout.astro";
 import LightFooter from "../sections/global/light-footer.astro";
 // Sections
+import AmenitiesAndComfortSection from "../sections/aboutUs/amenitiesAndComfortSection.astro";
 import HeroSection from "../sections/aboutUs/heroSection.astro";
 import OurStorySection from "../sections/aboutUs/ourStorySection.astro";
+import OwnersSection from "../sections/aboutUs/ownersSection.astro";
 import ReviewSection from "../sections/aboutUs/reviewSection.astro";
 import UspSection from "../sections/aboutUs/uspSection.astro";
 
@@ -22,6 +24,14 @@ import pageData from "../data/nl/about-us.json";
   <ReviewSection
     sectionContent={pageData.reviewSection}
     sectionId="review-section"
+  />
+  <OwnersSection
+    sectionContent={pageData.ownersSection}
+    sectionId="owners-section"
+  />
+  <AmenitiesAndComfortSection
+    sectionContent={pageData.amenitiesAndComfort}
+    sectionId="amenities-and-comfort-section"
   />
   <LightFooter />
 </Layout>

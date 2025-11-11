@@ -96,7 +96,89 @@
       }
     ]
   },
-
+  "ownersSection": {
+    "title": "Ontmoet Bas & Linda",
+    "list": [
+      {
+        "iconStyle": "green-icon",
+        "title": "Lokale kennnis",
+        "text": "Bas is geboren en getogen in Schermerhorn en Linda in het vlakbij gelegen Obdam, hierdoor kennen we alle verborgen parels van de omgeving."
+      },
+      {
+        "iconStyle": "gold-icon",
+        "title": "Culinaire passie",
+        "text": "Linda's ontbijtcreaties zijn beroemd bij onze gastenn - vers, lokaal enn met liefde gemaakt"
+      },
+      {
+        "iconStyle": "green-icon",
+        "title": "Natuur liefhebbers",
+        "text": "Bas organiseert graag fietstochten door de polder en deelt zijn favoriete wandelroutes"
+      }
+    ],
+    "quote": "Ons doel is eenvoudig: ervoor zorgen dat elke gast zich thuis voelt en met prachtige herinneringen vertrekt.",
+    "image": {
+      "url": "/assets/images/bas-linda-evi.png",
+      "altText": "Bas en Linda voor hun B&B"
+    },
+    "sticker":  {
+      "title": "200+",
+      "text": "Tevreden gasten"
+    }
+  },
+  "amenitiesAndComfort": {
+  "title": "Voorzieningen & comfort",
+  "subTitle":"Alles wat je nodig hebt voor een perfect verblijf",
+  "list": [
+    {
+      "iconStyle": "green-icon",
+      "iconUrl": "/assets/svgs/wifi-icon.svg",
+      "title": "Snelle WIFI",
+      "text": "365 MB/s wifi"
+    },
+    {
+      "iconStyle": "gold-icon",
+      "iconUrl": "/assets/svgs/wifi-icon.svg",
+      "title": "Gratis Parkeren",
+      "text": "Direct voor de deur"
+    },
+    {
+      "iconStyle": "green-icon",
+      "iconUrl": "/assets/svgs/wifi-icon.svg",
+      "title": "Airconditioning",
+      "text": "Optimaal comfort"
+    },
+    {
+      "iconStyle": "gold-icon",
+      "iconUrl": "/assets/svgs/wifi-icon.svg",
+      "title": "Massage stoel",
+      "text": "Kom heerlijk tot rust"
+    },
+    {
+      "iconStyle": "green-icon",
+      "iconUrl": "/assets/svgs/wifi-icon.svg",
+      "title": "Keuken",
+      "text": "Volledig uitgerust"
+    },
+    {
+      "iconStyle": "gold-icon",
+      "iconUrl": "/assets/svgs/wifi-icon.svg",
+      "title": "Smart TV",
+      "text": "Netflix & streaming"
+    },
+    {
+      "iconStyle": "green-icon",
+      "iconUrl": "/assets/svgs/wifi-icon.svg",
+      "title": "Was/Droog machine",
+      "text": "Altijd schone kleding"
+    },
+    {
+      "iconStyle": "gold-icon",
+      "iconUrl": "/assets/svgs/wifi-icon.svg",
+      "title": "Fietsenverhuur",
+      "text": "2 fietsen beschikbaar"
+    }
+  ]
+  },
   "cta": {
     "title": "Voel je welkom bij ons",
     "text": "We nodigen je van harte uit om het zelf te ervaren. Laat de rust van de polder je omarmen, geniet van de ruimte, en voel je thuis bij Schermer Eylandt.",
