@@ -274,15 +274,31 @@
       "text": "Bekijk alle 86+ reviews op Airbnb"
     }
   },
-  "closing_cta": {
-    "title": "Tot snel bij Schermer Eylandt",
-    "paragraph": "Of je nu komt om te onthaasten, de omgeving te ontdekken of gewoon te genieten van stilte en ruimte — je bent van harte welkom bij ons in de Schermerpolder.",
-    "signature": "Schermer Eylandt – rust, ruimte en gastvrijheid.",
-    "contact_info": {
-      "phone": "📞 Telefoon: +31 (0)6 xxx xxx xx",
-      "email": "✉️ E-mail: info@schermer-eylandt.nl",
-      "social": "🌐 Volg ons: [Instagram] | [Facebook] | [Airbnb ↗]"
-    }
+  "faqSection": {
+    "title": "Veel gestelde vragen",
+    "subtitle": "Hier vindt je antwoorden op de meest gestelde vragen ove je verblijf bij Schermer Eylandt",
+    "list": [
+      {
+        "question": "Hoe kan ik boeken",
+        "answer": "Lorem ipsum dolor sit amet consectetdipisicing elit. Quod nostrum numquamdignissimos eligendi, reprehenderit sapiente corrupti maiores nesciunt maxime involuptatum vel distinctio accusantium excepturi quae aperiam possimus? Debitis, aspernatur. Quas deleniti assumenda earum sunt necessitatibus quos quia est incidunt! Repellendus, inventore! Suscipit animi facere accusamus iste dignissimos eum voluptatem officia nesciunt laudantium amet aut aliquam et, cumcupiditate eaque?"
+      },
+      {
+        "question": "Wat is inbegrepen bij het verblijf",
+        "answer": "Lorem ipsum dolor sit amet consectetdipisicing elit. Quod nostrum numquamdignissimos eligendi, reprehenderit sapiente corrupti maiores nesciunt maxime involuptatum vel distinctio accusantium excepturi quae aperiam possimus? Debitis, aspernatur. Quas deleniti assumenda earum sunt necessitatibus quos quia est incidunt! Repellendus, inventore! Suscipit animi facere accusamus iste dignissimos eum voluptatem officia nesciunt laudantium amet aut aliquam et, cumcupiditate eaque?"
+      },
+      {
+        "question": "Wat zijn de check-in tijden?",
+        "answer": "Je kan bij ons inchecken vanaf 16:00. Wil je toch vroeger inchecken neem dan <a href='mailto:info@schermereylandt.com'>contact</a> met ons op om te overleggen"
+      },
+      {
+        "question": "Zijn huisdieren welkom?",
+        "answer": "Nee het is niet toegestaan om huisdieren mee te nemen naar ons gastenverblijf"
+      },
+      {
+        "question": "Wat is het annuleringsbeleid?",
+        "answer": "Lorem ipsum dolor sit amet consectetdipisicing elit. Quod nostrum numquamdignissimos eligendi, reprehenderit sapiente corrupti maiores nesciunt maxime involuptatum vel distinctio accusantium excepturi quae aperiam possimus? Debitis, aspernatur. Quas deleniti assumenda earum sunt necessitatibus quos quia est incidunt! Repellendus, inventore! Suscipit animi facere accusamus iste dignissimos eum voluptatem officia nesciunt laudantium amet aut aliquam et, cumcupiditate eaque?"
+      }
+    ]
   },
   "seo": {
     "title": "Contact & Boeking – B&B Schermer Eylandt Schermerhorn",

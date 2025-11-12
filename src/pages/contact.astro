@@ -14,6 +14,7 @@ import DirectBookingSection from "../sections/contact/directBookingSection.astro
 import MapsSection from "../sections/contact/mapsSection.astro";
 import ExploreTheArea from "../sections/contact/exploreTheArea.astro";
 import ReviewSection from "../sections/contact/reviewSection.astro";
+import FaqSection from "../sections/contact/faqSection.astro";
 ---
 
 <Layout>
@@ -38,6 +39,10 @@ import ReviewSection from "../sections/contact/reviewSection.astro";
   <ReviewSection
     sectionContent={pageData.reviewSection}
     sectionId="review-section"
+  />
+  <FaqSection
+    sectionContent={pageData.faqSection}
+    sectionId="faq-section"
   />
   <DarkFooter />
 </Layout>

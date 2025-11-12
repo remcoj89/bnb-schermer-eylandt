@@ -1,3 +1,22 @@
+export function AccordionIcon() {
+
+
+  return (
+    <svg width="20" height="20" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <g clipPath="url(#clip0_262_351)">
+        <path d="M0 8.9873C0 8.43502 0.447715 7.9873 1 7.9873H15C15.5523 7.9873 16 8.43502 16 8.9873C16 9.53959 15.5523 9.9873 15 9.9873H1C0.447715 9.9873 0 9.53959 0 8.9873Z" fill="currentColor" fillOpacity="1"/>
+        <path d="M7 1.9873C7 1.43502 7.44772 0.987305 8 0.987305C8.55228 0.987305 9 1.43502 9 1.9873V15.9873C9 16.5396 8.55228 16.9873 8 16.9873C7.44772 16.9873 7 16.5396 7 15.9873V1.9873Z" fill="currentColor" fillOpacity="1"/>
+      </g>
+      <defs>
+        <clipPath id="clip0_262_351">
+          <rect width="20" height="20" fill="currentColor" transform="translate(0 0.987305)"/>
+        </clipPath>
+      </defs>
+    </svg>
+
+  )
+}
+
 export function AirbnbIcon() {
   return (
     <svg

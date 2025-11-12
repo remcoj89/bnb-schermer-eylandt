@@ -1,0 +1,82 @@
+---
+// Data
+const { componentContent, index } = Astro.props;
+// Icons
+import { AccordionIcon } from "../../assets/icons";
+---
+
+<li class="accordion">
+  <h3 class="accordion-header">
+    <button
+      class="accordion-trigger"
+      aria-expanded="false"
+      aria-controls=`answer-${index}`
+      >{componentContent.question} <AccordionIcon /></button
+    >
+  </h3>
+  <div id=`answer-${index}` class="accordion-content">
+    <div>
+      <p set:html={componentContent.answer} />
+    </div>
+  </div>
+</li>
+
+<style>
+  .accordion {
+    background-color: var(--clr-warm-sand);
+    border-radius: var(--border-radius-card);
+    overflow: hidden;
+    padding: var(--size-1);
+
+    &:not(:last-child) {
+      margin-block-end: var(--size-1);
+    }
+
+    .accordion-header {
+      font-size: var(--fs-500);
+
+      button {
+        background-color: transparent;
+        border: none;
+        color: var(--clr-dark-gray);
+        cursor: pointer;
+        display: flex;
+        font-family: var(--ff-header);
+        font-size: var(--fs-500);
+        font-weight: var(--fw-semi-bold);
+        justify-content: space-between;
+        padding-block: var(--size-1);
+        width: 100%;
+      }
+
+      svg {
+        transition: transform 500ms ease-in-out;
+      }
+    }
+
+    .accordion-content {
+      display: grid;
+      grid-template-rows: 0fr;
+      transition: grid-template-rows 500ms ease-in-out;
+      padding-inline-end: var(--size-2);
+
+      div {
+        overflow: hidden;
+
+        p {
+          margin-block-end: var(--size-2);
+        }
+      }
+    }
+  }
+
+  .accordion.is__open {
+    .accordion-content {
+      grid-template-rows: 1fr;
+    }
+
+    svg {
+      transform: rotate(45deg);
+    }
+  }
+</style>

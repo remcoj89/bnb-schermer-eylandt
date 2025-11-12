@@ -16,7 +16,7 @@ import { AirbnbIcon } from "../../assets/icons";
 ---
 
 <section id={sectionId}>
-  <div class="wrapper ">
+  <div class="wrapper">
     <SectionTitle
       sectionTitle={sectionContent.title}
       subTitle={sectionContent.subtitle}
@@ -44,7 +44,9 @@ import { AirbnbIcon } from "../../assets/icons";
         ))
       }
     </CardGrid>
-    <Button href={sectionContent.button.url} target="_blank" buttonStyle="green">{sectionContent.button.text} <AirbnbIcon /></Button>
+    <Button href={sectionContent.button.url} target="_blank" buttonStyle="green"
+      >{sectionContent.button.text} <AirbnbIcon /></Button
+    >
   </div>
 </section>
 
@@ -63,3 +65,5 @@ import { AirbnbIcon } from "../../assets/icons";
     }
   }
 </style>
+
+
