@@ -1,0 +1,132 @@
+---
+// Astro Assets
+import { Image } from "astro:assets";
+// Components
+import Button from "../../components/global/buttons.astro";
+import FlexSection from "../../components/global/flex-section.astro";
+import Icon from "../../components/global/icon.astro";
+import SectionTitle from "../../components/global/sectionTitle.astro";
+// Data
+const { sectionContent, sectionId } = Astro.props;
+---
+
+<section id={sectionId}>
+  <div class="wrapper">
+    <SectionTitle
+      sectionTitle={sectionContent.title}
+      subTitle={sectionContent.subTitle}
+      headerStyle="text-center"
+    />
+    <FlexSection>
+      <div class="card locations-card">
+        <h3>{sectionContent.howToFindUs.title}</h3>
+
+        <ul role="list" id="locations">
+          {
+            sectionContent.howToFindUs.list.map((item: any) => (
+              <li>
+                <Icon iconStyle={item.iconStyle}>
+                  <Image alt="" width={20} height={20} src={item.iconUrl} />
+                </Icon>
+                <div>
+                  <h4>{item.title}</h4>
+
+                  <ul role="list">
+                    {item.list.map((p: string) => (
+                      <li>{p}</li>
+                    ))}
+                  </ul>
+                </div>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+
+      <div class="card maps-card">
+        <iframe src={sectionContent.maps.iframe}></iframe>
+        <div class="card-content">
+          <h3>{sectionContent.maps.title}</h3>
+          <div class="locations-grid">
+            {
+              sectionContent.maps.list.map((item: any) => (
+                <p>
+                  <Image class="icon" alt="" src={item.iconUrl} width={15} height={15} />
+                  {item.text}
+                </p>
+              ))
+            }
+          </div>
+        </div>
+      </div>
+    </FlexSection>
+  </div>
+</section>
+
+<style>
+
+  section {
+    background-color: var(--clr-warm-sand);
+  }
+  .card {
+    border-radius: var(--border-radius-card);
+    box-shadow: var(--box-shadow-light);
+    overflow: hidden;
+    width: 100%;
+
+    h3 {
+      font-size: var(--fs-600);
+    }
+
+    h4 {
+      font-size: var(--fs-500);
+    }
+  }
+
+  .card.locations-card {
+    display: grid;
+    gap: var(--size-2);
+    padding: var(--padding-card);
+
+    #locations {
+      display: grid;
+      gap: var(--size-1);
+
+      li {
+        display: flex;
+        gap: var(--size-1);
+
+        h4 {
+          margin-block-end: 0.5rem;
+        }
+      }
+    }
+  }
+
+
+  .maps-card {
+
+    iframe {
+      border: 0;
+      height: 30rem;
+      width: 100%;
+    }
+    .card-content {
+      padding: var(--padding-card);
+
+      h3 {
+        margin-block-end: var(--size-1);
+      }
+
+      .locations-grid {
+        display: grid;
+        font-size: var(--fs-400);
+        grid-template-columns: repeat(2, 1fr);
+
+        .icon {
+          margin-inline-end: 0.5rem;
+        }
+      }
+    }
+  }
+</style>

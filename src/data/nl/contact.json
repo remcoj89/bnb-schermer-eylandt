@@ -135,9 +135,110 @@
     }
   },
   "location": {
-    "title": "Waar vind je ons",
-    "description": "📍 Schermerhorn, tussen Alkmaar en Hoorn\nEen rustig dorp in de uitgestrekte Schermerpolder — dicht bij de kust, de stad en het echte buitenleven.",
-    "maps_button": "Open in Google Maps ↗"
+    "title": "Locatie & Route kaart",
+    "subTitle": "Schermer Eylandt ligt midden in het pittoreske dorpje Schermerhorn, het dorpje is omringt door historische molens, kanalen, sloten en eindeloze polderweides",
+    "howToFindUs": {
+      "title": "Hoe je ons vindt",
+      "list": [
+        {
+          "iconUrl": "/assets/svgs/location-icon-white.svg",
+          "iconStyle": "green-icon",
+          "title": "Adres",
+          "list": ["Oosteinde 10", "1636XV Schermerhorn", "Noord Holland"]
+        },
+        {
+          "iconUrl": "/assets/svgs/car-icon-white.svg",
+          "iconStyle": "gold-icon",
+          "title": "Met de auto",
+          "list": [
+            "Vanuit Amsterdam 30min via A7",
+            "Gratis parkeren voor de deur"
+          ]
+        },
+        {
+          "iconUrl": "/assets/svgs/train-icon-white.svg",
+          "iconStyle": "green-icon",
+          "title": "Openbaar vervoer",
+          "list": [
+            "Trein naar Alkmaar Centraal + Bus 129",
+            "Bushalte 't Zuidje, Schermerhorn ",
+            "5 min(580m) lopen naar onze B&B"
+          ]
+        }
+      ],
+      "button": {
+        "text": "Plan je route",
+        "btnStyle": "green"
+      }
+    },
+    "maps": {
+      "title": "In de buurt",
+      "iframe": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4547.073099050392!2d4.890105423951413!3d52.601977861544015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5fff613b16a19%3A0xb1a1729741f19590!2sOosteinde%2010%2C%201636%20XV%20Schermerhorn!5e0!3m2!1sen!2snl!4v1762944977330!5m2!1sen!2snl",
+      "list": [
+        {
+          "iconUrl": "/assets/svgs/cutlery-icon-green.svg",
+          "text": "Restaurants: 5km",
+          "iframe": "https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d19390.110434696708!2d4.89504179280965!3d52.59196348381037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x47cf5556cf42d17b%3A0x15521410aa8ee70b!2sSchermerhorn!3m2!1d52.600550299999995!2d4.8897768!4m5!1s0x47c6016ab413d78d%3A0x98967790cdc00537!2s1612%20Restaurant%20%26%20Lounge!3m2!1d52.5801053!2d4.9318121999999995!5e0!3m2!1sen!2snl!4v1762944848357!5m2!1sen!2snl"
+        },
+        {
+          "iconUrl": "/assets/svgs/shopping-icon-green.svg",
+          "text": "Museum molen: 1.3km",
+          "iframe": "https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d4846.656975930357!2d4.880047699802088!3d52.599833054800534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x47c5fff613b16a19%3A0xb1a1729741f19590!2sOosteinde%2010%2C%20Schermerhorn!3m2!1d52.600905!2d4.890446799999999!4m5!1s0x47c5ff89a7e9b817%3A0x565920f3a1c95972!2sDe%20Museummolen%2C%20Noordervaart%2C%20Schermerhorn!3m2!1d52.6001226!2d4.8734076!5e0!3m2!1sen!2snl!4v1762945281093!5m2!1sen!2snl"
+        },
+        {
+          "iconUrl": "/assets/svgs/forest-icon-green.svg",
+          "text": "Bos: 23km",
+          "iframe": "https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d79144.08953592837!2d4.891360532841935!3d52.58975913102952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x47c5fff613b16a19%3A0xb1a1729741f19590!2sOosteinde%2010%2C%20Schermerhorn!3m2!1d52.600905!2d4.890446799999999!4m5!1s0x47cf59e8fcd1ef9b%3A0xabf51491476cc0ff!2sDuinvermaak%2C%20Breelaan%2C%20Bergen!3m2!1d52.6775733!2d4.6923388!5e0!3m2!1sen!2snl!4v1762948696024!5m2!1sen!2snl"
+        },
+        {
+          "iconUrl": "/assets/svgs/shopping-icon-green.svg",
+          "text": "Supermarkt: 3km",
+          "iframe": "https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d4846.656975930357!2d4.880047699802088!3d52.599833054800534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x47c5fff613b16a19%3A0xb1a1729741f19590!2sOosteinde%2010%2C%20Schermerhorn!3m2!1d52.600905!2d4.890446799999999!4m5!1s0x47cf55f06302a28b%3A0xedec26477b75518e!2sDekaMarkt%20Stompetoren%2C%20Schermeerplein%2C%20Stompetoren!3m2!1d52.6128782!2d4.8210632!5e0!3m2!1sen!2snl!4v1762948598663!5m2!1sen!2snl"
+        }
+      ]
+    }
+  },
+  "exploreTheArea": {
+    "title": "Ontdek de omgeving",
+    "subTitle": "Van historische molens tot charmante stadjes, er is genoeg te beleven rondom Schermerhorn",
+    "list": [
+      {
+        "image": {
+          "url": "/assets/images/schermer-molens.webp",
+          "altText": "molens van Schermerhorn"
+        },
+        "title": "Molens van Schermerhorn",
+        "description": "Historische molens uit de 17e eeuw",
+        "distance": "2km - 15 min wandelen"
+      },
+      {
+        "image": {
+          "url": "/assets/images/kaasmarkt-alkmaar.webp",
+          "altText": "Kaasmarkt van Alkmaar"
+        },
+        "title": "Alkmaar",
+        "description": "Kaasmarkt & historisch centrum",
+        "distance": "15km - 20 min rijden"
+      },
+      {
+        "image": {
+          "url": "/assets/images/strand-bergen-aan-zee.webp",
+          "altText": "strand van Bergen Aan Zee"
+        },
+        "title": "Strand Bergen",
+        "description": "Prachtige duinen & strand",
+        "distance": "25km - 30 min rijden"
+      },
+      {
+        "image": {
+          "url": "/assets/images/wandelen-eilandspolder.webp",
+          "altText": "Fiets routes polder"
+        },
+        "title": "Fiets routes",
+        "description": "Eindeloze polderroutes",
+        "distance": "Direct vanaf de deur"
+      }
+    ]
   },
   "closing_cta": {
     "title": "Tot snel bij Schermer Eylandt",

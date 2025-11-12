@@ -11,6 +11,8 @@ import HeroSection from "../sections/contact/heroSection.astro";
 import BookingCards from "../sections/contact/bookingCards.astro";
 import ContactFormSection from "../sections/contact/contactFormSection.astro";
 import DirectBookingSection from "../sections/contact/directBookingSection.astro";
+import MapsSection from "../sections/contact/mapsSection.astro";
+import ExploreTheArea from "../sections/contact/exploreTheArea.astro";
 ---
 
 <Layout>
@@ -26,6 +28,11 @@ import DirectBookingSection from "../sections/contact/directBookingSection.astro
   <DirectBookingSection
     sectionContent={pageData.airbnbBooking}
     sectionId="direct-booking-section"
+  />
+  <MapsSection sectionContent={pageData.location} sectionId="maps-section" />
+  <ExploreTheArea
+    sectionContent={pageData.exploreTheArea}
+    sectionId="explore-the-area-section"
   />
   <DarkFooter />
 </Layout>

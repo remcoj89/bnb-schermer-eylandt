@@ -145,7 +145,7 @@ body {
 }
 
 .wrapper {
-  max-width: 1200px;
+  max-width: 1240px;
   margin: 0 auto;
   padding: 0 1rem;
 }
@@ -181,6 +181,10 @@ p:not(:last-child) {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+.green-text {
+  color: var(--clr-green-blue);
 }
 
 img {

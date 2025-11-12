@@ -39,22 +39,9 @@ const rel = isExternal && openInNewTab ? "noopener noreferrer" : undefined;
     text-transform: capitalize;
     transition: all 0.3s ease-in-out;
     width: fit-content;
-  }
-
-  .btn.primary {
-    background-color: var(--clr-gold-dark);
-    color: var(--clr-warm-sand);
-    border: solid 2px var(--clr-gold-dark);
-
-    &:hover,
-    &:focus {
-      background-color: transparent;
-      color: var(--clr-gold-dark);
-    }
 
     &:active {
-      transform: scale(0.9);
-      background-color: var(--clr-gold-dark);
+      transform: scale(0.95);
     }
   }
 
@@ -70,8 +57,42 @@ const rel = isExternal && openInNewTab ? "noopener noreferrer" : undefined;
     }
 
     &:active {
-      transform: scale(0.9);
+      background-color: var(--clr-gold);
+      color: var(--clr-warm-sand);
+    }
+  }
+
+  .btn.green {
+    background-color: var(--clr-green-blue);
+    border: solid 2px var(--clr-green-blue);
+    color: var(--clr-off-white);
+
+    &:hover,
+    &:focus {
+      background-color: transparent;
+      color: var(--clr-green-blue);
+    }
+
+    &:active {
+      background-color: var(--clr-gold);
+      color: var(--clr-off-white);
+    }
+  }
+
+  .btn.primary {
+    background-color: var(--clr-gold-dark);
+    color: var(--clr-warm-sand);
+    border: solid 2px var(--clr-gold-dark);
+
+    &:hover,
+    &:focus {
+      background-color: transparent;
+      color: var(--clr-gold-dark);
+    }
+
+    &:active {
       background-color: var(--clr-gold-dark);
+      color: var(--clr-warm-sand);
     }
   }
 
@@ -83,44 +104,6 @@ const rel = isExternal && openInNewTab ? "noopener noreferrer" : undefined;
     &:hover,
     &:focus {
       background-color: var(--clr-gold-dark);
-    }
-
-    &:active {
-      transform: scale(0.9);
-      background-color: var(--clr-gold-dark);
-    }
-  }
-  .btn.white-btn {
-    background-color: var(--clr-white);
-    color: var(--clr-gold);
-
-    &:hover,
-    &:focus {
-      background-color: var(--clr-warm-sand);
-    }
-  }
-
-  .btn.white-btn-green-text {
-    background-color: var(--clr-white);
-    border: solid 1px var(--clr-white);
-    color: var(--clr-green-blue);
-
-    &:hover,
-    &:focus {
-      background-color: transparent;
-      color: var(--clr-white);
-    }
-  }
-
-  .btn.white-btn-open {
-    background-color: transparent;
-    border: solid 1px var(--clr-white);
-    color: var(--clr-white);
-
-    &:hover,
-    &:focus {
-      background-color: var(--clr-white);
-      color: var(--clr-green-blue);
     }
   }
 
@@ -140,14 +123,61 @@ const rel = isExternal && openInNewTab ? "noopener noreferrer" : undefined;
     }
 
     &:active {
-      transform: translateY(2px);
-      transform: scale(0.95);
+      background-color: var(--clr-green-blue);
+      color: var(--clr-off-white);
     }
 
     &:disabled {
       background-color: var(--clr-dark-gray);
       pointer-events: none;
       cursor: none;
+    }
+  }
+  .btn.white-btn {
+    background-color: var(--clr-white);
+    color: var(--clr-gold);
+
+    &:hover,
+    &:focus {
+      background-color: var(--clr-warm-sand);
+    }
+
+    &:active {
+      background-color: var(--clr-white);
+    }
+  }
+
+  .btn.white-btn-green-text {
+    background-color: var(--clr-white);
+    border: solid 1px var(--clr-white);
+    color: var(--clr-green-blue);
+
+    &:hover,
+    &:focus {
+      background-color: transparent;
+      color: var(--clr-white);
+    }
+
+    &:active {
+      background-color: var(--clr-white);
+      color: var(--clr-green-blue);
+    }
+  }
+
+  .btn.white-btn-open {
+    background-color: transparent;
+    border: solid 1px var(--clr-white);
+    color: var(--clr-white);
+
+    &:hover,
+    &:focus {
+      background-color: var(--clr-white);
+      color: var(--clr-green-blue);
+    }
+
+    &:active {
+      background-color: transparent;
+      color: var(--clr-white);
     }
   }
 </style>

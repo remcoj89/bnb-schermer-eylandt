@@ -1,0 +1,42 @@
+---
+// Astro Assets
+import { Image } from "astro:assets";
+// Components
+import Card from "../../components/global/card.astro";
+import CardGrid from "../../components/global/cardGrid.astro";
+import SectionTitle from "../../components/global/sectionTitle.astro";
+
+// Data
+const { sectionContent, sectionId } = Astro.props;
+---
+
+<section id={sectionId}>
+  <div class="wrapper">
+    <SectionTitle
+      sectionTitle={sectionContent.title}
+      subTitle={sectionContent.subTitle}
+      headerStyle="text-center"
+    />
+
+    <CardGrid cardStyle="small-cards">
+      {
+        sectionContent.list.map((item: any) => (
+          <Card cardStyle="wide-border-card-with-image">
+            <Image
+              alt={item.image.altText}
+              class="smaller-image"
+              height={250}
+              src={item.image.url}
+              width={250}
+            />
+            <div class="centered-text">
+              <h3>{item.title}</h3>
+              <p>{item.description}</p>
+              <span class="green-text">{item.distance}</span>
+            </div>
+          </Card>
+        ))
+      }
+    </CardGrid>
+  </div>
+</section>
