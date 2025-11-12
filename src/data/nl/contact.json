@@ -83,12 +83,13 @@
         "Hulp bij speciale verzoeken of arrangementen",
         "Informatie over seizoensgebonden aanbiedingen",
         "Antwoord meestal binnen 24 uur"
-      ],
-      "directContact": {
-        "title": "Direct contact",
-        "list": [
+      ]
+    },
+    "directContact": {
+      "title": "Direct contact",
+      "list": [
         {
-          "iconUrl": "/assets/svgs/email-icon-green.svg",
+          "iconUrl": "/assets/svgs/email-icon.svg",
           "text": "info@schermereylandt.com"
         },
         {
@@ -99,8 +100,7 @@
           "iconUrl": "/assets/svgs/clock-icon-green.svg",
           "text": "Ma-Zo: 08:30 - 22:00"
         }
-        ]
-      }
+      ]
     }
   },
   "airbnb_booking": {

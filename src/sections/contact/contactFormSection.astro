@@ -1,4 +1,6 @@
 ---
+// Astro Assets
+import { Image } from "astro:assets";
 // Components
 import ContactForm from "../../components/contact/contactForm.astro";
 import FlexSection from "../../components/global/flex-section.astro";
@@ -10,7 +12,7 @@ import SectionTitle from "../../components/global/sectionTitle.astro";
 const { sectionContent, sectionId } = Astro.props;
 
 // Icons
-import { StarIcon } from "../../assets/icons";
+import { StarIcon, RoundCheckIconGold } from "../../assets/icons";
 ---
 
 <section id={sectionId}>
@@ -22,6 +24,7 @@ import { StarIcon } from "../../assets/icons";
           <ContactForm />
         </Card>
       </div>
+
       <div class="cards-wrapper">
         <Card cardStyle="review-card white-bg">
           <div class="review-with-icon">
@@ -39,8 +42,31 @@ import { StarIcon } from "../../assets/icons";
             </div>
           </div>
         </Card>
-        <Card cardStyle="green-list-card" />
-        <Card cardStyle="contact-card" />
+        <Card cardStyle="green-list-card">
+          <h3>{sectionContent.whyContact.title}</h3>
+
+          <ul role="list" class="custom-marker">
+            {
+              sectionContent.whyContact.list.map((item: string) => (
+                <li>{item}</li>
+              ))
+            }
+          </ul>
+        </Card>
+        <Card cardStyle="contact-card">
+          <h3>{sectionContent.directContact.title}</h3>
+
+          <ul role="list">
+            {
+              sectionContent.directContact.list.map((item: any) => (
+                <li>
+                  <Image alt="" src={item.iconUrl} width={15} height={15} />
+                  {item.text}
+                </li>
+              ))
+            }
+          </ul>
+        </Card>
       </div>
     </FlexSection>
   </div>

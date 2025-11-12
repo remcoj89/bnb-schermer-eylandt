@@ -244,7 +244,7 @@ const { cardStyle = "", cardId = "" } = Astro.props;
   .review-card.white-bg {
     background-color: var(--clr-off-white);
   }
-  
+
   #rating-card {
     display: flex;
     gap: var(--size-4);
@@ -307,6 +307,53 @@ const { cardStyle = "", cardId = "" } = Astro.props;
 
       h3 {
         font-size: var(--fs-600);
+      }
+    }
+  }
+
+  .green-list-card {
+    background-color: var(--clr-green-blue);
+    color: var(--clr-off-white);
+
+    h3 {
+      font-size: var(--fs-600);
+    }
+
+    ul {
+      padding-inline-start: var(--size-2);
+      padding-block-start: var(--size-2);
+
+      li {
+        padding-left: 0.5rem;
+
+        &:not(:last-child) {
+          margin-block-end: var(--size-1);
+        }
+      }
+
+      ::marker {
+        content: url("/assets/svgs/round-check-icon-gold.svg");
+      }
+    }
+  }
+
+  .contact-card {
+    h3 {
+      font-size: var(--fs-600);
+    }
+
+    ul {
+      padding-block-start: var(--size-2);
+
+      li {
+        padding-left: 0.5rem;
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+
+        &:not(:last-child) {
+          margin-block-end: var(--size-1);
+        }
       }
     }
   }
