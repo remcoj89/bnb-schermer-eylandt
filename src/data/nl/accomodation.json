@@ -218,7 +218,7 @@
       "text":"Bekijk prijzen en beschikbaarheid op Airbnb ↗",
       "iconUrl":"/assets/svgs/leave-icon.svg",
       "bookingLink": {
-        "url": "https://www.airbnb.nl/rooms/934796483879606222?s",
+        "url": "https://www.airbnb.nl/rooms/934796483879606222",
         "target": "_blank"
       }
     },

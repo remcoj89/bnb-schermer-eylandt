@@ -12,10 +12,10 @@ const { iconStyle = "green-icon" } = Astro.props;
     align-items: center;
     border-radius: var(--border-radius-full);
     display: grid;
-    height: 50px;
+    height: 5rem;
     justify-content: center;
     padding: 0.75em;
-    width: 50px;
+    width: 5rem;
   }
 
   .green-icon {
@@ -41,5 +41,13 @@ const { iconStyle = "green-icon" } = Astro.props;
   }
   .gradient-gold-green-270 {
     background-image: linear-gradient(270deg, var(--clr-gold), var(--clr-green-blue));
+  }
+
+  .white-square {
+    background-color: var(--clr-off-white);
+    border-radius: var(--border-radius-card);
+    box-shadow: var(--box-shadow-light);
+    height: 7.5rem;
+    width: 7.5rem;
   }
 </style>

@@ -1,0 +1,124 @@
+---
+// Astro Asstes
+import { Image } from "astro:assets";
+
+// Components
+import Button from "../../components/global/buttons.astro";
+import Icon from "../../components/global/icon.astro";
+// Data
+const { sectionContent, sectionId } = Astro.props;
+
+// Icons
+import { AirbnbIcon, NewTabIcon } from "../../assets/icons";
+---
+
+<section id={sectionId}>
+  <div class="wrapper">
+    <div class="booking-card">
+      <div class="booking-card-content">
+        <div class="card-header">
+          <!-- Logo -->
+          <Icon iconStyle="white-square">
+            <Image
+              alt={sectionContent.airbnbLogo.altText}
+              height={25}
+              src={sectionContent.airbnbLogo.url}
+              width={25}
+            />
+          </Icon>
+          <div>
+            <h3>{sectionContent.title}</h3>
+            <span>{sectionContent.subTitle}</span>
+          </div>
+        </div>
+        <p>{sectionContent.description}</p>
+        <ul role="list">
+          {
+            sectionContent.list.map((item: any) => (
+              <li>
+                <Image alt="" height={15} src={item.iconUrl} width={15} />
+                {item.text}
+              </li>
+            ))
+          }
+        </ul>
+
+        <Button
+          buttonStyle="gold"
+          href={sectionContent.button.url}
+          target="_blank"
+        >
+          <AirbnbIcon />
+          {sectionContent.button.text}
+          <NewTabIcon />
+        </Button>
+      </div>
+      <picture>
+        <Image
+          alt={sectionContent.image.altText}
+          src={sectionContent.image.url}
+          width={500}
+          height={250}
+        />
+      </picture>
+    </div>
+  </div>
+</section>
+
+<style>
+  .booking-card {
+    align-items: center;
+    border-radius: var(--border-radius-card);
+    box-shadow: var(--box-shadow);
+    display: flex;
+    padding-block: var(--size-4);
+    padding-inline-start: var(--size-4);
+
+    background-image: linear-gradient(
+      90deg,
+      var(--clr-warm-sand),
+      var(--clr-off-white)
+    );
+
+    .booking-card-content,
+    picture {
+      width: 100%;
+    }
+
+    .booking-card-content {
+      display: grid;
+      gap: var(--size-1);
+
+      .card-header {
+        align-items: center;
+        display: flex;
+        gap: var(--size-1);
+
+        span {
+          color: var(--clr-green-blue);
+        }
+      }
+
+      ul {
+        margin-block-end: var(--size-2);
+
+        li {
+          align-items: center;
+          display: flex;
+          gap: var(--size-1);
+        }
+      }
+
+    }
+
+    picture {
+      height: 30rem;
+      img {
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+      }
+    }
+  }
+</style>

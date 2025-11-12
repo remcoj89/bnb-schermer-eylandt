@@ -103,10 +103,36 @@
       ]
     }
   },
-  "airbnb_booking": {
-    "title": "Of boek direct via Airbnb",
-    "description": "Liever meteen je verblijf vastleggen? Dat kan eenvoudig via onze Airbnb-pagina. Daar zie je direct de actuele beschikbaarheid en prijzen.",
-    "button": "Bekijk beschikbaarheid op Airbnb ↗"
+  "airbnbBooking": {
+    "title": "Direct Boeken",
+    "subTitle": "Via Airbnb",
+    "airbnbLogo": {
+      "url": "/assets/svgs/airbnb-logo-icon.svg",
+      "altText": "Airbnb logo"
+    },
+    "description": "Bekijk onze beschikbaarheid, lees alle reviews en boek direct je verblijf bij Schermer Eylandt. Veilig betalen en directe bevestiging gegarandeerd.",
+    "list": [
+      {
+        "iconUrl": "/assets/svgs/pay-card-green.svg",
+        "text": "Veilige betaling via Airbnb"
+      },
+      {
+        "iconUrl": "/assets/svgs/booking-calendar-icon-green.svg",
+        "text": "Directe bevestiging van je boeking"
+      },
+      {
+        "iconUrl": "/assets/svgs/star-icon-green.svg",
+        "text": "Veilige betaling via Airbnb"
+      }
+    ],
+    "button": {
+      "url": "https://www.airbnb.nl/rooms/934796483879606222",
+      "text": "Bekijk beschikbaarheid op Airbnb"
+    },
+    "image": {
+      "url": "/assets/images/schermer-eylandt-living-room.avif",
+      "altText": "De woonkamer van de b&b"
+    }
   },
   "location": {
     "title": "Waar vind je ons",

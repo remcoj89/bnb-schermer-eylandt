@@ -34,7 +34,7 @@
 
 :root {
   /* Border Radius */
-  --border-radius-btn: 500vw;
+  --border-radius-btn: 8px;
   --border-radius-card: 8px;
   --border-radius-card-big: 24px;
   --border-radius-full: 100%;
