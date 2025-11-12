@@ -13,6 +13,7 @@ import ContactFormSection from "../sections/contact/contactFormSection.astro";
 import DirectBookingSection from "../sections/contact/directBookingSection.astro";
 import MapsSection from "../sections/contact/mapsSection.astro";
 import ExploreTheArea from "../sections/contact/exploreTheArea.astro";
+import ReviewSection from "../sections/contact/reviewSection.astro";
 ---
 
 <Layout>
@@ -33,6 +34,10 @@ import ExploreTheArea from "../sections/contact/exploreTheArea.astro";
   <ExploreTheArea
     sectionContent={pageData.exploreTheArea}
     sectionId="explore-the-area-section"
+  />
+  <ReviewSection
+    sectionContent={pageData.reviewSection}
+    sectionId="review-section"
   />
   <DarkFooter />
 </Layout>

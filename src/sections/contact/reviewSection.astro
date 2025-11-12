@@ -1,0 +1,65 @@
+---
+// Astro Asstes
+import { Image } from "astro:assets";
+// Components
+import Button from "../../components/global/buttons.astro";
+import Card from "../../components/global/card.astro";
+import CardGrid from "../../components/global/cardGrid.astro";
+import FiveStars from "../../components/global/fiveStars.astro";
+import SectionTitle from "../../components/global/sectionTitle.astro";
+
+// Data
+const { sectionContent, sectionId } = Astro.props;
+
+// Icons
+import { AirbnbIcon } from "../../assets/icons";
+---
+
+<section id={sectionId}>
+  <div class="wrapper ">
+    <SectionTitle
+      sectionTitle={sectionContent.title}
+      subTitle={sectionContent.subtitle}
+      headerStyle="text-center"
+    />
+
+    <CardGrid>
+      {
+        sectionContent.list.map((item: any) => (
+          <Card cardStyle="review-card">
+            <div class="author">
+              <Image
+                alt={`${item.avatar.altText} ${item.author}`}
+                height={50}
+                src={item.avatar.url}
+                width={50}
+              />
+              <div>
+                <p>{item.author}</p>
+                <FiveStars />
+              </div>
+            </div>
+            <quote>"{item.quoute}"</quote>
+          </Card>
+        ))
+      }
+    </CardGrid>
+    <Button href={sectionContent.button.url} target="_blank" buttonStyle="green">{sectionContent.button.text} <AirbnbIcon /></Button>
+  </div>
+</section>
+
+<style>
+  section {
+    background-image: linear-gradient(
+      var(--clr-warm-sand),
+      var(--clr-off-white)
+    );
+
+    .wrapper {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      gap: var(--size-5);
+    }
+  }
+</style>

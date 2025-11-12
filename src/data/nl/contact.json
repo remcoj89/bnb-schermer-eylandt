@@ -208,7 +208,7 @@
           "altText": "molens van Schermerhorn"
         },
         "title": "Molens van Schermerhorn",
-        "description": "Historische molens uit de 17e eeuw",
+        "description": "Historische schermermolens",
         "distance": "2km - 15 min wandelen"
       },
       {
@@ -239,6 +239,40 @@
         "distance": "Direct vanaf de deur"
       }
     ]
+  },
+  "reviewSection": {
+    "title": "Wat onze gasten zeggen",
+    "subtitle": "Lees de ervaringen van onze gasten en ontdek waarom zij zo enthousiast zijn over hun verblijf",
+    "list": [
+      {
+        "avatar": {
+          "url": "/assets/images/bas-linda-evi.png",
+          "altText": "profiel foto van"
+        },
+        "author": "Marie",
+        "quoute": "We voelden ons meteen thuis in dit prachtige pand. De rust en ruimte waren precies wat we nodig hadden na een drukke periode. Alles tot in de puntjes verzorgd."
+      },
+      {
+        "avatar": {
+          "url": "/assets/images/bas-linda-evi.png",
+          "altText": "profiel foto van"
+        },
+        "author": "Jan & Petra",
+        "quoute": "De locatie is fenomenaal, midden in de polder met prachtige wandel- en fietsroutes. De gastvrouw gaf ons geweldige tips over de omgeving. Zeker voor herhaling vatbaar!"
+      },
+      {
+        "avatar": {
+          "url": "/assets/images/bas-linda-evi.png",
+          "altText": "profiel foto van"
+        },
+        "author": "Claire",
+        "quoute": "De woning is schoon, compleet en voelt als thuis. Het ontbijt was heerlijk en de gastheer en gastvrouw zijn zeer vriendelijk en behulpzaam. Een perfecte plek om tot rust te komen."
+      }
+    ],
+    "button": {
+      "url": "https://www.airbnb.nl/rooms/934796483879606222/reviews",
+      "text": "Bekijk alle 86+ reviews op Airbnb"
+    }
   },
   "closing_cta": {
     "title": "Tot snel bij Schermer Eylandt",
